@@ -1,0 +1,10 @@
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\sBuildingCommunication.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\sBuildingCommunication.pdb
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\CommonHelper.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\JavaCommunication.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\Newtonsoft.Json.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\RestSharp.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\sWorldCommunication.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\bin\Release\sWorldModel.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\obj\Release\sBuildingCommunication.dll
+D:\vu.pham\sBuilding\Trunk\Client\sBuilding\SaigonPearl\sBuildingCommunication\obj\Release\sBuildingCommunication.pdb

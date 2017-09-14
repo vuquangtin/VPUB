@@ -1,0 +1,132 @@
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+C:\Users\Administrator\Desktop\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+D:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+C:\Tien Dung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+C:\TienDung\sParking5\Sources2\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+F:\Dropbox\Projects\sParking5\Sources\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+F:\Google Drive\Workspace\DotNet\SP5\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+F:\DUNG.NGUYEN\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+D:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+F:\Dropbox\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+D:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\SparkingInterface.pdb
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\WcfServiceCommon.pdb
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\bin\Debug\CommonHelper.pdb
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\ResolveAssemblyReference.cache
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.dll
+F:\Dropbox\SWT\Dept_Project\Projects\sParking5\Code\SVN\Trunk\Sources\Sparking5Common\SparkingInterface\obj\Debug\SparkingInterface.pdb

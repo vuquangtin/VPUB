@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11281E98-B95B-4442-B6EB-3654660637C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sTimeKeeping</RootNamespace>
+    <AssemblyName>sTimeKeeping</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="CommonControls">
+      <HintPath>..\..\libs\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper">
+      <HintPath>..\..\libs\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptoLibrary, Version=1.0.13151.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CryptoLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>..\MainForm\lib\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\JavaCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\..\libs\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="sExcelExportComponent">
+      <HintPath>..\..\libs\sExcelExportComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\sWorldCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldModel, Version=1.0.13151.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\sWorldModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemMgtComponent">
+      <HintPath>..\..\libs\SystemMgtComponent.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\ConstantsValue.cs" />
+    <Compile Include="Constants\DefineName.cs" />
+    <Compile Include="Constants\FunctionTimeKeeping.cs" />
+    <Compile Include="Constants\Message.cs" />
+    <Compile Include="Constants\TimeCommandName.cs" />
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Factory\TimeKeepingColorConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingDayOffConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingDeviceConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingEventFactory.cs" />
+    <Compile Include="Factory\TimeKeepingGeneralConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingHolidayConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingShiftFactory.cs" />
+    <Compile Include="Factory\TimeKeepingFormTimeKeepingFactory.cs" />
+    <Compile Include="Factory\TimeKeepingTimeConfigFactory.cs" />
+    <Compile Include="Factory\TimeKeepingUserTimeConfigFactory.cs" />
+    <Compile Include="Interface\ITimeKeepingColorConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingDayOffConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingDeviceConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingEvent.cs" />
+    <Compile Include="Interface\ITimeKeepingGeneralConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingHolidayConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingShift.cs" />
+    <Compile Include="Interface\ITimeKeepingFormTimeKeeping.cs" />
+    <Compile Include="Interface\ITimeKeepingTimeConfig.cs" />
+    <Compile Include="Interface\ITimeKeepingUserTimeConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeeping.cs" />
+    <Compile Include="Interface\ITimeKeeping.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingColorConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingDayOffConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingDeviceConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingEvent.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingGeneralConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingHolidayConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingShift.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingFormTimeKeeping.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingTimeConfig.cs" />
+    <Compile Include="JavaComunication\CommunicationTimeKeepingUserTimeConfig.cs" />
+    <Compile Include="Java\JavaTimeKeeping.cs" />
+    <Compile Include="Constants\TimeKeepingMethodNames.cs" />
+    <Compile Include="Java\JavaTimeKeepingColorConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingDayOffConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingDeviceConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingEvent.cs" />
+    <Compile Include="Java\JavaTimeKeepingGeneralConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingHolidayConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingShift.cs" />
+    <Compile Include="Java\JavaTimeKeepingFormTimeKeeping.cs" />
+    <Compile Include="Java\JavaTimeKeepingTimeConfig.cs" />
+    <Compile Include="Java\JavaTimeKeepingUserTimeConfig.cs" />
+    <Compile Include="Model\ChipPersonalizationCustom.cs" />
+    <Compile Include="Model\ColorConfig.cs" />
+    <Compile Include="Model\ColorEvent.cs" />
+    <Compile Include="Model\ColorValue.cs" />
+    <Compile Include="Model\ConfigForStatisticDTO.cs" />
+    <Compile Include="Model\DailyConfig.cs" />
+    <Compile Include="Model\DayOffConfig.cs" />
+    <Compile Include="Model\DayOffImportObject.cs" />
+    <Compile Include="Model\DayOffStatus.cs" />
+    <Compile Include="Model\DeviceConfig.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\EventConflictLong.cs" />
+    <Compile Include="Model\EventDTO.cs" />
+    <Compile Include="Model\EventFilter.cs" />
+    <Compile Include="Model\EventImportObject.cs" />
+    <Compile Include="Model\EventMember.cs" />
+    <Compile Include="Model\EventMemberListDTO.cs" />
+    <Compile Include="Model\EventResultForGetEventDTO.cs" />
+    <Compile Include="Model\GeneralConfig.cs" />
+    <Compile Include="Model\GeneralConfigJson.cs" />
+    <Compile Include="Model\GeneralConfigTime.cs" />
+    <Compile Include="Model\HolidayConfig.cs" />
+    <Compile Include="Model\MemberCustom.cs" />
+    <Compile Include="Model\MonthlyReport.cs" />
+    <Compile Include="Model\SessionWorking.cs" />
+    <Compile Include="Model\Shift.cs" />
+    <Compile Include="Factory\TimeKeepingFactory.cs" />
+    <Compile Include="Model\ShiftFilterDto.cs" />
+    <Compile Include="Model\SubOrgInfo.cs" />
+    <Compile Include="Model\TimeConfig.cs" />
+    <Compile Include="Model\TimeDetail.cs" />
+    <Compile Include="Model\TimeKeepingAcessDTO.cs" />
+    <Compile Include="Model\TimeKeepingImage.cs" />
+    <Compile Include="Model\TimeKeepingStatus.cs" />
+    <Compile Include="Model\TimeValue.cs" />
+    <Compile Include="Model\UserTimeConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\DayOffExcelReader.cs" />
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffConnectionConfig.Designer.cs">
+      <DependentUpon>FrmDayOffConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffIntegrateData.Designer.cs">
+      <DependentUpon>FrmDayOffIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReadExcelData.Designer.cs">
+      <DependentUpon>FrmDayOffReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReviewData.Designer.cs">
+      <DependentUpon>FrmDayOffReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\EventExcelReader.cs" />
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventConnectionConfig.designer.cs">
+      <DependentUpon>FrmEventConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventIntegrateData.designer.cs">
+      <DependentUpon>FrmEventIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventReadExcelData.designer.cs">
+      <DependentUpon>FrmEventReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\EventIntegratingExcel\FrmEventReviewData.designer.cs">
+      <DependentUpon>FrmEventReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FormMemberOfSubOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FormMemberOfSubOrg.Designer.cs">
+      <DependentUpon>FormMemberOfSubOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmColorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmColorConfig.Designer.cs">
+      <DependentUpon>FrmColorConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmDayOffConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmDayOffConfig.designer.cs">
+      <DependentUpon>FrmDayOffConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmDetail.Designer.cs">
+      <DependentUpon>FrmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmEventDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmEventDetail.Designer.cs">
+      <DependentUpon>FrmEventDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmHolidayConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmHolidayConfig.Designer.cs">
+      <DependentUpon>FrmHolidayConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmShiftImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmShiftImage.Designer.cs">
+      <DependentUpon>FrmShiftImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeKeeping.Designer.cs">
+      <DependentUpon>FrmTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeEvent.Designer.cs">
+      <DependentUpon>FrmTimeEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeStatisticDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmTimeStatisticDetail.Designer.cs">
+      <DependentUpon>FrmTimeStatisticDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ProcessBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ProcessBar.Designer.cs">
+      <DependentUpon>ProcessBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\session12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\session12.Designer.cs">
+      <DependentUpon>session12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\sheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\sheet.Designer.cs">
+      <DependentUpon>sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\sheet1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\sheet1.Designer.cs">
+      <DependentUpon>sheet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\TimeKeepingComponentWorkItem.cs" />
+    <Compile Include="WorkItems\usersessionworking12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\usersessionworking12.Designer.cs">
+      <DependentUpon>usersessionworking12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrDateStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrDateStatistic.Designer.cs">
+      <DependentUpon>UsrDateStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrDayOffConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrDayOffConfig.designer.cs">
+      <DependentUpon>UsrDayOffConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrDeviceConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrDeviceConfig.designer.cs">
+      <DependentUpon>UsrDeviceConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrGeneralConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrGeneralConfig.Designer.cs">
+      <DependentUpon>UsrGeneralConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrHolidayConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrHolidayConfig.Designer.cs">
+      <DependentUpon>UsrHolidayConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrMonthStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrMonthStatistic.designer.cs">
+      <DependentUpon>UsrMonthStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeConfig.designer.cs">
+      <DependentUpon>UsrTimeConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeEvent.Designer.cs">
+      <DependentUpon>UsrTimeEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeKeepingWithoutCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrTimeKeepingWithoutCard.Designer.cs">
+      <DependentUpon>UsrTimeKeepingWithoutCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserStatistic.designer.cs">
+      <DependentUpon>UsrUserStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserTimeConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserTimeConfig.Designer.cs">
+      <DependentUpon>UsrUserTimeConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Res.en.resx" />
+    <EmbeddedResource Include="Resources\Res.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\DayOffIntegratingExcel\FrmDayOffConnectionConfig.resx">
+      <DependentUpon>FrmDayOffConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\DayOffIntegratingExcel\FrmDayOffIntegrateData.resx">
+      <DependentUpon>FrmDayOffIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReadExcelData.resx">
+      <DependentUpon>FrmDayOffReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\DayOffIntegratingExcel\FrmDayOffReviewData.resx">
+      <DependentUpon>FrmDayOffReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\EventIntegratingExcel\FrmEventConnectionConfig.resx">
+      <DependentUpon>FrmEventConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\EventIntegratingExcel\FrmEventIntegrateData.resx">
+      <DependentUpon>FrmEventIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\EventIntegratingExcel\FrmEventReadExcelData.resx">
+      <DependentUpon>FrmEventReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\EventIntegratingExcel\FrmEventReviewData.resx">
+      <DependentUpon>FrmEventReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FormMemberOfSubOrg.resx">
+      <DependentUpon>FormMemberOfSubOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmColorConfig.resx">
+      <DependentUpon>FrmColorConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmDayOffConfig.resx">
+      <DependentUpon>FrmDayOffConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmEventDetail.resx">
+      <DependentUpon>FrmEventDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmHolidayConfig.resx">
+      <DependentUpon>FrmHolidayConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmShiftImage.resx">
+      <DependentUpon>FrmShiftImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmTimeKeeping.resx">
+      <DependentUpon>FrmTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmTimeEvent.resx">
+      <DependentUpon>FrmTimeEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmTimeStatisticDetail.resx">
+      <DependentUpon>FrmTimeStatisticDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ProcessBar.resx">
+      <DependentUpon>ProcessBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\session12.resx">
+      <DependentUpon>session12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\sheet.resx">
+      <DependentUpon>sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\sheet1.resx">
+      <DependentUpon>sheet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\usersessionworking12.resx">
+      <DependentUpon>usersessionworking12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrDateStatistic.resx">
+      <DependentUpon>UsrDateStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrDayOffConfig.resx">
+      <DependentUpon>UsrDayOffConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrDeviceConfig.resx">
+      <DependentUpon>UsrDeviceConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrGeneralConfig.resx">
+      <DependentUpon>UsrGeneralConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrHolidayConfig.resx">
+      <DependentUpon>UsrHolidayConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrMonthStatistic.resx">
+      <DependentUpon>UsrMonthStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrTimeConfig.resx">
+      <DependentUpon>UsrTimeConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrTimeEvent.resx">
+      <DependentUpon>UsrTimeEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrTimeKeepingWithoutCard.resx">
+      <DependentUpon>UsrTimeKeepingWithoutCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrUserStatistic.resx">
+      <DependentUpon>UsrUserStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrUserTimeConfig.resx">
+      <DependentUpon>UsrUserTimeConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wheel_16x16.png" />
+    <None Include="Resources\btnAdd.png" />
+    <None Include="Resources\btnUpdate.png" />
+    <None Include="Resources\btnDelete.png" />
+    <None Include="Resources\btnRefresh.png" />
+    <Content Include="Resources\Cancel_16x16.png" />
+    <None Include="Resources\colorDisable.png" />
+    <Content Include="Resources\Excel_16x16.png" />
+    <None Include="Resources\ic_search.png" />
+    <Content Include="Resources\Lock_16x16.png" />
+    <Content Include="Resources\MarkBlack_16x16.png" />
+    <Content Include="Resources\MarkBlue_16x16.png" />
+    <Content Include="Resources\MarkRed_16x16.png" />
+    <Content Include="Resources\noimage.jpg" />
+    <Content Include="Resources\Refresh_16x16.png" />
+    <Content Include="Resources\UnLock_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraComponent\CameraComponent.csproj">
+      <Project>{bbaab352-50a3-4894-acc2-63a6476f543b}</Project>
+      <Name>CameraComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SaigonPearl\sBuildingCommunication\sBuildingCommunication.csproj">
+      <Project>{7ddb9b48-a92f-4323-9d29-12711650e007}</Project>
+      <Name>sBuildingCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

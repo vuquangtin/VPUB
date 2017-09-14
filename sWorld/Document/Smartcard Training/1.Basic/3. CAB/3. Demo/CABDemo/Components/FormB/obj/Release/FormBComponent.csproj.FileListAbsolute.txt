@@ -1,0 +1,10 @@
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\FormB.exe.config
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\FormB.exe
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\FormB.pdb
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormBComponent.csprojResolveAssemblyReference.cache
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormB.frmB.resources
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormB.Properties.Resources.resources
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormA.UcA.resources
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormBComponent.csproj.GenerateResource.Cache
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormB.exe
+D:\chinh.nguyen\Privates\Projects\CABDemo\Components\FormB\obj\Release\FormB.pdb

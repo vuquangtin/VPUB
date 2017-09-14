@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89534068-01B1-458B-9E85-71A890EC5C9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sWorldModel</RootNamespace>
+    <AssemblyName>sWorldModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Filters\DoorOutFilterDto.cs" />
+    <Compile Include="Filters\AttendanceFilterDto.cs" />
+    <Compile Include="Filters\CardMagneticFilterDto.cs" />
+    <Compile Include="Filters\ConfigApartmentFilterDto.cs" />
+    <Compile Include="Filters\StatisticDeductFilter.cs" />
+    <Compile Include="Filters\EcashConfigFilterDto.cs" />
+    <Compile Include="Filters\GroupItemFilterDto.cs" />
+    <Compile Include="Filters\ItemFilterDto.cs" />
+    <Compile Include="Filters\OrgFilterDto.cs" />
+    <Compile Include="Filters\StatisticPayInDate.cs" />
+    <Compile Include="Filters\StatisticTouUpFilter.cs" />
+    <Compile Include="Filters\VoucherGiftFilterDto.cs" />
+    <Compile Include="TransportData\AttendanceDTO.cs" />
+    <Compile Include="TransportData\CardChip.cs" />
+    <Compile Include="TransportData\CmsOrgCustomerDto.cs" />
+    <Compile Include="TransportData\ConfigApartment.cs" />
+    <Compile Include="TransportData\Constants\CardChipType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\Constants\CardMagneticStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\CardStatisticsData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\Constants\CardStatus.cs" />
+    <Compile Include="TransportData\Constants\EcashCombobox.cs" />
+    <Compile Include="TransportData\Constants\Gender.cs" />
+    <Compile Include="TransportData\Constants\MemberActive.cs" />
+    <Compile Include="TransportData\CardmagneticDTO.cs" />
+    <Compile Include="TransportData\Constants\VoucherGiftCombobox.cs" />
+    <Compile Include="TransportData\Config_cardDTO.cs" />
+    <Compile Include="TransportData\DeviceDoor.cs" />
+    <Compile Include="TransportData\DoorOut.cs" />
+    <Compile Include="TransportData\ManagerCostApartment.cs" />
+    <Compile Include="TransportData\MoveMemberSubOrg.cs" />
+    <Compile Include="TransportData\OrgSubOrgCustomDTO.cs" />
+    <Compile Include="TransportData\PayOutStatisticDto.cs" />
+    <Compile Include="TransportData\PayInStatisticDto.cs" />
+    <Compile Include="TransportData\GroupItemConfig.cs" />
+    <Compile Include="TransportData\ImagePairDto.cs" />
+    <Compile Include="TransportData\ImagesDto.cs" />
+    <Compile Include="TransportData\ItemDto.cs" />
+    <Compile Include="TransportData\lockmoneycard.cs" />
+    <Compile Include="TransportData\MagneticListDTO.cs" />
+    <Compile Include="TransportData\DataToReadCardDTO.cs" />
+    <Compile Include="TransportData\DataToWriteCardDTO.cs" />
+    <Compile Include="TransportData\DepartmentDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\FacultyDepartmentDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\Constants\Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\GroupCustomerDto.cs" />
+    <Compile Include="TransportData\GroupDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\LoginHistoryDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\MemberChipPersoDTO.cs" />
+    <Compile Include="TransportData\MemberCustomerDto.cs" />
+    <Compile Include="TransportData\MemberDataExcelDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\MemberDataImportExcelDTO.cs" />
+    <Compile Include="TransportData\MemberDataImportFromExcelDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\MemberMagneticPersoDTO.cs" />
+    <Compile Include="TransportData\MemberMobilePersonalizationDTO.cs" />
+    <Compile Include="TransportData\MemberRelativeDto.cs" />
+    <Compile Include="TransportData\MethodResultDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\MobilePersonalizationDTO.cs" />
+    <Compile Include="TransportData\Organization.cs" />
+    <Compile Include="TransportData\OrgCustomerDto.cs" />
+    <Compile Include="TransportData\PayInDto.cs" />
+    <Compile Include="TransportData\PayOutDto.cs" />
+    <Compile Include="TransportData\PersoCardCustomerDTO.cs" />
+    <Compile Include="TransportData\MagneticPersonalizationDTO.cs" />
+    <Compile Include="TransportData\PersoMagneticCardInforDTO.cs" />
+    <Compile Include="TransportData\PersoMagneticInfo.cs" />
+    <Compile Include="TransportData\Constants\PersoStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\PolicyDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\ResultCheckCardDTO.cs" />
+    <Compile Include="TransportData\KeyDTO.cs" />
+    <Compile Include="TransportData\OrgMagineticPersData.cs" />
+    <Compile Include="Exceptions\sWorldException.cs" />
+    <Compile Include="Exceptions\sWorldExceptionUtils.cs" />
+    <Compile Include="Exceptions\ErrorCodes.cs" />
+    <Compile Include="Exceptions\WcfServiceFault.cs" />
+    <Compile Include="Filters\CardFilterDto.cs" />
+    <Compile Include="Filters\FacultyFilterDto.cs" />
+    <Compile Include="Filters\GroupFilterDto.cs" />
+    <Compile Include="Filters\LoginHistoryFilterDto.cs" />
+    <Compile Include="Filters\PersoChipFilter.cs" />
+    <Compile Include="Filters\MemberFilter.cs" />
+    <Compile Include="Filters\SubOrgFilterDto.cs" />
+    <Compile Include="Filters\UserFilterDto.cs" />
+    <Compile Include="ILocalStorageService.cs" />
+    <Compile Include="Integrating\ALL_BO_MON.cs" />
+    <Compile Include="Integrating\ALL_KHOA.cs" />
+    <Compile Include="Integrating\CHUC_VU.cs" />
+    <Compile Include="Integrating\ALL_NGACH.cs" />
+    <Compile Include="Integrating\ALL_CBCNV.cs" />
+    <Compile Include="Integrating\IntegratingTable.cs" />
+    <Compile Include="MethodData\DataForClearCard.cs" />
+    <Compile Include="MethodData\DataForImportCard.cs" />
+    <Compile Include="MethodData\DataForPersoCard.cs" />
+    <Compile Include="MethodData\DataForReadCard.cs" />
+    <Compile Include="MethodData\DataForUpdateCard.cs" />
+    <Compile Include="TransportData\SectorKeyPairDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\SessionDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\SettlementLog.cs" />
+    <Compile Include="TransportData\SubOrganization.cs" />
+    <Compile Include="TransportData\SubOrgCustomerDTO.cs" />
+    <Compile Include="TransportData\Personalization.cs" />
+    <Compile Include="TransportData\App.cs" />
+    <Compile Include="TransportData\MagneticPersData.cs" />
+    <Compile Include="TransportData\CardTypeDTO.cs" />
+    <Compile Include="TransportData\MasterInfoDTO.cs" />
+    <Compile Include="TransportData\PartnerInfoDTO.cs" />
+    <Compile Include="TransportData\PreGenerateData.cs" />
+    <Compile Include="TransportData\MemberDTO.cs" />
+    <Compile Include="Parser\AppMetadataParser.cs" />
+    <Compile Include="Parser\HeaderDataParser.cs" />
+    <Compile Include="Parser\TeacherDataParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransportData\sWorldConfig.cs" />
+    <Compile Include="TransportData\TimePeriodDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\TotalMemberDTO.cs" />
+    <Compile Include="TransportData\UserDTO.cs" />
+    <Compile Include="TransportData\Constants\UserStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransportData\VoucherGiftDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_ConfigurationName="Release" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

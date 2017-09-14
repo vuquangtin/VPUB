@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8A3CB93-F1B0-4F02-ACC6-D5E382C7860A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TreeViewColumnsProject</RootNamespace>
+    <AssemblyName>TreeViewColumnsProject</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewColumns1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TreeViewColumns1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServiceDependency.cs" />
+    <Compile Include="TreeViewColumns1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeViewColumns1.Designer.cs">
+      <DependentUpon>TreeViewColumns1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AttendanceComponent\AttendanceComponent.csproj">
+      <Project>{25df0f70-52a7-4c9e-bcb8-64127786a789}</Project>
+      <Name>AttendanceComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CardChipService\CardChipService.csproj">
+      <Project>{ed8a8197-d684-460d-933d-0768eafa9110}</Project>
+      <Name>CardChipService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CardMagneticMgtComponent\CardMagneticMgtComponent.csproj">
+      <Project>{86a69ffb-9b39-4f8e-9cb8-213f84ea5817}</Project>
+      <Name>CardMagneticMgtComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CardMgtComponent\CardChipMgtComponent.csproj">
+      <Project>{ce74f678-59a8-4405-94e9-ff7af2b353d7}</Project>
+      <Name>CardChipMgtComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LocalStorageService\LocalStorageService.csproj">
+      <Project>{1f1d0d02-c934-4852-be91-b6de41e0536b}</Project>
+      <Name>LocalStorageService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MockTest\MockTest.csproj">
+      <Project>{2c1a264d-480c-4499-9a84-c9434703a2df}</Project>
+      <Name>MockTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ReaderLibrary\PcsReaderLibrary.csproj">
+      <Project>{3b3d4195-c507-4e13-8dea-3a13495835f0}</Project>
+      <Name>PcsReaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

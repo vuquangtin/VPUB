@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8511BF5-22EE-4817-B7F4-BD44ACB4BA02}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccessControlService</RootNamespace>
+    <AssemblyName>AccessControlService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccessService.Designer.cs">
+      <DependentUpon>AccessService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\UserLoginConfigSection.cs" />
+    <Compile Include="MCR02\CommandUtils.cs" />
+    <Compile Include="MCR02\MCR02.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendMessage\AccessMessageService.cs" />
+    <Compile Include="Service\SystemService.cs" />
+    <Compile Include="Utils\SendMail.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InstallService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="UninstallService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\sWorld\Trunk\SWTClient\CShape\GPCoreClient\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\sWorld\Trunk\SWTClient\CShape\GPCoreClient\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\sWorld\Trunk\SWTClient\CShape\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{e28d8f1a-0585-42d3-bd71-e543af2fffd5}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\sWorld\Trunk\SWTClient\CShape\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\sWorld\Trunk\SWTClient\CShape\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLogger\CommonLogger.csproj">
+      <Project>{87aeb9f4-adb8-4fc7-8bde-baac6fdd9918}</Project>
+      <Name>CommonLogger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InstallUtil.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

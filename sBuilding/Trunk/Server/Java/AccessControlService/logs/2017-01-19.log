@@ -1,0 +1,210 @@
+Jan 19, 2017 12:58:44 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 12:58:44 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 12:58:44 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 12:59:54 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 12:59:54 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 12:59:54 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:00:18 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:00:18
+Jan 19, 2017 1:00:18 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:00:18
+Jan 19, 2017 1:00:51 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:00:51
+Jan 19, 2017 1:00:52 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:00:52 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 1:00:52 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 1:00:56 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:00:56
+Jan 19, 2017 1:01:01 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:01:01
+Jan 19, 2017 1:01:07 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:01:07
+Jan 19, 2017 1:01:08 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 1:01:08 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:01:08 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 1:01:12 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:01:12
+Jan 19, 2017 1:01:17 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:01:17
+Jan 19, 2017 1:04:58 PM com.swt.utilities.Logging writeError
+SEVERE: Cannot login to server at 19-01-2017 13:04:58
+Jan 19, 2017 1:04:58 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:04:58
+Jan 19, 2017 1:04:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 1:04:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:04:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 1:05:29 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:07:21 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:07:21
+Jan 19, 2017 1:07:21 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 1:07:21 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:07:21 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 1:07:52 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:08:22 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:08:52 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:09:22 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:09:48 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803219509,IPAddress=/192.168.1.78
+Jan 19, 2017 1:09:48 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 1:09:52 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:10:22 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:10:35 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:10:35
+Jan 19, 2017 1:10:52 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:11:22 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 1:11:46 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 13:11:46
+Jan 19, 2017 1:11:47 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 1:11:47 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 1:11:47 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 1:11:50 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803219509,IPAddress=/192.168.1.78
+Jan 19, 2017 1:11:50 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:06:10 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 2:06:10 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 2:06:10 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 2:06:10 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:06:10
+Jan 19, 2017 2:06:35 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:06:35 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 19, 2017 2:06:38 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=0566DF2F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:06:38 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:06:40 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:06:40
+Jan 19, 2017 2:06:40 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:07:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 2:07:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 2:07:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 2:07:53 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:07:53
+Jan 19, 2017 2:07:57 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:07:57 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:08:01 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=0566DF2F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:08:01 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:08:14 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=0566DF2F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:08:14 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:08:15 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 19, 2017 2:08:15 PM com.swt.utilities.Logging writeInfo
+INFO: -----> open
+Jan 19, 2017 2:08:23 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:08:23
+Jan 19, 2017 2:08:24 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:08:53 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:08:53
+Jan 19, 2017 2:08:54 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:09:23 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:09:23
+Jan 19, 2017 2:09:24 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:09:53 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:09:53
+Jan 19, 2017 2:09:54 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:10:23 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:10:23
+Jan 19, 2017 2:10:24 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:33:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 2:33:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 2:33:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 2:33:38 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:33:38
+Jan 19, 2017 2:33:47 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803169797,IPAddress=/192.168.1.78
+Jan 19, 2017 2:33:47 PM com.swt.utilities.Logging writeInfo
+INFO: 3528E02F
+Jan 19, 2017 2:33:47 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 19, 2017 2:34:19 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 2:34:19 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 2:34:19 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 2:34:19 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:34:19
+Jan 19, 2017 2:34:22 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803169797,IPAddress=/192.168.1.78
+Jan 19, 2017 2:34:49 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:34:49
+Jan 19, 2017 2:34:49 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:35:19 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:35:19
+Jan 19, 2017 2:35:19 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 19, 2017 2:38:50 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 19, 2017 2:38:50 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 19, 2017 2:38:50 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 19, 2017 2:38:50 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 19-01-2017 14:38:50
+Jan 19, 2017 2:38:54 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803169797,IPAddress=/192.168.1.78
+Jan 19, 2017 2:38:54 PM com.swt.utilities.Logging writeInfo
+INFO: 0566DF2F
+Jan 19, 2017 2:38:54 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 19, 2017 2:39:00 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D5EF11,UID=803219509,IPAddress=/192.168.1.78
+Jan 19, 2017 2:39:00 PM com.swt.utilities.Logging writeInfo
+INFO: 3528E02F
+Jan 19, 2017 2:39:00 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close

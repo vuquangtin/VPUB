@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B409134-C8BB-4C41-B885-0C7827B8DA2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReaderManager</RootNamespace>
+    <AssemblyName>ReaderManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contants\DefaultStyle.cs" />
+    <Compile Include="Contants\MessageReaderContants.cs" />
+    <Compile Include="DelegateReturnCardDataHandler.cs" />
+    <Compile Include="Enum\DeviceState.cs" />
+    <Compile Include="Model\AuthObject.cs" />
+    <Compile Include="Model\ReadDataObject.cs" />
+    <Compile Include="Model\DataCardObject.cs" />
+    <Compile Include="Model\HeaderObject.cs" />
+    <Compile Include="Model\LicenseReader.cs" />
+    <Compile Include="Model\WaitingCardObject.cs" />
+    <Compile Include="Model\ActionObject.cs" />
+    <Compile Include="Reader\ACR120\Acr120uWrapper.cs" />
+    <Compile Include="Contants\ReaderContants.cs" />
+    <Compile Include="Reader\Hf\HfReader.cs" />
+    <Compile Include="Reader\Hf\Rr3036Wrapper.cs" />
+    <Compile Include="IReader.cs" />
+    <Compile Include="Model\MifareClassicParams.cs" />
+    <Compile Include="Model\ReaderType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderException.cs" />
+    <Compile Include="ReaderFactory.cs" />
+    <Compile Include="Reader\MCR02\EventDelegate.cs" />
+    <Compile Include="Reader\MCR02\MCRException.cs" />
+    <Compile Include="Reader\MCR02\CommandUtils.cs" />
+    <Compile Include="Reader\MCR02\MCR02Reader.cs" />
+    <Compile Include="Reader\MCR02\NetworkService.cs" />
+    <Compile Include="Reader\MCR02\TerminalRequest.cs" />
+    <Compile Include="Reader\Pcsc\APDUCommand.cs" />
+    <Compile Include="Reader\Pcsc\ApduCommandException.cs" />
+    <Compile Include="Reader\Pcsc\APDUParam.cs" />
+    <Compile Include="Reader\Pcsc\APDUResponse.cs" />
+    <Compile Include="Reader\Pcsc\CardBase.cs" />
+    <Compile Include="Reader\Pcsc\CardManager.cs" />
+    <Compile Include="Reader\Pcsc\ConstantValues.cs" />
+    <Compile Include="Reader\Pcsc\DesfireErrorCode.cs" />
+    <Compile Include="Reader\Pcsc\DesfireAPDUWrapper.cs" />
+    <Compile Include="Reader\Pcsc\EventDelegate.cs" />
+    <Compile Include="Reader\Pcsc\ICard.cs" />
+    <Compile Include="Reader\Pcsc\IDesfine.cs" />
+    <Compile Include="Reader\Pcsc\MifareClassic.cs" />
+    <Compile Include="Reader\Pcsc\NativeMethods.cs" />
+    <Compile Include="Reader\Pcsc\PcscReader.cs" />
+    <Compile Include="Reader\Pcsc\SCardAttrValue.cs" />
+    <Compile Include="Reader\Pcsc\SCardIORequest.cs" />
+    <Compile Include="Reader\Pcsc\SCardReaderState.cs" />
+    <Compile Include="Reader\Pcsc\SmartCardException.cs" />
+    <Compile Include="Reader\Pcsc\WinSCardWrapper.cs" />
+    <Compile Include="ScErrorCodes.cs" />
+    <Compile Include="ScException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reader\Hf\BasicB.dll" />
+    <None Include="Resources\Stop-icon.png" />
+    <None Include="Resources\Play-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

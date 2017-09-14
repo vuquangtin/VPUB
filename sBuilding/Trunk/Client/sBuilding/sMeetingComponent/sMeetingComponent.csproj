@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F425B4-5AD4-4F08-9D7D-91E0F4E853E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sMeetingComponent</RootNamespace>
+    <AssemblyName>sMeetingComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardChipService">
+      <HintPath>..\..\libs\CardChipService.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonControls, Version=1.0.13151.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper, Version=1.0.13148.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaCommunication">
+      <HintPath>..\..\libs\JavaCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalStorageService">
+      <HintPath>..\..\libs\LocalStorageService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderLibrary">
+      <HintPath>..\..\libs\ReaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderManager">
+      <HintPath>..\..\libs\ReaderManager.dll</HintPath>
+    </Reference>
+    <Reference Include="sExcelExportComponent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\sExcelExportComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldModel">
+      <HintPath>..\..\libs\sWorldModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\ConfigTime.cs" />
+    <Compile Include="Constants\ConstantsEnum.cs" />
+    <Compile Include="Constants\Enums.cs" />
+    <Compile Include="Constants\FunctionMeeting.cs" />
+    <Compile Include="Constants\MeetingCommandName.cs" />
+    <Compile Include="Constants\MeetingDefineName.cs" />
+    <Compile Include="Constants\MeetingMethodNames.cs" />
+    <Compile Include="Constants\OrgEnum.cs" />
+    <Compile Include="Factory\AttendMeetingStatisticFactory.cs" />
+    <Compile Include="Factory\AttendMeetingFactory.cs" />
+    <Compile Include="Factory\DetailInfoFactory.cs" />
+    <Compile Include="Factory\ContactForWorkFactory.cs" />
+    <Compile Include="Factory\JournalistFactory.cs" />
+    <Compile Include="Factory\MeetingEventFactory.cs" />
+    <Compile Include="Factory\OrganizationMeetingFactory.cs" />
+    <Compile Include="Interface\IAttendMeetingStatistic.cs" />
+    <Compile Include="Interface\IAttendMeeting.cs" />
+    <Compile Include="Interface\IDetailInfo.cs" />
+    <Compile Include="Interface\IContactForWork.cs" />
+    <Compile Include="Interface\IJournalist.cs" />
+    <Compile Include="Interface\IMeetingEvent.cs" />
+    <Compile Include="Interface\IOrganizationMeeting.cs" />
+    <Compile Include="JavaComunication\CommunicationContactForWork.cs" />
+    <Compile Include="JavaComunication\CommunicationAttendMeetingStatistic.cs" />
+    <Compile Include="JavaComunication\CommunicationAttendMeeting.cs" />
+    <Compile Include="JavaComunication\CommunicationDetailInfo.cs" />
+    <Compile Include="JavaComunication\CommunicationJournalist.cs" />
+    <Compile Include="JavaComunication\CommunicationOrganizationMeeting.cs" />
+    <Compile Include="JavaComunication\CommunicationSMeetingEvent.cs" />
+    <Compile Include="Java\JavaContactForWork.cs" />
+    <Compile Include="Java\JavaAttendMeetingStatistic.cs" />
+    <Compile Include="Java\JavaAttendMeeting.cs" />
+    <Compile Include="Java\JavaDetailInfo.cs" />
+    <Compile Include="Java\JavaJournalist.cs" />
+    <Compile Include="Java\JavaMeetingEvent.cs" />
+    <Compile Include="Java\JavaOrganizationMeeting.cs" />
+    <Compile Include="Model\CustomObj\InfoJournalistObj\AttendMeetingJournalist.cs" />
+    <Compile Include="Model\CustomObj\ContactForWorkObj\SmeetingContactCount.cs" />
+    <Compile Include="Model\CustomObj\ContactForWorkObj\SmeetingContactStatistic.cs" />
+    <Compile Include="Model\CustomObj\ContactForWorkObj\SmeetingContactStatisticDetailObj.cs" />
+    <Compile Include="Model\CustomObj\ContactForWorkObj\SmeetingContactStatisticObj.cs" />
+    <Compile Include="Model\CustomObj\EnterpriseHaveBarcode\DetailInfoEnterpriseOrgOther.cs" />
+    <Compile Include="Model\CustomObj\PersonHaveBarcode\DetailInfoOnlyPersonObj.cs" />
+    <Compile Include="Model\CustomObj\EventMeetingObj.cs" />
+    <Compile Include="Model\CustomObj\JournalistObjForStatictis\JournalistAttendStatistic.cs" />
+    <Compile Include="Model\CustomObj\JournalistObjForStatictis\JournalistAttendStatisticDetail.cs" />
+    <Compile Include="Model\CustomObj\JournalistObjForStatictis\JournalistAttendStatisticDetailObj.cs" />
+    <Compile Include="Model\CustomObj\JournalistObjForStatictis\JournalistAttendStatisticObj.cs" />
+    <Compile Include="Model\NonResident.cs" />
+    <Compile Include="Model\CustomObj\NumberObj.cs" />
+    <Compile Include="Model\CustomObj\PersonInfoForStatictis\PersonAttendDetail.cs" />
+    <Compile Include="Model\CustomObj\PersonInfoForStatictis\PersonAttendDetailObj.cs" />
+    <Compile Include="Model\CustomObj\PersonInfoForStatictis\PersonAttendStatisticObj.cs" />
+    <Compile Include="Model\CustomObj\PersonInfoForStatictis\PersonAttendObj.cs" />
+    <Compile Include="Model\CustomObj\PersonNotBarcode\PersonNotBarcode.cs" />
+    <Compile Include="Model\CustomObj\PersonNotBarcode\PersonNotBarcodeObj.cs" />
+    <Compile Include="Model\CustomObj\PersonHaveBarcode\EventAttendMeeting.cs" />
+    <Compile Include="Model\CustomObj\PersonHaveBarcode\MeetingInfoPartakerObj.cs" />
+    <Compile Include="Model\EventMeeting.cs" />
+    <Compile Include="Model\CustomObj\InfoJournalistObj\Journalist.cs" />
+    <Compile Include="Model\CustomObj\InfoJournalistObj\MeetingInfoJournalistObj.cs" />
+    <Compile Include="Model\OrganizationMeeting.cs" />
+    <Compile Include="Model\PartakerObj.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\ContactForWork\FrmInfoContactForWordStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ContactForWork\FrmInfoContactForWordStatistics.Designer.cs">
+      <DependentUpon>FrmInfoContactForWordStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ContactForWork\UsrContactForWordStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ContactForWork\UsrContactForWordStatistics.Designer.cs">
+      <DependentUpon>UsrContactForWordStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\FrmUpdateTimeMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\FrmUpdateTimeMeeting.Designer.cs">
+      <DependentUpon>FrmUpdateTimeMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\FrmInfoAttendMeetingStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\FrmInfoAttendMeetingStatistics.Designer.cs">
+      <DependentUpon>FrmInfoAttendMeetingStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcodeEnterprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcodeEnterprise.designer.cs">
+      <DependentUpon>FrmDetailInforBarcodeEnterprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Journalist\FrmDetailBySerialNumberInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Journalist\FrmDetailBySerialNumberInfo.designer.cs">
+      <DependentUpon>FrmDetailBySerialNumberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Journalist\FrmDetailEmptyInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Journalist\FrmDetailEmptyInfor.designer.cs">
+      <DependentUpon>FrmDetailEmptyInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\FrmPartakerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\FrmPartakerList.Designer.cs">
+      <DependentUpon>FrmPartakerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcode.designer.cs">
+      <DependentUpon>FrmDetailInforBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\MeetingComponentWorkItem.cs" />
+    <Compile Include="WorkItems\ScheduleMeeting\FrmUpdateScheduleMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\FrmUpdateScheduleMeeting.Designer.cs">
+      <DependentUpon>FrmUpdateScheduleMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\FrmJournalistToInfoAttendMeetingStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\FrmJournalistToInfoAttendMeetingStatistics.Designer.cs">
+      <DependentUpon>FrmJournalistToInfoAttendMeetingStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatistics.Designer.cs">
+      <DependentUpon>UsrJournalistToAttendMeetingStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatisticsDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatisticsDetail.designer.cs">
+      <DependentUpon>UsrJournalistToAttendMeetingStatisticsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatistics.designer.cs">
+      <DependentUpon>UsrAttendMeetingStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatisticsDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatisticsDetail.designer.cs">
+      <DependentUpon>UsrAttendMeetingStatisticsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrJournalistAttendMeeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrJournalistAttendMeeting.designer.cs">
+      <DependentUpon>UsrJournalistAttendMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrListMeeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrListMeeting.designer.cs">
+      <DependentUpon>UsrListMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\UsrScheduleMeeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ScheduleMeeting\UsrScheduleMeeting.Designer.cs">
+      <DependentUpon>UsrScheduleMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrNotification.Designer.cs">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ContactForWork\FrmInfoContactForWordStatistics.resx">
+      <DependentUpon>FrmInfoContactForWordStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ContactForWork\UsrContactForWordStatistics.resx">
+      <DependentUpon>UsrContactForWordStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ScheduleMeeting\FrmUpdateTimeMeeting.resx">
+      <DependentUpon>FrmUpdateTimeMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatictisAttendMeeting\FrmInfoAttendMeetingStatistics.resx">
+      <DependentUpon>FrmInfoAttendMeetingStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcodeEnterprise.resx">
+      <DependentUpon>FrmDetailInforBarcodeEnterprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Journalist\FrmDetailBySerialNumberInfo.resx">
+      <DependentUpon>FrmDetailBySerialNumberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Journalist\FrmDetailEmptyInfor.resx">
+      <DependentUpon>FrmDetailEmptyInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ScheduleMeeting\FrmPartakerList.resx">
+      <DependentUpon>FrmPartakerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\InvitationHaveBarcode\FrmDetailInforBarcode.resx">
+      <DependentUpon>FrmDetailInforBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ScheduleMeeting\FrmUpdateScheduleMeeting.resx">
+      <DependentUpon>FrmUpdateScheduleMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForJournalist\FrmJournalistToInfoAttendMeetingStatistics.resx">
+      <DependentUpon>FrmJournalistToInfoAttendMeetingStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatistics.resx">
+      <DependentUpon>UsrJournalistToAttendMeetingStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForJournalist\UsrJournalistToAttendMeetingStatisticsDetail.resx">
+      <DependentUpon>UsrJournalistToAttendMeetingStatisticsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatistics.resx">
+      <DependentUpon>UsrAttendMeetingStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatictisAttendMeeting\UsrAttendMeetingStatisticsDetail.resx">
+      <DependentUpon>UsrAttendMeetingStatisticsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrJournalistAttendMeeting.resx">
+      <DependentUpon>UsrJournalistAttendMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrListMeeting.resx">
+      <DependentUpon>UsrListMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ScheduleMeeting\UsrScheduleMeeting.resx">
+      <DependentUpon>UsrScheduleMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrNotification.resx">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\btnAddDevice.Image.png" />
+    <Content Include="Resources\btnUpdateDevice.Image.png" />
+    <Content Include="Resources\Cancel_16x16.png" />
+    <Content Include="Resources\ic_search.png" />
+    <Content Include="Resources\info16x16.png" />
+    <None Include="Resources\Excel_16x16.png" />
+    <None Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

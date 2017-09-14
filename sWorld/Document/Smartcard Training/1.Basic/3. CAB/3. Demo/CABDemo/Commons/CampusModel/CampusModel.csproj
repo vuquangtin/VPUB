@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89534068-01B1-458B-9E85-71A890EC5C9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CampusModel</RootNamespace>
+    <AssemblyName>CampusModel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\CampusException.cs" />
+    <Compile Include="Exceptions\CampusExceptionUtils.cs" />
+    <Compile Include="Exceptions\ErrorCodes.cs" />
+    <Compile Include="Exceptions\WcfServiceFault.cs" />
+    <Compile Include="Filters\CardFilterDto.cs" />
+    <Compile Include="Filters\FacultyFilterDto.cs" />
+    <Compile Include="Filters\GroupFilterDto.cs" />
+    <Compile Include="Filters\IntegratingLogFilterDto.cs" />
+    <Compile Include="Filters\LoginHistoryFilterDto.cs" />
+    <Compile Include="Filters\PersoFilterDto.cs" />
+    <Compile Include="Filters\TeacherFilterDto.cs" />
+    <Compile Include="Filters\UserFilterDto.cs" />
+    <Compile Include="ICampusService.cs" />
+    <Compile Include="ILocalStorageService.cs" />
+    <Compile Include="Integrating\ALL_BO_MON.cs" />
+    <Compile Include="Integrating\ALL_KHOA.cs" />
+    <Compile Include="Integrating\CHUC_VU.cs" />
+    <Compile Include="Integrating\ALL_NGACH.cs" />
+    <Compile Include="Integrating\ALL_CBCNV.cs" />
+    <Compile Include="Integrating\IntegratingTable.cs" />
+    <Compile Include="MethodData\DataForClearCard.cs" />
+    <Compile Include="MethodData\DataForImportCard.cs" />
+    <Compile Include="MethodData\DataForPersoCard.cs" />
+    <Compile Include="MethodData\DataForReadCard.cs" />
+    <Compile Include="MethodData\DataForUpdateCard.cs" />
+    <Compile Include="Model\AppDto.cs" />
+    <Compile Include="Model\AppMetadataDto.cs" />
+    <Compile Include="Model\CardDto.cs" />
+    <Compile Include="Model\CardStatisticsData.cs" />
+    <Compile Include="Model\CardStatus.cs" />
+    <Compile Include="Model\CardType.cs" />
+    <Compile Include="Model\CardCompactDto.cs" />
+    <Compile Include="Model\DepartmentDto.cs" />
+    <Compile Include="Model\FacultyDepartmentDto.cs" />
+    <Compile Include="Model\FacultyDto.cs" />
+    <Compile Include="Model\Function.cs" />
+    <Compile Include="Model\GroupDto.cs" />
+    <Compile Include="Model\GroupStatus.cs" />
+    <Compile Include="Model\HistoryChangedType.cs" />
+    <Compile Include="Model\IntegratingLogDto.cs" />
+    <Compile Include="Model\KeyDto.cs" />
+    <Compile Include="Model\KeyPairDto.cs" />
+    <Compile Include="Model\KeyUpdateSetDto.cs" />
+    <Compile Include="Model\LoginHistoryDto.cs" />
+    <Compile Include="Model\LogType.cs" />
+    <Compile Include="Model\MethodResultDto.cs" />
+    <Compile Include="Model\OrganizationType.cs" />
+    <Compile Include="Model\PersonalizationDto.cs" />
+    <Compile Include="Model\PersonalInfoDto.cs" />
+    <Compile Include="Model\PersoStatus.cs" />
+    <Compile Include="Model\GroupFunctionDto.cs" />
+    <Compile Include="Model\SessionDto.cs" />
+    <Compile Include="Model\TeacherCompactDto.cs" />
+    <Compile Include="Model\TeacherDto.cs" />
+    <Compile Include="Model\TeacherWorkingStatus.cs" />
+    <Compile Include="Model\TimePeriodDto.cs" />
+    <Compile Include="Model\UserDto.cs" />
+    <Compile Include="Model\UserStatus.cs" />
+    <Compile Include="Parser\AppMetadataParser.cs" />
+    <Compile Include="Parser\HeaderDataParser.cs" />
+    <Compile Include="Parser\TeacherDataParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_ConfigurationName="Release" BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

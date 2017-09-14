@@ -1,0 +1,9 @@
+D:\chinh.nguyen\Dept_Project\Projects\sBuilding\Branches\SaigonPearl\Trunk\Sources\SVN\sAccessControl\CommonLogger\bin\x86\Release\CommonLogger.dll
+D:\chinh.nguyen\Dept_Project\Projects\sBuilding\Branches\SaigonPearl\Trunk\Sources\SVN\sAccessControl\CommonLogger\bin\x86\Release\CommonLogger.pdb
+D:\chinh.nguyen\Dept_Project\Projects\sBuilding\Branches\SaigonPearl\Trunk\Sources\SVN\sAccessControl\CommonLogger\obj\x86\Release\CommonLogger.dll
+D:\chinh.nguyen\Dept_Project\Projects\sBuilding\Branches\SaigonPearl\Trunk\Sources\SVN\sAccessControl\CommonLogger\obj\x86\Release\CommonLogger.pdb
+D:\chinh.nguyen\Dept_Project\Projects\sBuilding\Branches\SaigonPearl\Trunk\Sources\SVN\sAccessControl\CommonLogger\obj\x86\Release\CommonLogger.csprojResolveAssemblyReference.cache
+D:\vu.pham\sBuilding\Trunk\sAccessControl\CommonLogger\bin\x86\Release\CommonLogger.dll
+D:\vu.pham\sBuilding\Trunk\sAccessControl\CommonLogger\bin\x86\Release\CommonLogger.pdb
+D:\vu.pham\sBuilding\Trunk\sAccessControl\CommonLogger\obj\x86\Release\CommonLogger.dll
+D:\vu.pham\sBuilding\Trunk\sAccessControl\CommonLogger\obj\x86\Release\CommonLogger.pdb

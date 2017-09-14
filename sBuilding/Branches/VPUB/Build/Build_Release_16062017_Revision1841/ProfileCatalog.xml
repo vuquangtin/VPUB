@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile" >
+  <Modules>
+
+    <ModuleInfo AssemblyFile="SupportMgtComponet.dll" />
+    
+    <ModuleInfo AssemblyFile="sMeetingComponent.dll" />
+    <ModuleInfo AssemblyFile="sNonResidentComponent.dll" />
+    <ModuleInfo AssemblyFile="sTimeKeeping.dll" />
+    <!--close module sAccess-->
+    <!--<ModuleInfo AssemblyFile="sAccessComponent.dll" />-->
+    <ModuleInfo AssemblyFile="CardChipMgtComponent.dll" />
+    
+    <ModuleInfo AssemblyFile="SystemMgtComponent.dll" />
+    <ModuleInfo AssemblyFile="LocalStorageService.dll" />
+  </Modules>
+</SolutionProfile>

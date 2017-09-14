@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://192.168.1.147:3306/sworld_sbuilding?autoReconnect=true&amp;useUnicode=true&amp;createDatabaseIfNotExist=true&amp;characterEncoding=utf-8</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">sworld123</property>
+		<property name="hibernate.connection.charSet">utf-8</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.jdbc.batch_size">0</property>
+		<property name="hibernate.cache.use_structured_entries">true</property>
+		<property name="hibernate.connection.release_mode">after_transaction</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</property>
+		<property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="hibernate.connection.autoReconnectForPools">true</property>
+
+		<property name="hibernate.c3p0.max_size">1</property>
+		<property name="hibernate.c3p0.min_size">0</property>
+		<property name="hibernate.c3p0.timeout">1000</property>
+		<property name="hibernate.c3p0.max_statements">1000</property>
+		<property name="hibernate.c3p0.idle_test_period">300</property>
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+
+		<mapping class="com.swt.sworld.ams.domain.App" />
+		<mapping class="com.swt.sworld.ams.domain.CardChipApp" />
+		<mapping class="com.swt.sworld.ams.domain.CardMagneticApp" />
+		<mapping class="com.swt.sworld.ams.domain.PersonalizationApp" />
+
+		<mapping class="com.swt.sworld.cms.domain.Acquirer" />
+		<mapping class="com.swt.sworld.cms.domain.CardChip" />
+		<mapping class="com.swt.sworld.cms.domain.CardMagnetic" />
+		<mapping class="com.swt.sworld.cms.domain.CardType" />
+		<mapping class="com.swt.sworld.cms.domain.Organization" />
+		<mapping class="com.swt.sworld.cms.domain.PartnersOfMaster" />
+		<mapping class="com.swt.sworld.cms.domain.SubOrganization" />
+
+		<mapping class="com.swt.sworld.common.domain.Config" />
+		<mapping class="com.swt.sworld.common.domain.GroupSworld" />
+		<mapping class="com.swt.sworld.common.domain.IntegratingLog" />
+		<mapping class="com.swt.sworld.common.domain.LoginHistory" />
+		<mapping class="com.swt.sworld.common.domain.PolicySworld" />
+		<mapping class="com.swt.sworld.common.domain.UserSworld" />
+
+		<mapping class="com.swt.sworld.hsm.domain.Hsm" />
+
+		<mapping class="com.swt.sworld.kms.domain.SecretKey" />
+
+		<mapping class="com.swt.sworld.ps.domain.ChipPersonalization" />
+		<mapping class="com.swt.sworld.ps.domain.MagneticPersonalization" />
+		<mapping class="com.swt.sworld.ps.domain.Member" />
+		<mapping class="com.swt.sworld.ps.domain.Personalization" />
+		<mapping class="com.swt.sworld.ps.domain.CardMagneticPerData" />
+
+		<!-- <mapping class="com.swt.saigonpearl.domain.ManagerCosts" /> <mapping 
+			class="com.swt.saigonpearl.domain.DeviceDoor" /> <mapping class="com.swt.saigonpearl.domain.DoorIn" 
+			/> <mapping class="com.swt.saigonpearl.domain.DoorOut" /> <mapping class="com.swt.saigonpearl.domain.DeviceDoorGroup" 
+			/> <mapping class="com.swt.saigonpearl.domain.DeviceDoorGroupDeviceDoor" 
+			/> <mapping class="com.swt.saigonpearl.domain.RoleDTO" /> <mapping class="com.swt.saigonpearl.domain.RoleDeviceDoorGroup" 
+			/> <mapping class="com.swt.saigonpearl.domain.RoleChipPersonalization" /> 
+			<mapping class="com.swt.saigonpearl.domain.PersonalizationDevice" /> <mapping 
+			class="com.swt.timekeeping.domain.Shift" /> <mapping class="com.swt.timekeeping.domain.Event" 
+			/> <mapping class="com.swt.timekeeping.domain.EventMember" /> <mapping class="com.swt.timekeeping.domain.DeviceConfig" 
+			/> <mapping class="com.swt.timekeeping.domain.TimeConfig" /> -->
+
+		<!-- start smeeting -->
+		<mapping class="com.swt.meeting.domain.AttendMeeting" />
+		<mapping class="com.swt.meeting.domain.Meeting" />
+		<mapping class="com.swt.meeting.domain.MeetingInvitation" />
+		<mapping class="com.swt.meeting.domain.OrganizationMeeting" />
+		<mapping class="com.swt.meeting.domain.Room" />
+		<mapping class="com.swt.meeting.domain.Partaker" />
+		<mapping class="com.swt.meeting.domain.ListMeeting" />
+		<mapping class="com.swt.meeting.domain.JournaList" />
+		<mapping class="com.swt.meeting.domain.ListMeetingJournalist" />
+		<mapping class="com.swt.meeting.domain.AttendMeetingJournalist" />
+		<mapping class="com.swt.meeting.domain.NonResident" />
+		<mapping class="com.swt.meeting.domain.PersonNotBarcode" />
+		<mapping class="com.swt.meeting.domain.MeetingInvitationOrgOther" />
+		<mapping class="com.swt.meeting.domain.EmailConfig" />
+		<mapping class="com.swt.meeting.domain.KeyOrgMeeting" />
+		
+
+		<!-- model use to statistic -->
+		<mapping class="com.swt.meeting.customObject.PersonAttend" />
+		<mapping class="com.swt.meeting.customObject.PersonAttendDetail" />
+		<mapping class="com.swt.meeting.customObject.DetailInfoOnlyPerson" />
+		
+		<mapping class="com.swt.meeting.customObject.JournalistAttendStatistic" />
+		<mapping class="com.swt.meeting.customObject.JournalistAttendStatisticDetail" />
+		
+		<!-- new -->
+		
+		<mapping class="com.swt.meeting.domain.SmeetingContactCount" />
+		<mapping class="com.swt.meeting.domain.SmeetingContactStatistic" />
+		
+		<!-- end -->
+	</session-factory>
+</hibernate-configuration>

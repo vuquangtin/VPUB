@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90FAB718-5F47-4A81-8719-6C43A4FA79A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sAccessControl</RootNamespace>
+    <AssemblyName>sAccessControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>scampus.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonControls, Version=1.0.13151.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper, Version=1.0.13148.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\JavaCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms">
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\sWorldCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldModel, Version=1.0.13151.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\sWorld\Branches\dll_debug_20162007\sWorldModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonUserControl.Designer.cs">
+      <DependentUpon>CommonUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\AccessControlConfigSection.cs" />
+    <Compile Include="Config\CameraPairConfigElement.cs" />
+    <Compile Include="Config\LocalConfigsManager.cs" />
+    <Compile Include="Config\ReaderConfigElement.cs" />
+    <Compile Include="Config\AccessMessageServiceConfigSection.cs" />
+    <Compile Include="Contants\CommonMessages.cs" />
+    <Compile Include="Contants\ReaderContants.cs" />
+    <Compile Include="Contants\StatusContants.cs" />
+    <Compile Include="Contants\VideoSourceContants.cs" />
+    <Compile Include="Device\Camera\DHVECSystem\Vec800xBoard.cs" />
+    <Compile Include="Device\Camera\DHVECSystem\Vec800xChannel.cs" />
+    <Compile Include="Device\Camera\DHVECSystem\VecSystemWrapper.cs" />
+    <Compile Include="Device\Camera\DHVECSystem\VideoStandard_t.cs" />
+    <Compile Include="Device\Camera\IVideoSource.cs" />
+    <Compile Include="Device\Camera\LibVLC\LibvlcException.cs" />
+    <Compile Include="Device\Camera\LibVLC\LibvlcInstance.cs" />
+    <Compile Include="Device\Camera\LibVLC\LibvlcMedia.cs" />
+    <Compile Include="Device\Camera\LibVLC\LibvlcMediaPlayer.cs" />
+    <Compile Include="Device\Camera\LibVLC\LibvlcWrapper.cs" />
+    <Compile Include="Device\Camera\Sa7130Capture\Sa7130CaptureWrapper.cs" />
+    <Compile Include="Device\Camera\VideoSourceEventArgs.cs" />
+    <Compile Include="Device\Camera\VideoSourceException.cs" />
+    <Compile Include="Device\Camera\VideoSourceFactory.cs" />
+    <Compile Include="Device\Reader\IReader.cs" />
+    <Compile Include="Device\Reader\MCR02\CommandUtils.cs" />
+    <Compile Include="Device\Reader\MCR02\MCR02.cs" />
+    <Compile Include="Device\Reader\Pcsc\APDUCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\ApduCommandException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\APDUParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\APDUResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\CardBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\CardManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\ConstantValues.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\ICard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\MifareClassicParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\PcscReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\SCardAttrValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\SCardIORequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\SCardReaderState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\ScErrorCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\SmartCardException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\Pcsc\WinSCardWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Device\Reader\ReaderException.cs" />
+    <Compile Include="Device\Reader\ReaderFactory.cs" />
+    <Compile Include="Enums\CameraConnectionType.cs" />
+    <Compile Include="Enums\DeviceState.cs" />
+    <Compile Include="Enums\ReaderType.cs" />
+    <Compile Include="FrmConfigService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfigService.Designer.cs">
+      <DependentUpon>FrmConfigService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\BigInteger.cs" />
+    <Compile Include="Utils\CheckLicenseCard.cs" />
+    <Compile Include="Utils\SaveSession.cs" />
+    <Compile Include="View\UsrLoading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UsrLoading.Designer.cs">
+      <DependentUpon>UsrLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\FileUtils.cs" />
+    <Compile Include="Utils\ImageUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="View\UsrCameraCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UsrCameraCanvas.Designer.cs">
+      <DependentUpon>UsrCameraCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsrDeviceStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UsrNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UsrNotification.designer.cs">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmConfigService.resx">
+      <DependentUpon>FrmConfigService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsrLoading.resx">
+      <DependentUpon>UsrLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\UsrCameraCanvas.resx">
+      <DependentUpon>UsrCameraCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsrDeviceStatus.resx">
+      <DependentUpon>UsrDeviceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsrNotification.resx">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Device\Camera\DHVECSystem\DSPIMG.LIB" />
+    <None Include="Device\Camera\Sa7130Capture\Sa7130Capture.lib" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Device\Camera\DHVECSystem\DHVECSystem.dll" />
+    <Content Include="Device\Camera\DHVECSystem\DllMonitor.dll" />
+    <Content Include="Device\Camera\LibVLC\libvlc.dll" />
+    <Content Include="Device\Camera\LibVLC\libvlccore.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_attachment_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_bd_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_ftp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_http_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_imem_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_mms_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_rar_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_realrtsp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_smb_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_tcp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_udp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libaccess_vdr_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libcdda_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libdshow_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libdtv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libdvdnav_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libdvdread_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libfilesystem_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libidummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\liblibbluray_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\liblive555_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\librtp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libscreen_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libsdp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libshm_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libstream_filter_rar_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libtimecode_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libvcd_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access\libzip_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_dummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_file_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_http_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_livehttp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_shout_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\access_output\libaccess_output_udp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\liba52tofloat32_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\liba52tospdif_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libaudiobargraph_a_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libaudio_format_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libchorus_flanger_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libcompressor_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libdolby_surround_decoder_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libdtstofloat32_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libdtstospdif_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libequalizer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libgain_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libheadphone_channel_mixer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libkaraoke_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libmono_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libmpgatofixed32_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libnormvol_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libparam_eq_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libremap_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libsamplerate_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libscaletempo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libsimple_channel_mixer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libspatializer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libspeex_resampler_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libstereo_widen_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libtrivial_channel_mixer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_filter\libugly_resampler_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_mixer\libfloat_mixer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_mixer\libinteger_mixer_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libadummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libafile_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libamem_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libdirectsound_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libmmdevice_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\audio_output\libwaveout_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\liba52_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libadpcm_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libaes3_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libaraw_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libavcodec_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libcc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libcdg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libcrystalhd_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libcvdsub_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libddummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libdmo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libdts_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libdvbsub_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libdxva2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libedummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libfaad_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libflac_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libg711_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libkate_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\liblibass_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\liblibmpeg2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\liblpcm_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libmpeg_audio_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libopus_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libpng_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libqsv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libquicktime_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\librawvideo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libschroedinger_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libscte27_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libspeex_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libspudec_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libstl_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libsubsdec_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libsubsusf_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libsvcdsub_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libt140_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libtheora_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libtwolame_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libuleaddvaudio_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libvorbis_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libx264_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\codec\libzvbi_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libdummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libgestures_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libglobalhotkeys_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libhotkeys_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libnetsync_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\libntservice_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\control\liboldrc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libaiff_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libasf_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libau_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libavi_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libdemuxdump_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libdemux_cdg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libdemux_stl_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libdirac_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libes_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libflacsys_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libgme_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libh264_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libimage_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmjpeg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmkv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmod_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmp4_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmpc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libmpgv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libnsc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libnsv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libnuv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libogg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libplaylist_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libps_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libpva_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\librawaud_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\librawdv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\librawvid_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libreal_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libsid_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libsmf_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libsubtitle_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libts_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libtta_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libty_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libvc1_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libvobsub_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libvoc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libwav_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\demux\libxa_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\gui\libqt4_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\gui\libskins2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\lua\liblua_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\meta_engine\libfolder_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\meta_engine\libtaglib_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libaudioscrobbler_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libexport_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libfingerprinter_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libgnutls_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\liblogger_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libstats_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libvod_rtsp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\misc\libxml_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mmx\libi420_rgb_mmx_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mmx\libi420_yuy2_mmx_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mmx\libi422_yuy2_mmx_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_asf_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_avi_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_dummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_mp4_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_mpjpeg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_ogg_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_ps_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_ts_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\mux\libmux_wav_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_copy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_dirac_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_flac_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_h264_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_mlp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_mpeg4video_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_mpegvideo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\packetizer\libpacketizer_vc1_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\services_discovery\libmediadirs_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\services_discovery\libpodcast_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\services_discovery\libsap_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\services_discovery\libupnp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\services_discovery\libwindrive_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\sse2\libi420_rgb_sse2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\sse2\libi420_yuy2_sse2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\sse2\libi422_yuy2_sse2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_filter\libdash_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_filter\libhttplive_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_filter\librecord_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_filter\libsmooth_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_autodel_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_bridge_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_chromaprint_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_delay_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_description_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_display_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_dummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_duplicate_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_es_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_gather_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_langfromtelx_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_raop_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_record_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_rtp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_setid_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_smem_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_standard_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\stream_out\libstream_out_transcode_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\text_renderer\libfreetype_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\text_renderer\libtdummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libgrey_yuv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libi420_rgb_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libi420_yuy2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libi422_i420_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libi422_yuy2_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\librv32_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libyuy2_i420_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_chroma\libyuy2_i422_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libadjust_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libalphamask_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libanaglyph_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libantiflicker_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libatmo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libaudiobargraph_v_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libball_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libblendbench_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libblend_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libbluescreen_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libcanvas_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libchain_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libclone_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libcolorthres_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libcroppadd_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libdeinterlace_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\liberase_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libextract_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libgaussianblur_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libgradfun_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libgradient_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libgrain_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libhqdn3d_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libinvert_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\liblogo_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmagnify_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmarq_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmirror_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmosaic_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmotionblur_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libmotiondetect_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libpanoramix_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libposterize_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libpostproc_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libpsychedelic_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libpuzzle_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libremoteosd_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libripple_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\librotate_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\librss_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libscale_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libscene_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libsepia_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libsharpen_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libsubsdelay_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libswscale_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libtransform_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libwall_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libwave_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_filter\libyuvp_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libcaca_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libdirect2d_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libdirect3d_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libdirectdraw_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libdrawable_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libglwin32_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libvdummy_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libvmem_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libwingdi_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\video_output\libyuv_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\visualization\libgoom_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\visualization\libprojectm_plugin.dll" />
+    <Content Include="Device\Camera\LibVLC\Plugins\visualization\libvisual_plugin.dll" />
+    <Content Include="Device\Camera\Sa7130Capture\DSound.dll" />
+    <Content Include="Device\Camera\Sa7130Capture\Mix.dll" />
+    <Content Include="Device\Camera\Sa7130Capture\Sa7130Capture.dll" />
+    <Content Include="Device\Camera\Sa7130Capture\XvidCore.dll" />
+    <None Include="Resources\NoImage.jpg" />
+    <Content Include="scampus.ico" />
+    <None Include="Resources\Gear_16x161.png" />
+    <None Include="Resources\login_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(SolutionDir)sAccessControl\Device\Camera\LibVLC\*.dll $(SolutionDir)sAccessControl\bin\debug\ /d /i /e /y
+xcopy $(SolutionDir)sAccessControl\Device\Camera\LibVLC\*.dll $(SolutionDir)sAccessControl\bin\release\ /d /i /e /y
+xcopy $(SolutionDir)sAccessControl\Device\Camera\Sa7130Capture\*.dll $(SolutionDir)sAccessControl\bin\debug\ /d
+xcopy $(SolutionDir)sAccessControl\sAccessControl\Device\Camera\Sa7130Capture\*.dll $(SolutionDir)sAccessControl\bin\release\ /d
+xcopy $(SolutionDir)sAccessControl\sAccessControl\Device\Camera\DHVECSystem\*.dll $(SolutionDir)sAccessControl\bin\debug\ /d
+xcopy $(SolutionDir)sAccessControl\sAccessControl\Device\Camera\DHVECSystem\*.dll $(SolutionDir)sAccessControl\bin\release\ /d</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

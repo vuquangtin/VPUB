@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<link href="css/sb-admin-2.css" rel="stylesheet">
+<script src="js/meetingapp.js"></script>
+<link
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet"
+	href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script type="text/javascript"
+	src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/responsive/2.0.0/css/responsive.bootstrap.min.css"></script>
+</head>
+<body ng-app="detailMeetingApp"
+	ng-controller="DetailmeetingController as meetingCtr">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#myNavbar">
+							<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" rel="home" href="login.html"
+							title="logo company"> <img
+							style="max-width: 150px; margin-top: -9px;"
+							src="image/MeetingRegister.png">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li><button type="button" class="btn btn-info" style="margin-top: 9px;"
+									data-target="#configEmailModal" data-toggle="modal">
+									<span class="glyphicon glyphicon-cog"></span>Cấu hình Email gửi
+								</button></li>
+							<li><a href="login.html" id="clolornarbar"><span
+									class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="panel panel-default">
+
+			<div class="panel-heading">Đăng ký ra vào Văn Phòng Ủy Ban</div>
+			<div class="panel-body">
+
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form action="#" class="form-horizontal">
+							<h2 class="bg-info">{{informessage}}</h2>
+							<div class="form-group modal-header">
+								<h3 class="text-center modal-header chu">Lý do ra vào văn
+									phòng ủy ban</h3>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2 radio">
+									<label><input type="radio" id="cothumoi" name="thumoi">Có
+										thư mời</label>
+								</div>
+								<div class="col-md-2">
+									<label class="control-label">Mã thư mời:</label>
+								</div>
+								<div class="col-md-6">
+									<input class="form-control" type="text" ng-model="barcode"
+										id="barcode" placeholder="Mã thư mời" disabled>
+								</div>
+								<div class="col-md-2">
+									<button class="btn btn-info" type="button" id="deltailBox"
+										ng-click=viewDetail() disabled="disabled">Chi tiết
+										thư mời</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2 radio">
+									<label><input type="radio" id="other" name="thumoi"
+										ng-click="getlistmeeting()">Khác</label>
+								</div>
+								<div class="col-md-2">
+									<label class="control-label">Lý do khác:</label>
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" id="notbarcode"
+										placeholder="Lý do khác" required="required" ng-model="reason">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form action="#" class="form-horizontal">
+							<div class="form-group modal-header">
+								<h3 class="text-center modal-header chu">Thông tin chi tiết</h3>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3">Đơn vị</label>
+								<div class="col-md-9">
+									<input class="form-control" id="partaker" type="text"
+										ng-model="partaker" required="required" placeholder="Đơn vị">
+								</div>
+							</div>
+							<div class="form-group" id="normal">
+								<label class="col-md-3">Nội dung họp</label>
+								<div class="col-md-9">
+									<input class="form-control" type="text" ng-model="detail"
+										id="detail" placeholder="Nội dung họp">
+								</div>
+							</div>
+							<div class="form-group" id="showCombobox">
+								<label class="col-md-3">Nội dung họp</label>
+								<div class="col-md-9">
+									<select class="form-control" ng-model="selectedMeeting"
+										ng-options="meeting.name for meeting in listMeeting"
+										ng-change=getmeeting()>
+										<option value="">--Vui lòng chọn nội dung họp--</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3">Thời gian</label>
+								<div class="col-md-2">
+									<input class="form-control" type="number" ng-model="hour"
+										id="hourbegin" readonly="readonly">
+								</div>
+								<div class="col-md-1">
+									<label class="control-label">Giờ</label>
+								</div>
+								<div class="col-md-2">
+									<input class="form-control" readonly="readonly" type="number"
+										ng-model="minute" id="hourend">
+								</div>
+								<div class="col-md-1">
+									<label class="control-label">Phút</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3">Cơ quan đến</label>
+								<div class="col-md-9">
+									<input class="form-control" type="text" id="comeOrg"
+										placeholder="Cơ quan đến" ng-model="orgname"
+										readonly="readonly">
+								</div>
+							</div>
+							<div class="form-group col-sm-offset-6">
+								<div class="col-md-3"></div>
+								<div class="col-md-9 modal-header">
+									<button id="xacnhan" type="button" class="btn btn-primary"
+										ng-click="saveotherpartaker()">Xác nhận</button>
+									<a type="button" class="btn btn-info" id="list" dis
+										href="./listpartaker.html" hidden="hidden">Danh sách người
+										tham dự</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="panel-body">
+					<h2 class="chugiua mauchu">Thành phần tham dự</h2>
+					<div class="alert alert-success" ng-if="message">
+						<a href="#" class="close" aria-label="close"
+							ng-click=clearMessage()>×</a> {{message}}
+					</div>
+					<button type="button" class="btn btn-primary" data-toggle="modal"
+						data-target="#exampleModal" data-whatever="@mdo">Thêm thành phần tham dự</button>
+					<div class=" martop">
+						<table id="example"
+							class="table table-striped table-bordered dt-responsive nowrap"
+							cellspacing="0" width="100%" style="width: 100%">
+							<thead>
+								<tr id="maunen">
+									<th>Họ và tên</th>
+									<th>Chức vụ</th>
+									<th>Email</th>
+									<th>Mã vạch</th>
+									<th>Hành động</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="obj in listObj">
+									<td>{{ obj.name }}</td>
+									<td>{{ obj.position }}</td>
+									<td>{{ obj.email }}</td>
+									<td>{{ obj.barcode }}</td>
+									<td>
+										<button type="button" class="btn btn-info" data-toggle="modal"
+											data-target="#modalEdit" ng-click="selectPartaker(obj)">Sửa</button>
+										<button type="button" class="btn btn-danger"
+											data-toggle="modal" data-target="#modalDelete"
+											ng-click="selectPartaker(obj)">Xóa</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn btn-info" data-toggle="modal"
+							data-target="#sendEmail" ng-click="">Gửi mail</button>
+					</div>
+				</div>
+				<!-- 	modal add -->
+				<div class="modal fade" id="exampleModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Thêm mới thành phần tham dự</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" method="Post" id="formadd">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Họ
+											và tên</label> <input type="text" class="form-control"
+											id="recipient-name" required="required" ng-model="name">
+									</div>
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Chức
+											vụ</label> <input type="text" class="form-control"
+											id="recipient-name" required="required" ng-model="posision">
+									</div>
+									<div class="form-group">
+										<label for="message-text" class="control-label">Email</label>
+										<input type="email" class="form-control" id="message-text"
+											ng-model="email" required="required">
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary"
+											ng-click=addPartaker() id="addPartaker">Lưu</button>
+										<button type="button" class="btn btn-danger"
+											data-dismiss="modal">Thoát</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 	modal update -->
+				<div class="modal fade" id="modalEdit" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Thêm mới thành phần tham dự</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" method="Post">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Họ
+											và tên</label> <input type="text" class="form-control"
+											id="recipient-name" ng-model="partakerObj.name">
+									</div>
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Chức
+											vụ</label> <input type="text" class="form-control"
+											id="recipient-name" ng-model="partakerObj.position">
+									</div>
+									<div class="form-group">
+										<label for="message-text" class="control-label">Email</label>
+										<input type="text" class="form-control" id="message-text"
+											ng-model="partakerObj.email">
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary"
+											ng-click=updatePartaker() data-dismiss="modal">Lưu</button>
+										<button type="button" class="btn btn-danger"
+											data-dismiss="modal">Thoát</button>
+
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- 	modal delete -->
+				<div class="modal fade" id="modalDelete" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Xác nhận xóa</h4>
+							</div>
+							<div class="modal-body">
+								<strong style="color: :red"> Bạn có chắc muốn xóa
+									{{partakerObj.name}}? </strong>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal" ng-click=deletePartaker()>Đồng ý</button>
+								<button type="button" class="btn btn-danger"
+									data-dismiss="modal">Hủy</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 	modal config email -->
+				<div class="modal fade" id="configEmailModal" role="dialog"
+					aria-labelledby="exampleModalLabel">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Cấu hình email gửi</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" method="Post">
+									<fieldset>
+										<div class="alert alert-success" ng-if="message">
+											<a href="#" class="close" aria-label="close"
+												ng-click=clearMessage()>×</a> {{message}}
+										</div>
+										<label class="colortext">Email</label>
+										<div class="form-group">
+											<input class="form-control" id="username"
+												ng-model="emailConfig" placeholder="Email" name="username"
+												type="email" autofocus>
+										</div>
+										<label class="colortext">Mật khẩu</label>
+										<div class="form-group">
+											<input class="form-control" id="password" ng-model="password"
+												placeholder="Mật khẩu" name="password" type="password"
+												value="">
+										</div>
+										<label class="colortext">Nhập lại mật khẩu</label>
+										<div class="form-group">
+											<input class="form-control" id="repassword"
+												ng-model="repassword" placeholder="Nhập lại mật khẩu"
+												name="repassword" type="password" value="">
+										</div>
+										<div id="colorText">
+											<h6>{{validate}}</h6>
+										</div>
+										<!-- Change this to a button or input when using this as a form -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default"
+												ng-click=saveEmail()>Lưu cấu hình</button>
+											<button type="button" class="btn btn-danger"
+												data-dismiss="modal">Hủy</button>
+
+										</div>
+									</fieldset>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- 	modal sendmail -->
+				<div class="modal fade" id="sendEmail" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Gửi mail thành phần tham dự</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" method="Post">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Tiêu
+											đề</label> <input type="text" class="form-control"
+											id="recipient-name" ng-model="subject">
+									</div>
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Nội
+											dung</label>
+										<textarea rows="5" class="form-control" id="recipient-name"
+											ng-model="content"></textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary"
+											ng-click="sendMail()" data-dismiss="modal">Gửi</button>
+										<button type="button" class="btn btn-danger"
+											data-dismiss="modal">Thoát</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 	modal help -->
+				<div class="modal fade" id="help" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">Gửi mail thành phần tham dự</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" method="Post">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Tiêu
+											đề</label> <input type="text" class="form-control"
+											id="recipient-name" ng-model="subject">
+									</div>
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Nội
+											dung</label>
+										<textarea rows="5" class="form-control" id="recipient-name"
+											ng-model="content"></textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary"
+											ng-click="sendMail()" data-dismiss="modal">Gửi</button>
+										<button type="button" class="btn btn-danger"
+											data-dismiss="modal">Thoát</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('#example').DataTable();
+			});
+			$('#example').DataTable({
+				"bAutoWidth" : false,
+				"aoColumns" : [ {
+					"sWidth" : "20%"
+				}, {
+					"sWidth" : "20%"
+				}, {
+					"sWidth" : "20%"
+				}, {
+					"sWidth" : "20%"
+				}, {
+					"sWidth" : "20%"
+				} ]
+			});
+		</script>
+	</div>
+	<script src="js/eventjquery.js" type="text/javascript"></script>
+</body>
+</html>

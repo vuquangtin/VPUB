@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C23F1BB-4798-4511-B128-FFAAF0465EC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersoMgtComponent</RootNamespace>
+    <AssemblyName>PersoMgtComponent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\PersoCommandNames.cs" />
+    <Compile Include="Constants\PersoEventTopicNames.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmChooseExpDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmChooseExpDate.Designer.cs">
+      <DependentUpon>FrmChooseExpDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmConfirmChangeStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmConfirmChangeStatus.Designer.cs">
+      <DependentUpon>FrmConfirmChangeStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrPersoMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrPersoMgtMain.Designer.cs">
+      <DependentUpon>UsrPersoMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\PersoWorkItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmChooseExpDate.resx">
+      <DependentUpon>FrmChooseExpDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmConfirmChangeStatus.resx">
+      <DependentUpon>FrmConfirmChangeStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrPersoMgtMain.resx">
+      <DependentUpon>UsrPersoMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5C06C55A-825D-4B1A-89A7-654798CE2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728B1500-2760-468D-BCBA-EF16F2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Lock_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnLock_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkBlue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkBlack_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkRed_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_ConfigurationName="Release" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

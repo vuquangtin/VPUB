@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile" >
+  <Modules>
+    <ModuleInfo AssemblyFile="LocalStorageService.dll" />
+    <ModuleInfo AssemblyFile="SupportMgtComponet.dll" />
+    <!--<ModuleInfo AssemblyFile="sAccessComponent.dll" />-->
+    <!--<ModuleInfo AssemblyFile="eCashComponent.dll" />-->
+    <!--<ModuleInfo AssemblyFile="VoucherGiftCardComponent.dll" />-->
+    <!--<ModuleInfo AssemblyFile="AttendanceComponent.dll" />-->
+    <!--<ModuleInfo AssemblyFile="CardMagneticMgtComponent.dll" />-->
+    <ModuleInfo AssemblyFile="CardMgtComponent.dll" />
+    <ModuleInfo AssemblyFile="SystemMgtComponent.dll" />
+  </Modules>
+</SolutionProfile>

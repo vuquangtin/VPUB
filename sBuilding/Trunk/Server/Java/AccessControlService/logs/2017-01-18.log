@@ -1,0 +1,154 @@
+Jan 18, 2017 1:54:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 13:54:06
+Jan 18, 2017 1:54:07 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 1:54:07 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 1:54:07 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 1:55:34 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 13:55:34
+Jan 18, 2017 1:55:35 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 1:55:35 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 1:55:35 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 1:59:15 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 1:59:15 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 13:59:15
+Jan 18, 2017 1:59:15 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 1:59:15 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 1:59:39 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 13:59:39
+Jan 18, 2017 1:59:41 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 18, 2017 2:00:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 2:00:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 2:00:53 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 14:00:53
+Jan 18, 2017 2:00:53 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 2:04:03 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 14:04:03
+Jan 18, 2017 2:04:04 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 2:04:04 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 2:04:04 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 2:07:57 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 14:07:57
+Jan 18, 2017 2:07:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 2:07:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 2:07:58 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 2:08:08 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 2:08:08 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 2:08:11 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 2:08:11 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 2:08:20 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 2:08:20 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 2:08:27 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 2:08:27 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 2:08:27 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 14:08:27
+Jan 18, 2017 4:00:17 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:00:17
+Jan 18, 2017 4:00:18 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:00:18 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:00:18 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 4:00:48 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:00:48
+Jan 18, 2017 4:00:49 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:00:49 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:00:49 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 4:02:50 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:02:50
+Jan 18, 2017 4:02:51 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:02:51 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:02:51 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 4:08:08 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:08:08
+Jan 18, 2017 4:08:09 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:08:09 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:08:09 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 4:13:08 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:13:08
+Jan 18, 2017 4:13:31 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:13:31
+Jan 18, 2017 4:13:32 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:13:32 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:13:32 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 4:14:10 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 16:14:10
+Jan 18, 2017 4:14:11 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 4:14:11 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 4:14:11 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 5:24:37 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 18-01-2017 17:24:37
+Jan 18, 2017 5:24:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Jan 18, 2017 5:24:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Jan 18, 2017 5:24:38 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Jan 18, 2017 5:24:40 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 5:24:40 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 5:24:42 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 5:24:42 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 5:24:45 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 5:24:45 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 5:25:08 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 18, 2017 5:25:35 PM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=3528E02F,IPAddress=/192.168.1.77
+Jan 18, 2017 5:25:35 PM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Jan 18, 2017 5:25:38 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 18, 2017 5:26:08 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 18, 2017 5:26:38 PM com.swt.utilities.Logging writeInfo
+INFO: Playing
+Jan 18, 2017 5:27:08 PM com.swt.utilities.Logging writeInfo
+INFO: Playing

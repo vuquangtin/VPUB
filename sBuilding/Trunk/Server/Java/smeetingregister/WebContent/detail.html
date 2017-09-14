@@ -1,0 +1,84 @@
+<div class="container" ng-controller="detailcontroller">
+	<!-- 	data-ng-init="onloadFun()"> -->
+	<div class="panel panel-default">
+		<div class="panel-heading" id="back">
+			<h3 class="panel-title">Danh sách thành phần tham dự họp</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 boder">
+						<div class="row">
+							<div class="form-horizontal form-group">
+								<div class="col-md-2">
+									<label for="recipient-name" class="control-label">Ngày
+										họp</label>
+								</div>
+								<div class="col-md-3">
+									<input type="date" name="txtdateMeeting" class="form-control"
+										id="recipient-name" required="required"
+										ng-model="txtdateMeeting" ng-change="change()">
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="form-horizontal form-group">
+								<div class="col-md-2">
+									<label for="recipient-name" class="control-label">Nội
+										dung họp</label>
+								</div>
+								<div class="col-md-10">
+									<select class="form-control" name="repeatSelect"
+										id="repeatSelect" ng-model="meetingSelect"
+										ng-change="getmeeting()">
+										<option value="">---Vui lòng chọn cuộc họp---</option>
+										<option ng-repeat="option in lstMeetings"
+											value="{{option.id}}">{{option.name}}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<br />
+
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-6"></div>
+							<div class="col-md-4 pull-right">
+								<div>
+									<input type="text" class="form-control" placeholder="Tìm kiếm"
+										maxlength="100" ng-model="search"> </span>
+								</div>
+							</div>
+						</div>
+						<div class="martop">
+							<table class="table table-bordered">
+								<thead>
+									<tr id="maunen" style="text-align: center;">
+										<th class="col-xs-1">STT</th>
+										<th class="col-xs-3">Tên tổ chức</th>
+										<th class="col-xs-3">Họ và tên</th>
+										<th class="col-xs-2">Chức vụ</th>
+										<th class="col-xs-2">Điện thoại</th>
+										<th class="col-xs-3">Email</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="text-align: center;"
+										ng-repeat="obj in lstPartakers | filter: search">
+										<td class="col-xs-1">{{$index + 1}}</td>
+										<td class="col-xs-3">{{obj.orgname}}</td>
+										<td class="col-xs-3">{{ obj.name }}</td>
+										<td class="col-xs-2">{{ obj.position }}</td>
+										<td class="col-xs-2">{{ obj.phone }}</td>
+										<td class="col-xs-3">{{ obj.email }}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

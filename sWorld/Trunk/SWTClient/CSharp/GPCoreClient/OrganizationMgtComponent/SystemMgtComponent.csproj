@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6258063-6732-46CD-98A6-4AA56B49E65F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SystemMgtComponent</RootNamespace>
+    <AssemblyName>SystemMgtComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SWT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;_SWT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelLibrary.1.2011.7.31\lib\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>..\..\GPCoreCommon\Libs\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\CardCommandNames.cs" />
+    <Compile Include="Constants\OrganizationCommandNames.cs" />
+    <Compile Include="Constants\OrganizationEventTopicNames.cs" />
+    <Compile Include="Constants\UserCommandNames.cs" />
+    <Compile Include="Constants\UserEventTopicNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\ExcelReader.cs" />
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmConnectionConfig.Designer.cs">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmIntegrateData.Designer.cs">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmReadExcelData.Designer.cs">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ApartmentIntegratingExcel\FrmReviewData.Designer.cs">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Application\FrmAddOrEditApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Application\FrmAddOrEditApp.Designer.cs">
+      <DependentUpon>FrmAddOrEditApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Application\UsrApplicationMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Application\UsrApplicationMgtMain.Designer.cs">
+      <DependentUpon>UsrApplicationMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\ExcelReader.cs" />
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmConnectionConfig.Designer.cs">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmImportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmImportExcel.Designer.cs">
+      <DependentUpon>FrmImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmIntegrateData.Designer.cs">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmReadExcelData.Designer.cs">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\CardIntegratingExcel\FrmReviewData.Designer.cs">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ClearCard\FrmClearEmptyCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ClearCard\FrmClearEmptyCard.Designer.cs">
+      <DependentUpon>FrmClearEmptyCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Device\FrmAddOrEditDeviceDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Device\FrmAddOrEditDeviceDoor.Designer.cs">
+      <DependentUpon>FrmAddOrEditDeviceDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Device\UsrDeviceDoorMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Device\UsrDeviceDoorMgtMain.Designer.cs">
+      <DependentUpon>UsrDeviceDoorMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ExportDataCard\FrmExportDataCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ExportDataCard\FrmExportDataCard.Designer.cs">
+      <DependentUpon>FrmExportDataCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ExportDataCard\UsrExportDataCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ExportDataCard\UsrExportDataCard.Designer.cs">
+      <DependentUpon>UsrExportDataCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ImportCard\FrmWriteMasterKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ImportCard\FrmWriteMasterKey.Designer.cs">
+      <DependentUpon>FrmWriteMasterKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\MasterAndPartner\FrmAddOrEditMasterAndPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\MasterAndPartner\FrmAddOrEditMasterAndPartner.Designer.cs">
+      <DependentUpon>FrmAddOrEditMasterAndPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\MasterAndPartner\UsrMasterAndPartnerMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\MasterAndPartner\UsrMasterAndPartnerMgtMain.Designer.cs">
+      <DependentUpon>UsrMasterAndPartnerMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrEditMemberContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrEditMemberContact.Designer.cs">
+      <DependentUpon>FrmAddOrEditMemberContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrUpdateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrUpdateMember.Designer.cs">
+      <DependentUpon>FrmAddOrUpdateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrUpdateMemberAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Member\FrmAddOrUpdateMemberAttendance.Designer.cs">
+      <DependentUpon>FrmAddOrUpdateMemberAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Member\UsrMemberMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Member\UsrMemberMgtMain.Designer.cs">
+      <DependentUpon>UsrMemberMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\MoveSubOrganizationForMember\FrmMoveSubOrgForMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\MoveSubOrganizationForMember\FrmMoveSubOrgForMember.Designer.cs">
+      <DependentUpon>FrmMoveSubOrgForMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\OrgAcquirerManager\FrmAddOrEditOrgAcquirerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\OrgAcquirerManager\FrmAddOrEditOrgAcquirerManager.Designer.cs">
+      <DependentUpon>FrmAddOrEditOrgAcquirerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\OrgAcquirerManager\UsrOrgAcquirerManagerMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\OrgAcquirerManager\UsrOrgAcquirerManagerMgtMain.Designer.cs">
+      <DependentUpon>UsrOrgAcquirerManagerMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Organization\frmAddOrEditGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Organization\frmAddOrEditGroup.Designer.cs">
+      <DependentUpon>frmAddOrEditGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Organization\FrmAddOrEditSubOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Organization\FrmAddOrEditSubOrg.Designer.cs">
+      <DependentUpon>FrmAddOrEditSubOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Organization\FrmAddOrEditOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Organization\FrmAddOrEditOrg.Designer.cs">
+      <DependentUpon>FrmAddOrEditOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\ExcelReader.cs" />
+    <Compile Include="WorkItems\IntegratingExcel\FrmConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmConnectionConfig.Designer.cs">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmIntegrateData.Designer.cs">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReadExcelData.Designer.cs">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReviewData.Designer.cs">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\SystemWorkItem.cs" />
+    <Compile Include="WorkItems\Organization\UsrOrganizationMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Organization\UsrOrganizationMgtMain.Designer.cs">
+      <DependentUpon>UsrOrganizationMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\TreeOrg\TreeOrg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\TreeOrg\TreeOrg.Designer.cs">
+      <DependentUpon>TreeOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmChangeUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmChangeUserGroup.Designer.cs">
+      <DependentUpon>FrmChangeUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmGroupDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmGroupDetail.Designer.cs">
+      <DependentUpon>FrmGroupDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmResetPassword.designer.cs">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmUpdatePersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\FrmUpdatePersonalInfo.Designer.cs">
+      <DependentUpon>FrmUpdatePersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\FrmAddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\FrmAddAccount.Designer.cs">
+      <DependentUpon>FrmAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\FrmAddUser.Designer.cs">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\IUserAddingDialog.cs" />
+    <Compile Include="WorkItems\Users\UserAdding\UsrAccountInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrAccountInfo.Designer.cs">
+      <DependentUpon>UsrAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrAddUserOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrAddUserOptions.Designer.cs">
+      <DependentUpon>UsrAddUserOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrMemberList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrMemberList.Designer.cs">
+      <DependentUpon>UsrMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UserAdding\UsrUserInfo.designer.cs">
+      <DependentUpon>UsrUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UsrLoginHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UsrLoginHistory.Designer.cs">
+      <DependentUpon>UsrLoginHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Users\UsrUserMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Users\UsrUserMgtMain.Designer.cs">
+      <DependentUpon>UsrUserMgtMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WorkItems\ApartmentIntegratingExcel\FrmConnectionConfig.resx">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ApartmentIntegratingExcel\FrmIntegrateData.resx">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ApartmentIntegratingExcel\FrmReadExcelData.resx">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ApartmentIntegratingExcel\FrmReviewData.resx">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Application\FrmAddOrEditApp.resx">
+      <DependentUpon>FrmAddOrEditApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Application\UsrApplicationMgtMain.resx">
+      <DependentUpon>UsrApplicationMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\CardIntegratingExcel\FrmConnectionConfig.resx">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\CardIntegratingExcel\FrmImportExcel.resx">
+      <DependentUpon>FrmImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\CardIntegratingExcel\FrmIntegrateData.resx">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\CardIntegratingExcel\FrmReadExcelData.resx">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\CardIntegratingExcel\FrmReviewData.resx">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ClearCard\FrmClearEmptyCard.resx">
+      <DependentUpon>FrmClearEmptyCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Device\FrmAddOrEditDeviceDoor.resx">
+      <DependentUpon>FrmAddOrEditDeviceDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Device\UsrDeviceDoorMgtMain.resx">
+      <DependentUpon>UsrDeviceDoorMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ExportDataCard\FrmExportDataCard.resx">
+      <DependentUpon>FrmExportDataCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ExportDataCard\UsrExportDataCard.resx">
+      <DependentUpon>UsrExportDataCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ImportCard\FrmWriteMasterKey.resx">
+      <DependentUpon>FrmWriteMasterKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\MasterAndPartner\FrmAddOrEditMasterAndPartner.resx">
+      <DependentUpon>FrmAddOrEditMasterAndPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\MasterAndPartner\UsrMasterAndPartnerMgtMain.resx">
+      <DependentUpon>UsrMasterAndPartnerMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Member\FrmAddOrEditMemberContact.resx">
+      <DependentUpon>FrmAddOrEditMemberContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Member\FrmAddOrUpdateMember.resx">
+      <DependentUpon>FrmAddOrUpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Member\FrmAddOrUpdateMemberAttendance.resx">
+      <DependentUpon>FrmAddOrUpdateMemberAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Member\UsrMemberMgtMain.resx">
+      <DependentUpon>UsrMemberMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\MoveSubOrganizationForMember\FrmMoveSubOrgForMember.resx">
+      <DependentUpon>FrmMoveSubOrgForMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\OrgAcquirerManager\FrmAddOrEditOrgAcquirerManager.resx">
+      <DependentUpon>FrmAddOrEditOrgAcquirerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\OrgAcquirerManager\UsrOrgAcquirerManagerMgtMain.resx">
+      <DependentUpon>UsrOrgAcquirerManagerMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Organization\frmAddOrEditGroup.resx">
+      <DependentUpon>frmAddOrEditGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Organization\FrmAddOrEditSubOrg.resx">
+      <DependentUpon>FrmAddOrEditSubOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Organization\FrmAddOrEditOrg.resx">
+      <DependentUpon>FrmAddOrEditOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmConnectionConfig.resx">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmIntegrateData.resx">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmReadExcelData.resx">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmReviewData.resx">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Organization\UsrOrganizationMgtMain.resx">
+      <DependentUpon>UsrOrganizationMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\TreeOrg\TreeOrg.resx">
+      <DependentUpon>TreeOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\FrmChangeUserGroup.resx">
+      <DependentUpon>FrmChangeUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\FrmGroupDetail.resx">
+      <DependentUpon>FrmGroupDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\FrmResetPassword.resx">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\FrmUpdatePersonalInfo.resx">
+      <DependentUpon>FrmUpdatePersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\FrmAddAccount.resx">
+      <DependentUpon>FrmAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\UsrAccountInfo.resx">
+      <DependentUpon>UsrAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\UsrAddUserOptions.resx">
+      <DependentUpon>UsrAddUserOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\UsrMemberList.resx">
+      <DependentUpon>UsrMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UserAdding\UsrUserInfo.resx">
+      <DependentUpon>UsrUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UsrLoginHistory.resx">
+      <DependentUpon>UsrLoginHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Users\UsrUserMgtMain.resx">
+      <DependentUpon>UsrUserMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+      <Project>{073bcd60-f2fb-4db9-92fb-403c8f9e8dd0}</Project>
+      <Name>CompositeUI.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CryptoHelper\CryptoHelper.csproj">
+      <Project>{02d6869f-28cf-4514-9847-eae8a868a88f}</Project>
+      <Name>CryptoHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardChipService\CardChipService.csproj">
+      <Project>{ed8a8197-d684-460d-933d-0768eafa9110}</Project>
+      <Name>CardChipService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sExcelExportComponent\sExcelExportComponent.csproj">
+      <Project>{fd290b41-1ff4-4f5a-92bc-4140c079539d}</Project>
+      <Name>sExcelExportComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{A9AC7BCE-561F-48A9-B732-C67416DDBFF0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoImage1.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

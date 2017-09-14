@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E84BDF80-EA79-4184-98FC-2CA5F9AFC114}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eCashComponent</RootNamespace>
+    <AssemblyName>eCashComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Contants\EcashEventTopicName.cs" />
+    <Compile Include="Contants\ItemCommandNames.cs" />
+    <Compile Include="Contants\ECashCommandNames.cs" />
+    <Compile Include="WorkItems\GroupItem\FrmAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\GroupItem\FrmAddGroup.Designer.cs">
+      <DependentUpon>FrmAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\GroupItem\FrmAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\GroupItem\FrmAddItem.Designer.cs">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UsrHomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrHomePage.Designer.cs">
+      <DependentUpon>UsrHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\Config\FrmAddConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Config\FrmAddConfig.Designer.cs">
+      <DependentUpon>FrmAddConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Config\UsrConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Config\UsrConfig.Designer.cs">
+      <DependentUpon>UsrConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\eCashWorkItem.cs" />
+    <Compile Include="WorkItems\GroupItem\UsrGroupItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\GroupItem\UsrGroupItem.Designer.cs">
+      <DependentUpon>UsrGroupItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\PayOut\DeductPayOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\PayOut\DeductPayOut.Designer.cs">
+      <DependentUpon>DeductPayOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticsPayOut\UsrPayOutStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticsPayOut\UsrPayOutStatistics.Designer.cs">
+      <DependentUpon>UsrPayOutStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Statistics\UsrTopUpStattistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Statistics\UsrTopUpStattistics.Designer.cs">
+      <DependentUpon>UsrTopUpStattistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\PayIn\FrmPayIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\PayIn\FrmPayIn.Designer.cs">
+      <DependentUpon>FrmPayIn.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardChipService\CardChipService.csproj">
+      <Project>{ed8a8197-d684-460d-933d-0768eafa9110}</Project>
+      <Name>CardChipService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderLibrary\PcsReaderLibrary.csproj">
+      <Project>{3b3d4195-c507-4e13-8dea-3a13495835f0}</Project>
+      <Name>PcsReaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkItems\GroupItem\FrmAddGroup.resx">
+      <DependentUpon>FrmAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\GroupItem\FrmAddItem.resx">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrHomePage.resx">
+      <DependentUpon>UsrHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Config\FrmAddConfig.resx">
+      <DependentUpon>FrmAddConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Config\UsrConfig.resx">
+      <DependentUpon>UsrConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\GroupItem\UsrGroupItem.resx">
+      <DependentUpon>UsrGroupItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\PayOut\DeductPayOut.resx">
+      <DependentUpon>DeductPayOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticsPayOut\UsrPayOutStatistics.resx">
+      <DependentUpon>UsrPayOutStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Statistics\UsrTopUpStattistics.resx">
+      <DependentUpon>UsrTopUpStattistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\PayIn\FrmPayIn.resx">
+      <DependentUpon>FrmPayIn.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_ConfigurationName="Release" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

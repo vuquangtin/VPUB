@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12C294FB-A70E-4CFB-A327-F9463A11B3C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UtilitiesMgtComponet</RootNamespace>
+    <AssemblyName>UtilitiesMgtComponet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\CardCommandNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\FrmWriteMasterKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmWriteMasterKey.designer.cs">
+      <DependentUpon>FrmWriteMasterKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UtilitiesWorkItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CryptoHelper\CryptoHelper.csproj">
+      <Project>{02d6869f-28cf-4514-9847-eae8a868a88f}</Project>
+      <Name>CryptoHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardChipService\CardChipService.csproj">
+      <Project>{ed8a8197-d684-460d-933d-0768eafa9110}</Project>
+      <Name>CardChipService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderLibrary\PcsReaderLibrary.csproj">
+      <Project>{3b3d4195-c507-4e13-8dea-3a13495835f0}</Project>
+      <Name>PcsReaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkItems\FrmWriteMasterKey.resx">
+      <DependentUpon>FrmWriteMasterKey.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

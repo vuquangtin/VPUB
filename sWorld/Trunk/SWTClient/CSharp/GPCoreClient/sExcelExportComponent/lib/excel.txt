@@ -1,0 +1,21 @@
+		    //export excel
+		    ConfigExportFileModel configExportFile = new ConfigExportFileModel();
+                    configExportFile.FilePath = filePath;
+                    GemboxUtils.Instance.ExportDataGridToFile(dataGridview4Export, configExportFile);//tua de, xuat file
+                    GemboxUtils.Instance.ExportDataGridToFile(dataGridview4Export.Rows.Count);//tua de, xuat file
+
+                    GemboxUtils.Instance.AutoFix();
+                    try
+                    {
+                        GemboxUtils.Instance.Save();
+                    }
+                    catch (IOException x)
+                    {
+                        MessageBoxManager.ShowInfoMessageBox(this, MessageValidate.GetMessage(rm, "fileExcelOpen"));
+                    }
+                    //end
+
+=> file design
+           // this.dataGridview4Export = new ClientModel.Controls.Commons.CommonDataGridView();
+
+//        private ClientModel.Controls.Commons.CommonDataGridView dataGridview4Export;

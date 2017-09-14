@@ -1,0 +1,248 @@
+Mar 01, 2017 9:40:19 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 9:40:19 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 9:40:19 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 9:40:21 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 09:40:21
+Mar 01, 2017 9:40:49 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 09:40:49
+Mar 01, 2017 9:40:55 AM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 9:40:55 AM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 10:54:15 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 10:54:15 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 10:54:15 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 10:54:15 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 10:54:15
+Mar 01, 2017 10:54:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 10:54:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 10:54:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 10:54:43 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 10:54:43
+Mar 01, 2017 10:58:38 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 10:58:38 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 10:58:38 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 10:58:38 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 10:58:38
+Mar 01, 2017 11:00:26 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 11:00:26 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 11:00:26 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 11:00:26 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 11:00:26
+Mar 01, 2017 11:02:53 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 11:02:53 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 11:02:53 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 11:02:53 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 11:02:53
+Mar 01, 2017 4:34:36 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 01, 2017 4:34:36 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 01, 2017 4:34:36 PM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 01, 2017 4:34:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:34:36
+Mar 01, 2017 4:35:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:35:06
+Mar 01, 2017 4:35:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:35:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:35:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:35:36
+Mar 01, 2017 4:35:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:35:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:36:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:36:06
+Mar 01, 2017 4:36:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:36:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:36:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:36:36
+Mar 01, 2017 4:36:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:36:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:37:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:37:06
+Mar 01, 2017 4:37:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:37:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:37:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:37:36
+Mar 01, 2017 4:37:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:37:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:38:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:38:06
+Mar 01, 2017 4:38:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:38:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:38:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:38:36
+Mar 01, 2017 4:38:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:38:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:39:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:39:06
+Mar 01, 2017 4:39:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:39:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:39:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:39:36
+Mar 01, 2017 4:39:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:39:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:40:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:40:06
+Mar 01, 2017 4:40:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:40:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:40:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:40:36
+Mar 01, 2017 4:40:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:40:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:41:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:41:06
+Mar 01, 2017 4:41:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:41:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:41:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:41:36
+Mar 01, 2017 4:41:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:41:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:42:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:42:06
+Mar 01, 2017 4:42:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:42:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:42:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:42:36
+Mar 01, 2017 4:42:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:42:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:43:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:43:06
+Mar 01, 2017 4:43:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:43:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:43:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:43:36
+Mar 01, 2017 4:43:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:43:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:44:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:44:06
+Mar 01, 2017 4:44:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:44:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:44:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:44:36
+Mar 01, 2017 4:44:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:44:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:45:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:45:06
+Mar 01, 2017 4:45:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:45:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:45:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:45:36
+Mar 01, 2017 4:45:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:45:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:46:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:46:06
+Mar 01, 2017 4:46:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:46:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:46:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:46:36
+Mar 01, 2017 4:46:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:46:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:47:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:47:06
+Mar 01, 2017 4:47:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:47:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:47:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:47:36
+Mar 01, 2017 4:47:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:47:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:48:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:48:06
+Mar 01, 2017 4:48:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 playing
+Mar 01, 2017 4:48:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:48:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:48:36
+Mar 01, 2017 4:48:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:48:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:49:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:49:06
+Mar 01, 2017 4:49:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:49:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:49:36 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:49:36
+Mar 01, 2017 4:49:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:49:37 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing
+Mar 01, 2017 4:50:06 PM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 01-03-2017 16:50:06
+Mar 01, 2017 4:50:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 2 not play
+Mar 01, 2017 4:50:07 PM com.swt.utilities.Logging writeInfo
+INFO: Camera 1 playing

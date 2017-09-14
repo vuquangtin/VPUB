@@ -1,0 +1,28 @@
+Mar 14, 2017 9:55:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6778
+Mar 14, 2017 9:55:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6777
+Mar 14, 2017 9:55:43 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6779
+Mar 14, 2017 9:55:43 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 14-03-2017 09:55:43
+Mar 14, 2017 9:56:27 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6789
+Mar 14, 2017 9:56:27 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6790
+Mar 14, 2017 9:56:27 AM com.swt.utilities.Logging writeInfo
+INFO: Server start listening port 6791
+Mar 14, 2017 9:56:27 AM com.swt.utilities.Logging writeInfo
+INFO: Login sucessful to server at 14-03-2017 09:56:27
+Mar 14, 2017 9:56:32 AM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=658DDF2F,IPAddress=/192.168.1.77
+Mar 14, 2017 9:56:32 AM com.swt.utilities.Logging writeInfo
+INFO: 658DDF2F
+Mar 14, 2017 9:56:32 AM com.swt.utilities.Logging writeInfo
+INFO: -----> close
+Mar 14, 2017 9:56:34 AM com.swt.utilities.Logging writeInfo
+INFO: MCR02-D63D4B,UID=658DDF2F,IPAddress=/192.168.1.77
+Mar 14, 2017 9:56:34 AM com.swt.utilities.Logging writeInfo
+INFO: 658DDF2F
+Mar 14, 2017 9:56:34 AM com.swt.utilities.Logging writeInfo
+INFO: -----> close

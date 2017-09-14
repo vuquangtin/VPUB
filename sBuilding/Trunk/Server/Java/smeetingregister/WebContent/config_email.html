@@ -1,0 +1,73 @@
+<div ng-controller = "configController" data-ng-init="loadToken()">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title">Cấu hình email gửi</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form" method="Post" name="formSendMail">
+								<fieldset>
+									<div class="alert alert-success" ng-if="message">
+										<a href="#" class="close" aria-label="close"
+											ng-click=clearMessage()>×</a> {{infomessage}}
+									</div>
+									<label class="colortext">Người gửi</label>
+									<div class="form-group">
+										<input class="form-control" id="user" ng-model="emailConfig.user"
+											placeholder="Tên người gửi" name="txtusername" type="text"
+											autofocus required="required"> 
+									</div>
+									<label class="colortext">Email</label>
+									<div class="form-group">
+										<input class="form-control" id="email" ng-model="emailConfig.email"
+											placeholder="Email" name="txtemailSend" type="email"
+											autofocus> 
+									</div>
+									<label class="colortext">Mật khẩu</label>
+									<div class="form-group">
+										<input class="form-control" id="password" ng-model="emailConfig.passWord"
+											placeholder="Mật khẩu" name="txtpasswordSend" type="password">
+									</div>
+									<label class="colortext">SMTP</label>
+									<div class="form-group">
+										<input class="form-control" id="user" ng-model="emailConfig.smtp"
+											placeholder="Smtp" name="txtusername" type="text"
+											autofocus required="required"> 
+									</div>
+									<label class="colortext">Port</label>
+									<div class="form-group">
+										<input class="form-control" id="user" ng-model="emailConfig.port"
+											placeholder="Port" name="txtusername" type="number"
+											autofocus required="required"> 
+									</div>
+									<label class="colortext">Tiêu đề</label>
+									<div class="form-group">
+										<input class="form-control" id="user" ng-model="emailConfig.title"
+											placeholder="tiêu đề" name="txtusername" type="text"
+											autofocus required="required"> 
+									</div>
+									<label class="colortext">Nội dung</label>
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="user" ng-model="emailConfig.content"
+											placeholder="nội dung" name="content" type="text"
+											autofocus required="required"> </textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-default"
+											ng-click=saveEmail() ng-disabled="formSendMail.$invalid">Lưu
+											cấu hình</button>
+										<button type="button" class="btn btn-danger"
+											data-dismiss="modal">Hủy</button>
+
+									</div>
+								</fieldset>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>

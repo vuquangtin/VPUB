@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/swordcore?autoReconnect=true</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		<property name="hibernate.connection.charSet">utf-8</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.jdbc.batch_size">0</property>
+		<property name="hibernate.cache.use_structured_entries">true</property>
+		<property name="hibernate.connection.release_mode">after_transaction</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</property>
+		<property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+		
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+  		<property name="hibernate.connection.autoReconnectForPools">true</property>
+		
+		<property name="hibernate.c3p0.max_size">1</property>
+		<property name="hibernate.c3p0.min_size">0</property>
+		<property name="hibernate.c3p0.timeout">1000</property>
+		<property name="hibernate.c3p0.max_statements">1000</property>
+		<property name="hibernate.c3p0.idle_test_period">300</property>
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+		
+		<!-- 
+		<mapping class="com.swt.sattendance.domain.Attendance" />
+		<mapping class="com.swt.sattendance.domain.MemberRelatives" />
+		 -->
+		<mapping class="com.swt.sworld.ams.domain.App" />
+		<mapping class="com.swt.sworld.ams.domain.CardChipApp" />
+		<mapping class="com.swt.sworld.ams.domain.CardMagneticApp" />
+		<mapping class="com.swt.sworld.ams.domain.PersonalizationApp" />
+		
+		<mapping class="com.swt.sworld.cms.domain.Acquirer" />
+		<mapping class="com.swt.sworld.cms.domain.CardChip" />
+		<mapping class="com.swt.sworld.cms.domain.CardMagnetic" />
+		<mapping class="com.swt.sworld.cms.domain.CardMagneticPerData" />
+		<mapping class="com.swt.sworld.cms.domain.CardType" />
+		<mapping class="com.swt.sworld.cms.domain.Organization" />
+		<mapping class="com.swt.sworld.cms.domain.PartnersOfMaster" />
+		<mapping class="com.swt.sworld.cms.domain.SubOrganization" />
+		
+		<mapping class="com.swt.sworld.common.domain.Config" />
+		<mapping class="com.swt.sworld.common.domain.GroupSworld" />
+		<mapping class="com.swt.sworld.common.domain.IntegratingLog" />
+		<mapping class="com.swt.sworld.common.domain.LoginHistory" />
+		<mapping class="com.swt.sworld.common.domain.PolicySworld" />
+		<mapping class="com.swt.sworld.common.domain.UserSworld"/>
+		<mapping class="com.swt.sworld.mobile.domain.VourcherGiftCard"/>
+		
+		<mapping class="com.swt.sworld.hsm.domain.Hsm" />
+		
+		<mapping class="com.swt.sworld.kms.domain.SecretKey" />
+		
+		<mapping class="com.swt.sworld.ps.domain.ChipPersonalization" />
+		<mapping class="com.swt.sworld.ps.domain.MagneticPersonalization" />
+		<mapping class="com.swt.sworld.ps.domain.Member" />
+		<mapping class="com.swt.sworld.ps.domain.Personalization" />
+		
+		<!-- 
+		<mapping class="com.swt.sworld.mobile.domain.ActionsOnDeal" />
+		<mapping class="com.swt.sworld.mobile.domain.Category" />
+		<mapping class="com.swt.sworld.mobile.domain.DealComment" />
+		<mapping class="com.swt.sworld.mobile.domain.DealInfor" />
+		<mapping class="com.swt.sworld.mobile.domain.MobileCard" />
+		<mapping class="com.swt.sworld.mobile.domain.MobilePointPolicy" />
+		<mapping class="com.swt.sworld.mobile.domain.PersonalMobileCard" />
+		<mapping class="com.swt.sworld.mobile.domain.UserActionsOnDeal" />
+		<mapping class="com.swt.sworld.mobile.domain.UserPoint" />
+		
+		-->
+		
+		<!--
+		<mapping class="com.swt.sworld.ps.domain.DataForUpdateCard" />
+		-->
+		
+		
+		<!--
+		<mapping class="com.swt.shopping.domain.AccumulatedPointSaleOff" />
+		<mapping class="com.swt.shopping.domain.PosUserAccess"/>
+		<mapping class="com.swt.shopping.domain.SessionLog"/>
+		<mapping class="com.swt.shopping.domain.TradedCard"/>
+		<mapping class="com.swt.shopping.domain.TradedTransactions" />
+		<mapping class="com.swt.shopping.domain.UpdateLog" />
+		-->
+	    <!-- 
+	    <mapping class="com.swt.ecash.domain.PayInRequest" />
+	    <mapping class="com.swt.ecash.domain.PayInSuccess" />
+	    <mapping class="com.swt.ecash.domain.SummaryPayIn" />
+	    
+	    <mapping class="com.swt.ecash.domain.PayOutRequest" />
+	    <mapping class="com.swt.ecash.domain.PayOutSuccess" />
+	    <mapping class="com.swt.ecash.domain.SummaryPayOut" />
+	    
+	    <mapping class="com.swt.ecash.domain.Lockmoneycard" />
+		<mapping class="com.swt.ecash.domain.GroupItem" />
+		<mapping class="com.swt.ecash.domain.Item" />
+		<mapping class="com.swt.ecash.domain.ConfigCard" />
+	    
+	    <mapping class="com.swt.saigonpearl.domain.ManagerCosts" />
+	    <mapping class="com.swt.saigonpearl.domain.DeviceDoor" />
+		<mapping class="com.swt.saigonpearl.domain.DoorIn" />
+		<mapping class="com.swt.saigonpearl.domain.DoorOut" />
+
+ 	-->
+	</session-factory>
+</hibernate-configuration>

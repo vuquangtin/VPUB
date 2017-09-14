@@ -1,0 +1,7 @@
+* Build_Release_16062017_Revision1841
+	- Reader Manager
+	
+* Build_Release_07062017_Revision1835
+	- Check kiem tra the bao chi het han.
+	- Cai thien toc do doc tu dau doc the.
+	- Dau doc keu 2 tieng beep neu thanh cong.

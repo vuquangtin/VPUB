@@ -1,0 +1,3243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Hủy Bỏ</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Làm Mới</value>
+  </data>
+  <data name="FrmAboutSworld" xml:space="preserve">
+    <value>Giới Thiệu sWorld</value>
+  </data>
+  <data name="FrmChangePassword" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="labelCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="labelCopyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="lblChangePassUserCurrent" xml:space="preserve">
+    <value>Thay đổi mật khẩu của người dùng hiện tại</value>
+  </data>
+  <data name="lblChangePassword" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="lblInstruction" xml:space="preserve">
+    <value>Hãy nhập các trường bên dưới để thay đổi mật khẩu. Mật khẩu mới phải có độ mạnh tối thiểu ở mức độ trung bình.</value>
+  </data>
+  <data name="lblProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="MainForm" xml:space="preserve">
+    <value>Hệ Thống Phát Hành Thẻ</value>
+  </data>
+  <data name="mnuChangePassword" xml:space="preserve">
+    <value>Đổi Mật Khẩu...</value>
+  </data>
+  <data name="mnuExit" xml:space="preserve">
+    <value>Thoát...</value>
+  </data>
+  <data name="mnuHome" xml:space="preserve">
+    <value>Trang chính</value>
+  </data>
+  <data name="mnuLogout" xml:space="preserve">
+    <value>Đăng Xuất...</value>
+  </data>
+  <data name="mnuOptions" xml:space="preserve">
+    <value>Cấu Hình Hệ Thống...</value>
+  </data>
+  <data name="mnuSystem" xml:space="preserve">
+    <value>Hệ Thống</value>
+  </data>
+  <data name="okButton" xml:space="preserve">
+    <value>&amp;Đóng</value>
+  </data>
+  <data name="textBoxDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="btnListDevices" xml:space="preserve">
+    <value>Tìm Thiết Bị</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="btnPause" xml:space="preserve">
+    <value>Tạm Ngưng</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Lưu Lại</value>
+  </data>
+  <data name="btnStart" xml:space="preserve">
+    <value>Bắt Đầu</value>
+  </data>
+  <data name="cbxDontAskLater" xml:space="preserve">
+    <value>Không cần hỏi ở những lần thao tác sau.</value>
+  </data>
+  <data name="cbxFilterByCardType" xml:space="preserve">
+    <value>Lọc theo loại thẻ:</value>
+  </data>
+  <data name="cbxFilterByChangedType" xml:space="preserve">
+    <value>Lọc theo kiểu thay đổi:</value>
+  </data>
+  <data name="cbxFilterByDegree" xml:space="preserve">
+    <value>Lọc theo trình độ:</value>
+  </data>
+  <data name="cbxFilterByLoginResult" xml:space="preserve">
+    <value>Lọc theo kết quả:</value>
+  </data>
+  <data name="cbxFilterByLoginTime" xml:space="preserve">
+    <value>Lọc theo khoảng thời gian:</value>
+  </data>
+  <data name="cbxFilterByMemberCode" xml:space="preserve">
+    <value>Lọc theo mã thành viên:</value>
+  </data>
+  <data name="cbxFilterByMemberName" xml:space="preserve">
+    <value>Lọc theo tên thành viên:</value>
+  </data>
+  <data name="cbxFilterByPersoDate" xml:space="preserve">
+    <value>Lọc theo ngày phát hành:</value>
+  </data>
+  <data name="cbxFilterByPersoStatus" xml:space="preserve">
+    <value>Lọc theo trạng thái:</value>
+  </data>
+  <data name="cbxFilterByPersoStatusMember" xml:space="preserve">
+    <value>Lọc theo trạng thái phát hành:</value>
+  </data>
+  <data name="cbxFilterByPhysicalStt" xml:space="preserve">
+    <value>Lọc theo trạng thái vật lý:</value>
+  </data>
+  <data name="cbxFilterByUserName" xml:space="preserve">
+    <value>Lọc theo tài khoản:</value>
+  </data>
+  <data name="cbxFilterByUserStatus" xml:space="preserve">
+    <value>Lọc theo trạng thái tài khoản:</value>
+  </data>
+  <data name="cbxFilterByWorkingStatus" xml:space="preserve">
+    <value>Lọc theo tình trạng công tác:</value>
+  </data>
+  <data name="cbxHideAfterTagRemoved" xml:space="preserve">
+    <value>Đóng hộp thoại này sau khi đưa thẻ ra khỏi thiết bị đọc.</value>
+  </data>
+  <data name="cbxOnlyShowRecordsNeedToUpdate" xml:space="preserve">
+    <value>Chỉ hiển thị những lượt phát hành cần cập nhật dữ liệu thành viên</value>
+  </data>
+  <data name="cbxShowCanceledPersoes" xml:space="preserve">
+    <value>Hiển thị những lượt phát hành đã bị hủy</value>
+  </data>
+  <data name="cbxShowInactiveUsers" xml:space="preserve">
+    <value>Hiển thị những tài khoản đã bị hủy</value>
+  </data>
+  <data name="cbxShowTeacherColumns" xml:space="preserve">
+    <value>Hiện đầy đủ thông tin của thành viên</value>
+  </data>
+  <data name="FrmChangeUserGroup" xml:space="preserve">
+    <value>Chọn Nhóm Mới</value>
+  </data>
+  <data name="FrmChooseExpDate" xml:space="preserve">
+    <value>Chọn Ngày Hết Hạn</value>
+  </data>
+  <data name="FrmClearCardData" xml:space="preserve">
+    <value>Xóa Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmConfigService" xml:space="preserve">
+    <value>Cấu Hình Địa Chỉ Máy Chủ</value>
+  </data>
+  <data name="FrmConfirmChangeStatus" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="FrmConfirmClearData" xml:space="preserve">
+    <value>Xác Nhận Xóa Dữ liệu</value>
+  </data>
+  <data name="FrmGroupDetail" xml:space="preserve">
+    <value>Title is depend on operating mode</value>
+  </data>
+  <data name="FrmImportCard" xml:space="preserve">
+    <value>Nhập Thẻ</value>
+  </data>
+  <data name="FrmLogin" xml:space="preserve">
+    <value>sWorld - Đăng Nhập</value>
+  </data>
+  <data name="FrmMemberData" xml:space="preserve">
+    <value>Thông Tin Thành Viên</value>
+  </data>
+  <data name="FrmPersoProcess" xml:space="preserve">
+    <value>Cấp Thẻ Cho Thành Viên</value>
+  </data>
+  <data name="FrmPieChartSetup" xml:space="preserve">
+    <value>Thiết Lập Đồ Thị</value>
+  </data>
+  <data name="FrmReadCardData" xml:space="preserve">
+    <value>Đọc Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmResetPassword" xml:space="preserve">
+    <value>Cài Lại Mật Khẩu</value>
+  </data>
+  <data name="FrmUpdateCardData" xml:space="preserve">
+    <value>Đồng Bộ Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmUpdatePersonalInfo" xml:space="preserve">
+    <value>Cập Nhật Thông Tin Cá Nhân</value>
+  </data>
+  <data name="groupBoxMarginPieChartSetup" xml:space="preserve">
+    <value>Canh lề</value>
+  </data>
+  <data name="groupBoxPersoStatusStatistics" xml:space="preserve">
+    <value>Thống kê theo tình trạng phát hành</value>
+  </data>
+  <data name="groupBoxPhysicalStatistics" xml:space="preserve">
+    <value>Thống kê theo tình trạng vật lý</value>
+  </data>
+  <data name="groupBoxShadingPieChartSetup" xml:space="preserve">
+    <value>Kiểu đổ bóng</value>
+  </data>
+  <data name="lblAdressService" xml:space="preserve">
+    <value>Địa chỉ máy chủ:</value>
+  </data>
+  <data name="lblAnglePieChartSetup" xml:space="preserve">
+    <value>Góc xoay:</value>
+  </data>
+  <data name="lblAreSureConfirmClearData" xml:space="preserve">
+    <value>Bạn có chắc muốn xóa dữ liệu trên thẻ này không? Lưu ý là việc này đồng nghĩa với việc lượt phát hành thẻ tương ứng (nếu có) sẽ bị hủy.</value>
+  </data>
+  <data name="lblCheckFunctionforUser" xml:space="preserve">
+    <value>Đánh dấu chọn vào các chức năng mà bạn cho phép các tài khoản trong nhóm này được quyền thực hiện. Việc cấp quyền cần được xem xét cẩn thận.</value>
+  </data>
+  <data name="lblChooseNewGroup" xml:space="preserve">
+    <value>Chọn một nhóm mới trong khung bên dưới rồi nhấn "Xác Nhận".</value>
+  </data>
+  <data name="lblChooseReader" xml:space="preserve">
+    <value>Chọn thiết bị đọc thẻ:</value>
+  </data>
+  <data name="lblChooseSubjectPerso" xml:space="preserve">
+    <value>Chọn chủ thể phát hành thẻ:</value>
+  </data>
+  <data name="lblClearCardData" xml:space="preserve">
+    <value>Xóa Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblColorEdgePieChartSetup" xml:space="preserve">
+    <value>Kiểu màu cạnh:</value>
+  </data>
+  <data name="lblConfigService" xml:space="preserve">
+    <value>Để cấu hình địa chỉ máy chủ sWorld, vui lòng nhập thông số vào khung bên dưới rồi nhấn "Lưu Lại".</value>
+  </data>
+  <data name="lblConfimMessage" xml:space="preserve">
+    <value>[Confirmation Message]</value>
+  </data>
+  <data name="lblCreateNewPass" xml:space="preserve">
+    <value>Tạo một mật khẩu mới cho người dùng đã chọn</value>
+  </data>
+  <data name="lblCurrentPass" xml:space="preserve">
+    <value>Mật khẩu hiện tại:</value>
+  </data>
+  <data name="lblCurrentStatus" xml:space="preserve">
+    <value>Trạng thái hiện tại:</value>
+  </data>
+  <data name="lblDownPieChartSetup" xml:space="preserve">
+    <value>Dưới:</value>
+  </data>
+  <data name="lblEdgePieChartSetup" xml:space="preserve">
+    <value>Độ rộng cạnh:</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>lblFrom</value>
+  </data>
+  <data name="lblGuiChooseExpDate" xml:space="preserve">
+    <value>Ngày hết hạn phải trễ hơn ngày hiện tại. Thời điểm hết hạn của lượt phát hành sẽ là 0 giờ của ngày mà bạn chọn.</value>
+  </data>
+  <data name="lblGuiChooseReader" xml:space="preserve">
+    <value>Nếu thiết bị của bạn không được liệt kê trong khung trên, hãy đảm bảo thiết bị đã được kết nối đúng cách với máy tính. Sau đó, nhấn nút "Tìm Thiết Bị".</value>
+  </data>
+  <data name="lblGuiClearCardData" xml:space="preserve">
+    <value>Quét thẻ để xóa dữ liệu của tất cả ứng dụng trên thẻ và phục hồi khóa mặc định.</value>
+  </data>
+  <data name="lblGUIMemberData" xml:space="preserve">
+    <value>Thông tin của thành viên được lưu trong thẻ.</value>
+  </data>
+  <data name="lblGuiPersoProcess" xml:space="preserve">
+    <value>Quét thẻ để cấp thẻ cho thành viên đang được chọn, đồng thời ghi dữ liệu của thành viên vào thẻ.</value>
+  </data>
+  <data name="lblGuiReadCardData" xml:space="preserve">
+    <value>Quét thẻ để đọc dữ liệu thành viên lưu trong thẻ.</value>
+  </data>
+  <data name="lblGuiUpdateCardData" xml:space="preserve">
+    <value>Quét thẻ để kiểm tra và đồng bộ dữ liệu các ứng dụng trên thẻ nếu có sự thay đổi</value>
+  </data>
+  <data name="lblHeightPieChartSetup" xml:space="preserve">
+    <value>Chiều cao:</value>
+  </data>
+  <data name="lblImportCard" xml:space="preserve">
+    <value>Nhập Thẻ</value>
+  </data>
+  <data name="lblImportInfobaseGroup" xml:space="preserve">
+    <value>Nhập các thông tin cơ bản của nhóm. Lưu ý: tên nhóm có chiều dài tối đa 255 ký tự và không được đặt trùng với các nhóm hiện có.</value>
+  </data>
+  <data name="lblIsLoading" xml:space="preserve">
+    <value>Đang tải dữ liệu, vui lòng chờ...</value>
+  </data>
+  <data name="lblLeftAreaTitle" xml:space="preserve">
+    <value>DANH SÁCH NHÓM</value>
+  </data>
+  <data name="lblLeftAreaTitleforListPartner" xml:space="preserve">
+    <value>DANH SÁCH ĐỐI TÁC</value>
+  </data>
+  <data name="lblLeftPieChartSetup" xml:space="preserve">
+    <value>Trái:</value>
+  </data>
+  <data name="lblListMemberWatingIssueCard" xml:space="preserve">
+    <value>Danh sách thành viên chờ cấp thẻ:</value>
+  </data>
+  <data name="lblListResultClearCardData" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultImportCardData" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultReadCardData" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultUpdateCardData" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblLoading1" xml:space="preserve">
+    <value>Đang tải dữ liệu, xin hãy chờ...</value>
+  </data>
+  <data name="lblLoading2" xml:space="preserve">
+    <value>Đang tải dữ liệu, xin hãy chờ...</value>
+  </data>
+  <data name="lblMemberData" xml:space="preserve">
+    <value>Thông Tin Thành Viên</value>
+  </data>
+  <data name="lblNameGroup" xml:space="preserve">
+    <value>Tên nhóm:</value>
+  </data>
+  <data name="lblNewPass" xml:space="preserve">
+    <value>Mật khẩu mới:</value>
+  </data>
+  <data name="lblNoteConfirmClearData" xml:space="preserve">
+    <value>(Chương trình sẽ tự động hủy lượt phát hành tương ứng)</value>
+  </data>
+  <data name="lblNotes" xml:space="preserve">
+    <value>Chú thích:</value>
+  </data>
+  <data name="lblNotification1" xml:space="preserve">
+    <value>Vui lòng nhập ít nhất 2 ký tự</value>
+  </data>
+  <data name="lblNotification2" xml:space="preserve">
+    <value>Vui lòng nhập ít nhất 2 ký tự</value>
+  </data>
+  <data name="lblNotPerso" xml:space="preserve">
+    <value>Chưa phát hành:</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="lblPerso" xml:space="preserve">
+    <value>Đã phát hành:</value>
+  </data>
+  <data name="lblPersoProcess" xml:space="preserve">
+    <value>Cấp Thẻ Cho Thành Viên</value>
+  </data>
+  <data name="lblReadCardData" xml:space="preserve">
+    <value>Đọc Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblReasonSuggestion" xml:space="preserve">
+    <value>Nhập lý do (việc này nhằm giúp cho bạn dễ quản lý thông tin sau này):</value>
+  </data>
+  <data name="lblReSetupPassWord" xml:space="preserve">
+    <value>Cài Lại Mật Khẩu</value>
+  </data>
+  <data name="lblResultListIssue" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblReTypePass" xml:space="preserve">
+    <value>Nhập lại mật khẩu mới:</value>
+  </data>
+  <data name="lblRightAreaTitle" xml:space="preserve">
+    <value>THÔNG TIN TỔ CHỨC</value>
+  </data>
+  <data name="lblRightAreaTitleCardStatistics" xml:space="preserve">
+    <value>THỐNG KÊ THẺ</value>
+  </data>
+  <data name="lblRightAreaTitleforListMember" xml:space="preserve">
+    <value>DANH SÁCH THÀNH VIÊN</value>
+  </data>
+  <data name="lblRightAreaTitlePerso" xml:space="preserve">
+    <value>DANH SÁCH LƯỢT PHÁT HÀNH</value>
+  </data>
+  <data name="lblRightPieChartSetup" xml:space="preserve">
+    <value>Phải:</value>
+  </data>
+  <data name="lblSerialNumber" xml:space="preserve">
+    <value>Mã Thẻ:</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Chưa kết nối với thiết bị đọc</value>
+  </data>
+  <data name="lblStatusBroken" xml:space="preserve">
+    <value>Đã bị hư:</value>
+  </data>
+  <data name="lblStatusLost" xml:space="preserve">
+    <value>Đã bị mất:</value>
+  </data>
+  <data name="lblStatusNormal" xml:space="preserve">
+    <value>Bình thường:</value>
+  </data>
+  <data name="lblTeacherTableDescription" xml:space="preserve">
+    <value>Thành viên đang được chọn là thành viên sẽ được cấp thẻ trong lượt kế tiếp. Bạn cũng có thể thay đổi thứ tự thành viên nếu muốn.</value>
+  </data>
+  <data name="lblTitleIntegratingLog" xml:space="preserve">
+    <value>LỊCH SỬ TÍCH HỢP DỮ LIỆU</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>Đến:</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblUpdateCardData" xml:space="preserve">
+    <value>Đồng Bộ Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblUpdateInfoChoosed" xml:space="preserve">
+    <value>Cập nhật các thông tin cá nhân của tài khoản được chọn</value>
+  </data>
+  <data name="lblUpdateInfoUser" xml:space="preserve">
+    <value>Cập Nhật Thông Tin Cá Nhân</value>
+  </data>
+  <data name="lblUpPieChartSetup" xml:space="preserve">
+    <value>Trên:</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>Tài khoản:</value>
+  </data>
+  <data name="rbtnLoginFail" xml:space="preserve">
+    <value>Thất bại</value>
+  </data>
+  <data name="rbtnLoginFailed" xml:space="preserve">
+    <value>Thất bại</value>
+  </data>
+  <data name="rbtnLoginSuccess" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
+  <data name="rbtnNotPerso" xml:space="preserve">
+    <value>Chưa phát hành</value>
+  </data>
+  <data name="rbtnNotWorking" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="rbtnPerso" xml:space="preserve">
+    <value>Đã phát hành</value>
+  </data>
+  <data name="rbtnShadowStyleGradualPieChartSetup" xml:space="preserve">
+    <value>Nhạt dần</value>
+  </data>
+  <data name="rbtnShadowStyleNonePieChartSetup" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="rbtnShadowStyleUniformPieChartSetup" xml:space="preserve">
+    <value>Đồng nhất</value>
+  </data>
+  <data name="rbtnStatusBroken" xml:space="preserve">
+    <value>Đã bị hư</value>
+  </data>
+  <data name="rbtnStatusCanceled" xml:space="preserve">
+    <value>Đã bị hủy</value>
+  </data>
+  <data name="rbtnStatusLocked" xml:space="preserve">
+    <value>Đang bị khóa</value>
+  </data>
+  <data name="rbtnStatusLost" xml:space="preserve">
+    <value>Đã bị mất</value>
+  </data>
+  <data name="rbtnStatusNormal" xml:space="preserve">
+    <value>Bình thường</value>
+  </data>
+  <data name="rbtnSttCanceled" xml:space="preserve">
+    <value>Đã Bị Hủy</value>
+  </data>
+  <data name="rbtnSttExpired" xml:space="preserve">
+    <value>Đã Hết Hạn</value>
+  </data>
+  <data name="rbtnSttLocked" xml:space="preserve">
+    <value>Đang Bị Khóa</value>
+  </data>
+  <data name="rbtnSttNormal" xml:space="preserve">
+    <value>Bình Thường</value>
+  </data>
+  <data name="rbtnWorking" xml:space="preserve">
+    <value>Đang Công Tác</value>
+  </data>
+  <data name="rbtnWorkingAbroad" xml:space="preserve">
+    <value>Đi Nước Ngoài</value>
+  </data>
+  <data name="UsrLoginHistory" xml:space="preserve">
+    <value>LỊCH SỬ ĐĂNG NHẬP</value>
+  </data>
+  <data name="btnExportData" xml:space="preserve">
+    <value>Xuất Dữ Liệu</value>
+  </data>
+  <data name="btnGenerateSerialNumber" xml:space="preserve">
+    <value>Sinh Mã Số</value>
+  </data>
+  <data name="btnImportData" xml:space="preserve">
+    <value>Tải Dữ Liệu</value>
+  </data>
+  <data name="btnSaveData" xml:space="preserve">
+    <value>Lưu Dữ Liệu</value>
+  </data>
+  <data name="cbxFilterByPrintedStatus" xml:space="preserve">
+    <value>Lọc theo trạng thái in ấn:</value>
+  </data>
+  <data name="dgvResult" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="lblBiHuy" xml:space="preserve">
+    <value>Bị hủy:</value>
+  </data>
+  <data name="lblBiKhoa" xml:space="preserve">
+    <value>Bị khóa:</value>
+  </data>
+  <data name="lblBinhThuong" xml:space="preserve">
+    <value>Bình thường:</value>
+  </data>
+  <data name="lblChuaIn" xml:space="preserve">
+    <value>Chưa in:</value>
+  </data>
+  <data name="lblChucVu" xml:space="preserve">
+    <value>Chức vụ:</value>
+  </data>
+  <data name="lblDaBiHu" xml:space="preserve">
+    <value>Đã bị hư:</value>
+  </data>
+  <data name="lblDaBiMat" xml:space="preserve">
+    <value>Đã bị mất:</value>
+  </data>
+  <data name="lblDaIn" xml:space="preserve">
+    <value>Đã in:</value>
+  </data>
+  <data name="lblDienThoai" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lblDuongDanDuLieu" xml:space="preserve">
+    <value>Đường Dẫn Tập Tin Dữ Liệu Khách Hàng:</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblHetHan" xml:space="preserve">
+    <value>Hết hạn:</value>
+  </data>
+  <data name="lblLoaiThe" xml:space="preserve">
+    <value>Loại thẻ:</value>
+  </data>
+  <data name="lblMaThanhVien" xml:space="preserve">
+    <value>Mã thành viên:</value>
+  </data>
+  <data name="lblMoTa" xml:space="preserve">
+    <value>Mô tả:</value>
+  </data>
+  <data name="lblNhapKhoaChuThePhatHanh" xml:space="preserve">
+    <value>Nhập Khóa Của Chủ Thể Phát Hành</value>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>Gửi tin nhắn cho người liên hệ.</value>
+  </data>
+  <data name="lblPartnerKey" xml:space="preserve">
+    <value>Tổ chức đồng phát hành:</value>
+  </data>
+  <data name="lblPhongBan" xml:space="preserve">
+    <value>Tổ chức:</value>
+  </data>
+  <data name="lblSoLuongTheCanPhatHanh" xml:space="preserve">
+    <value>Số lượng thẻ cần phát hành:</value>
+  </data>
+  <data name="lblTenThanhVien" xml:space="preserve">
+    <value>Tên thành viên:</value>
+  </data>
+  <data name="lblTenUngDung" xml:space="preserve">
+    <value>Tên ứng dụng:</value>
+  </data>
+  <data name="lblThemUngDung" xml:space="preserve">
+    <value>Thêm Ứng Dụng</value>
+  </data>
+  <data name="lblThoiHanThe" xml:space="preserve">
+    <value>Thời hạn thẻ:</value>
+  </data>
+  <data name="lblTongCong1" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblTongCong2" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblTongCong3" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblViTriCot_HoTen" xml:space="preserve">
+    <value>Vị trí của cột họ và tên khách hàng:</value>
+  </data>
+  <data name="lblViTriCot_SoDienThoai" xml:space="preserve">
+    <value>Vị trí của cột số điện thoại khách hàng:</value>
+  </data>
+  <data name="lblViTriCot_TenCongTy" xml:space="preserve">
+    <value>Vị trí của cột tên công ty:</value>
+  </data>
+  <data name="lblViTriCot_ThoiGianThe" xml:space="preserve">
+    <value>Vị trí của cột thời hạn thẻ:</value>
+  </data>
+  <data name="lblViTriTieuDeMoiSheet" xml:space="preserve">
+    <value>Vị trí dòng tiêu đề của mỗi sheet:</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Tích Hợp</value>
+  </data>
+  <data name="cbxReviewData" xml:space="preserve">
+    <value>Kiểm tra lại dữ liệu trước khi tiến hành tích hợp vào hệ thống.</value>
+  </data>
+  <data name="chkAutoCloseNode" xml:space="preserve">
+    <value>Tự động rút gọn danh sách.</value>
+  </data>
+  <data name="groupBoxMemberInfo" xml:space="preserve">
+    <value>Thông tin thành viên</value>
+  </data>
+  <data name="lbInfo_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Thông tin tổ chức:</value>
+  </data>
+  <data name="lbl10_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Chức vụ:</value>
+  </data>
+  <data name="lbl10_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột chức vụ:</value>
+  </data>
+  <data name="lbl10_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl11_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl11_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột điện thoại:</value>
+  </data>
+  <data name="lbl11_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl12_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl12_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột email:</value>
+  </data>
+  <data name="lbl12_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl13_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl13_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột ĐC thường trú:</value>
+  </data>
+  <data name="lbl13_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl14_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl14_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột ĐC tạm trú:</value>
+  </data>
+  <data name="lbl14_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl14_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl15_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Họ và tên:</value>
+  </data>
+  <data name="lbl15_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột họ và tên:</value>
+  </data>
+  <data name="lbl15_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl16_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl16_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột số ĐTDD:</value>
+  </data>
+  <data name="lbl16_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl17_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl17_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột email:</value>
+  </data>
+  <data name="lbl17_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl17_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl18_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl18_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột địa chỉ:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrgAcquirerManager" xml:space="preserve">
+    <value>Có thể chọn một hoặc nhiều tổ chức đồng phát hành thẻ.</value>
+  </data>
+  <data name="lbl1_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Thông tin thành viên</value>
+  </data>
+  <data name="lbl1_FrmConnectionConfig" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmIntegrateData" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmReadExcelData" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmReviewData" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl2_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Mã thành viên:</value>
+  </data>
+  <data name="lbl2_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột mã TV:</value>
+  </data>
+  <data name="lbl2_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl3_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Họ và tên đệm:</value>
+  </data>
+  <data name="lbl3_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột họ và tên đệm:</value>
+  </data>
+  <data name="lbl3_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl4_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl4_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột tên:</value>
+  </data>
+  <data name="lbl4_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl5_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl5_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột ngày sinh:</value>
+  </data>
+  <data name="lbl5_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl6_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="lbl6_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột giới tính:</value>
+  </data>
+  <data name="lbl6_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl7_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl7_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột quốc tịch:</value>
+  </data>
+  <data name="lbl7_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl8_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Công ty:</value>
+  </data>
+  <data name="lbl8_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột công ty:</value>
+  </data>
+  <data name="lbl8_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl9_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Trình độ:</value>
+  </data>
+  <data name="lbl9_FrmConnectionConfig" xml:space="preserve">
+    <value>Cột trình độ:</value>
+  </data>
+  <data name="lbl9_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lblNote_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Thêm một tổ chức mới vào hệ thống.</value>
+  </data>
+  <data name="lblNote_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Tạo thành viên mới cho tổ chức vào hệ thống.</value>
+  </data>
+  <data name="lblTitle_frmAddOrEditGroup" xml:space="preserve">
+    <value>Thêm Nhóm Tổ Chức Con</value>
+  </data>
+  <data name="lblTitle_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Nhập Thông Tin Thành Viên</value>
+  </data>
+  <data name="lbTitle_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Thêm Tổ Chức Vào Hệ Thống</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="lbl10_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_FrmEditUser" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl10_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrUserInfo" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmEditUser" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl11_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrUserInfo" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl12_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_FrmEditUser" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl12_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl12_UsrUserInfo" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrUserInfo" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl14_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl14_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_FrmAddOrEditOrg" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl17_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl1_FrmEditUser" xml:space="preserve">
+    <value>Họ và chữ lót:</value>
+  </data>
+  <data name="lbl1_UsrMemberList" xml:space="preserve">
+    <value>Chọn thông tin cá nhân của một thành viên từ hệ thống.</value>
+  </data>
+  <data name="lbl1_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_UsrUserInfo" xml:space="preserve">
+    <value>This message is depend on operating mode.</value>
+  </data>
+  <data name="lbl2_FrmEditUser" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl2_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_UsrUserInfo" xml:space="preserve">
+    <value>Họ và chữ lót:</value>
+  </data>
+  <data name="lbl3_FrmEditUser" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl3_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_UsrUserInfo" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl4_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_FrmEditUser" xml:space="preserve">
+    <value>Số CMND:</value>
+  </data>
+  <data name="lbl4_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_UsrUserInfo" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl5_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_FrmEditUser" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="lbl5_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_UsrUserInfo" xml:space="preserve">
+    <value>Số CMND:</value>
+  </data>
+  <data name="lbl6_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_FrmEditUser" xml:space="preserve">
+    <value>Nơi cấp:</value>
+  </data>
+  <data name="lbl6_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_UsrUserInfo" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="lbl7_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_FrmEditUser" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl7_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_UsrUserInfo" xml:space="preserve">
+    <value>Nơi cấp:</value>
+  </data>
+  <data name="lbl8_FrmAddOrEditOrg" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_FrmEditUser" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="lbl8_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrUserInfo" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl9_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_FrmEditUser" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl9_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_UsrUserInfo" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="MenuAppManager" xml:space="preserve">
+    <value>Ứng dụng trên thẻ</value>
+  </data>
+  <data name="MenuAttendance" xml:space="preserve">
+    <value>Quét thẻ vào/ra</value>
+  </data>
+  <data name="MenuAttendanceHistory" xml:space="preserve">
+    <value>Thống kê quét thẻ vào/ra</value>
+  </data>
+  <data name="MenuCardChip" xml:space="preserve">
+    <value>Thẻ chíp</value>
+  </data>
+  <data name="MenuCardMagnetic" xml:space="preserve">
+    <value>Thẻ từ</value>
+  </data>
+  <data name="MenuCardManager" xml:space="preserve">
+    <value>Quản lý thẻ</value>
+  </data>
+  <data name="MenuCardPerso" xml:space="preserve">
+    <value>Cấp phát thẻ</value>
+  </data>
+  <data name="MenuCardPersoManager" xml:space="preserve">
+    <value>Quản lý phát hành</value>
+  </data>
+  <data name="MenuCardStatistics" xml:space="preserve">
+    <value>Thống kê thẻ</value>
+  </data>
+  <data name="MenuChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="MenuClearCard" xml:space="preserve">
+    <value>Xóa dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuClearEmptyCard" xml:space="preserve">
+    <value>Xóa trắng thẻ...</value>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="MenuKeyManager" xml:space="preserve">
+    <value>Khóa</value>
+  </data>
+  <data name="MenuLogout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="MenuManager" xml:space="preserve">
+    <value>Quản lý</value>
+  </data>
+  <data name="MenuManual" xml:space="preserve">
+    <value>Hướng dẫn sử dụng</value>
+  </data>
+  <data name="MenuMemberManager" xml:space="preserve">
+    <value>Thành viên</value>
+  </data>
+  <data name="MenuOrgAcquirerManager" xml:space="preserve">
+    <value>Tổ chức chấp nhận thẻ</value>
+  </data>
+  <data name="MenuOrgManager" xml:space="preserve">
+    <value>Tổ chức</value>
+  </data>
+  <data name="MenuPartnerOfMasterManager" xml:space="preserve">
+    <value>Tổ chức liên kết phát hành thẻ</value>
+  </data>
+  <data name="MenuReadCard" xml:space="preserve">
+    <value>Đọc dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuRelatives" xml:space="preserve">
+    <value>Người liên hệ</value>
+  </data>
+  <data name="MenuSupport" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+  <data name="MenuSystemInfo" xml:space="preserve">
+    <value>Thông tin chương trình</value>
+  </data>
+  <data name="MenuUpdateCard" xml:space="preserve">
+    <value>Đồng bộ dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuUpdateUser" xml:space="preserve">
+    <value>Cập nhật thông tin cá nhân</value>
+  </data>
+  <data name="MenuUserManager" xml:space="preserve">
+    <value>Nhóm - tài khoản</value>
+  </data>
+  <data name="MenuUtilities" xml:space="preserve">
+    <value>Tiện ích</value>
+  </data>
+  <data name="MenuVoucherCard" xml:space="preserve">
+    <value>Quản lý phiếu</value>
+  </data>
+  <data name="MenuVoucherCardConfigRule" xml:space="preserve">
+    <value>Cấu hình phiếu</value>
+  </data>
+  <data name="MenuVoucherCardCreateRule" xml:space="preserve">
+    <value>Tạo phiếu</value>
+  </data>
+  <data name="MenuWirteKey" xml:space="preserve">
+    <value>Cài khóa và Nhập thẻ...</value>
+  </data>
+  <data name="colCardType" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="colContactName" xml:space="preserve">
+    <value>Tên Người Liên Hệ</value>
+  </data>
+  <data name="colDateIn" xml:space="preserve">
+    <value>Ngày giờ vào</value>
+  </data>
+  <data name="colDateOut" xml:space="preserve">
+    <value>Ngày Giờ Ra</value>
+  </data>
+  <data name="colFirstName1" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="colImageIn" xml:space="preserve">
+    <value>Ảnh Vào</value>
+  </data>
+  <data name="colImageOut" xml:space="preserve">
+    <value>Ảnh Ra</value>
+  </data>
+  <data name="colImportedOn" xml:space="preserve">
+    <value>Thời Gian Nhập</value>
+  </data>
+  <data name="colLastName1" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="colMemberCode" xml:space="preserve">
+    <value>Mã Thành Viên</value>
+  </data>
+  <data name="colMemberCode1" xml:space="preserve">
+    <value>Mã NV</value>
+  </data>
+  <data name="colMemberFullName" xml:space="preserve">
+    <value>Họ Và Tên</value>
+  </data>
+  <data name="colPersoStatus" xml:space="preserve">
+    <value>TT Phát Hành</value>
+  </data>
+  <data name="colPhone" xml:space="preserve">
+    <value>Số ĐTDD</value>
+  </data>
+  <data name="colResult" xml:space="preserve">
+    <value>Kết Quả</value>
+  </data>
+  <data name="colSerialNumber" xml:space="preserve">
+    <value>Mã Thẻ</value>
+  </data>
+  <data name="colSttBroken" xml:space="preserve">
+    <value>Đã Bị Hư</value>
+  </data>
+  <data name="colSttLost" xml:space="preserve">
+    <value>Đã Bị Mất</value>
+  </data>
+  <data name="colSttPersonalized" xml:space="preserve">
+    <value>Đã Phát Hành</value>
+  </data>
+  <data name="colTitle" xml:space="preserve">
+    <value>Chức Danh</value>
+  </data>
+  <data name="colType" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="btnCreateNew" xml:space="preserve">
+    <value>Tạo tài khoản đăng nhập cho cá nhân không phải là thành viên.</value>
+  </data>
+  <data name="btnUseExisting" xml:space="preserve">
+    <value>Tạo tài khoản đăng nhập cho một thành viên của nhà trường</value>
+  </data>
+  <data name="colActive" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="ColActiveCode" xml:space="preserve">
+    <value>ActiveCode</value>
+  </data>
+  <data name="colActiveCodeNew" xml:space="preserve">
+    <value>ActiveCodeNew</value>
+  </data>
+  <data name="colAppName" xml:space="preserve">
+    <value>Tên Ứng Dụng</value>
+  </data>
+  <data name="colBirthDate" xml:space="preserve">
+    <value>Ngày Sinh</value>
+  </data>
+  <data name="colCardStatus" xml:space="preserve">
+    <value>TT Thẻ</value>
+  </data>
+  <data name="colCompany" xml:space="preserve">
+    <value>Công Ty</value>
+  </data>
+  <data name="colCompanyName" xml:space="preserve">
+    <value>Công Ty</value>
+  </data>
+  <data name="colCustomerName" xml:space="preserve">
+    <value>Họ &amp; Tên</value>
+  </data>
+  <data name="colDegree" xml:space="preserve">
+    <value>Trình Độ</value>
+  </data>
+  <data name="colDescription" xml:space="preserve">
+    <value>Mô Tả</value>
+  </data>
+  <data name="colEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="colExpirationDate" xml:space="preserve">
+    <value>Ngày Hết Hạn</value>
+  </data>
+  <data name="colExpireDate" xml:space="preserve">
+    <value>Ngày Hết Hạn</value>
+  </data>
+  <data name="colExpiredTime" xml:space="preserve">
+    <value>Thời Hạn Thẻ</value>
+  </data>
+  <data name="colFailedReason" xml:space="preserve">
+    <value>Nguyên Nhân Thất Bại</value>
+  </data>
+  <data name="colFirstName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="colFullName" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="colGroupName" xml:space="preserve">
+    <value>Tên Nhóm</value>
+  </data>
+  <data name="colIsMember" xml:space="preserve">
+    <value>Là Thành Viên</value>
+  </data>
+  <data name="colLastName" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="colLoginTime" xml:space="preserve">
+    <value>Thời Gian Đăng Nhập</value>
+  </data>
+  <data name="colMasterCode" xml:space="preserve">
+    <value>MasterCode</value>
+  </data>
+  <data name="colMemberName" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="colNotes" xml:space="preserve">
+    <value>Ghi Chú</value>
+  </data>
+  <data name="colOrgName" xml:space="preserve">
+    <value>Tên Tổ Chức</value>
+  </data>
+  <data name="colPermanentAddress" xml:space="preserve">
+    <value>Địa Chỉ Thường Trú</value>
+  </data>
+  <data name="colPersoDate" xml:space="preserve">
+    <value>Ngày Phát Hành</value>
+  </data>
+  <data name="colPhoneNo" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="colPhoneNumber" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="colPhysicalStatus" xml:space="preserve">
+    <value>Trạng Thái Thẻ</value>
+  </data>
+  <data name="colPinCode" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="colPinCodeNew" xml:space="preserve">
+    <value>PinCodeNew</value>
+  </data>
+  <data name="colPosition" xml:space="preserve">
+    <value>Chức Vụ</value>
+  </data>
+  <data name="colPrintedStatus" xml:space="preserve">
+    <value>Trạng Thái In</value>
+  </data>
+  <data name="colSerialCard" xml:space="preserve">
+    <value>Mã Số Thẻ</value>
+  </data>
+  <data name="colSheetName" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="colStartDate" xml:space="preserve">
+    <value>Ngày Phát Hành</value>
+  </data>
+  <data name="colSttCanceled" xml:space="preserve">
+    <value>Đã Bị Hủy</value>
+  </data>
+  <data name="colSttLocked" xml:space="preserve">
+    <value>Đã Bị Khóa</value>
+  </data>
+  <data name="colSubOrgName" xml:space="preserve">
+    <value>Tổ Chức Con</value>
+  </data>
+  <data name="colTemporaryAddress" xml:space="preserve">
+    <value>Địa Chỉ Tạm Trú</value>
+  </data>
+  <data name="colTrackData" xml:space="preserve">
+    <value>Track Từ</value>
+  </data>
+  <data name="colTrackOneData" xml:space="preserve">
+    <value>Dữ Liệu Track 1</value>
+  </data>
+  <data name="colTypeCrypto" xml:space="preserve">
+    <value>TypeCrypto</value>
+  </data>
+  <data name="colUserName" xml:space="preserve">
+    <value>Tên Đăng Nhập</value>
+  </data>
+  <data name="colWorking" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="lbl1_FrmAddUser" xml:space="preserve">
+    <value>Tạo tài khoản mới cho một cá nhân là thành viên hoặc không là thành viên vào hệ thống.</value>
+  </data>
+  <data name="lbl1_UsrAccountInfo" xml:space="preserve">
+    <value>Nhập các thông tin của tài khoản. Lưu ý: tên đăng nhập có chiều dài tối đa 255 ký tự và không được đặt trùng với các tài khoản hiện có. Mật khẩu phải có độ mạnh tối thiểu ở mức độ trung bình. Để tạo được một mật khẩu mạnh, bạn có thể làm theo các gợi ý dưới đây:
+
+- Chiều dài từ 8 đến 16 ký tự
+- Có ít nhất một ký tự viết hoa (A, B, C... Z)
+- Có ít nhất một ký tự viết thường (a, b, c... z)
+- Có ít nhất một ký tự số (1, 2, 3... 9)
+- Có ít nhất một ký tự đặc biệt (@, #, $, %...)</value>
+  </data>
+  <data name="lbl2_lbl1_FrmIntegrateData" xml:space="preserve">
+    <value>Danh sách thành viên bị lỗi khi cập nhật vào hệ thống.</value>
+  </data>
+  <data name="lbl2_UsrAccountInfo" xml:space="preserve">
+    <value>Tên đăng nhập:</value>
+  </data>
+  <data name="lbl3_UsrAccountInfo" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="lbl4_UsrAccountInfo" xml:space="preserve">
+    <value>Nhập lại:</value>
+  </data>
+  <data name="lbl5_UsrAccountInfo" xml:space="preserve">
+    <value>Nhóm tài khoản:</value>
+  </data>
+  <data name="PartnerCode" xml:space="preserve">
+    <value>PartnerCode</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="btnCancel1" xml:space="preserve">
+    <value>Hủy Bỏ</value>
+  </data>
+  <data name="btnClose1" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="btnConfirm1" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="btnCreateNew1" xml:space="preserve">
+    <value>Tạo tài khoản đăng nhập cho cá nhân không phải là thành viên.</value>
+  </data>
+  <data name="btnExportData1" xml:space="preserve">
+    <value>Xuất Dữ Liệu</value>
+  </data>
+  <data name="btnGenerateSerialNumber1" xml:space="preserve">
+    <value>Sinh Mã Số</value>
+  </data>
+  <data name="btnImportData1" xml:space="preserve">
+    <value>Tải Dữ Liệu</value>
+  </data>
+  <data name="btnListDevices1" xml:space="preserve">
+    <value>Tìm Thiết Bị</value>
+  </data>
+  <data name="btnLogin1" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
+  <data name="btnNext1" xml:space="preserve">
+    <value>Tích Hợp</value>
+  </data>
+  <data name="btnOK1" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="btnPause1" xml:space="preserve">
+    <value>Tạm Ngưng</value>
+  </data>
+  <data name="btnRefresh1" xml:space="preserve">
+    <value>Làm Mới</value>
+  </data>
+  <data name="btnSave1" xml:space="preserve">
+    <value>Lưu Lại</value>
+  </data>
+  <data name="btnSaveData1" xml:space="preserve">
+    <value>Lưu Dữ Liệu</value>
+  </data>
+  <data name="btnStart1" xml:space="preserve">
+    <value>Bắt Đầu</value>
+  </data>
+  <data name="btnUseExisting1" xml:space="preserve">
+    <value>Tạo tài khoản đăng nhập cho một thành viên của nhà trường</value>
+  </data>
+  <data name="cbxDontAskLater1" xml:space="preserve">
+    <value>Không cần hỏi ở những lần thao tác sau.</value>
+  </data>
+  <data name="cbxFilterByCardType1" xml:space="preserve">
+    <value>Lọc theo loại thẻ:</value>
+  </data>
+  <data name="cbxFilterByChangedType1" xml:space="preserve">
+    <value>Lọc theo kiểu thay đổi:</value>
+  </data>
+  <data name="cbxFilterByDegree1" xml:space="preserve">
+    <value>Lọc theo trình độ:</value>
+  </data>
+  <data name="cbxFilterByLoginResult1" xml:space="preserve">
+    <value>Lọc theo kết quả:</value>
+  </data>
+  <data name="cbxFilterByLoginTime1" xml:space="preserve">
+    <value>Lọc theo khoảng thời gian:</value>
+  </data>
+  <data name="cbxFilterByMemberCode1" xml:space="preserve">
+    <value>Lọc theo mã thành viên:</value>
+  </data>
+  <data name="cbxFilterByMemberName1" xml:space="preserve">
+    <value>Lọc theo tên thành viên:</value>
+  </data>
+  <data name="cbxFilterByPersoDate1" xml:space="preserve">
+    <value>Lọc theo ngày phát hành:</value>
+  </data>
+  <data name="cbxFilterByPersoStatus1" xml:space="preserve">
+    <value>Lọc theo trạng thái:</value>
+  </data>
+  <data name="cbxFilterByPersoStatusMember1" xml:space="preserve">
+    <value>Lọc theo trạng thái phát hành:</value>
+  </data>
+  <data name="cbxFilterByPhysicalStt1" xml:space="preserve">
+    <value>Lọc theo trạng thái vật lý:</value>
+  </data>
+  <data name="cbxFilterByPrintedStatus1" xml:space="preserve">
+    <value>Lọc theo trạng thái in ấn:</value>
+  </data>
+  <data name="cbxFilterByUserName1" xml:space="preserve">
+    <value>Lọc theo tài khoản:</value>
+  </data>
+  <data name="cbxFilterByUserStatus1" xml:space="preserve">
+    <value>Lọc theo trạng thái tài khoản:</value>
+  </data>
+  <data name="cbxFilterByWorkingStatus1" xml:space="preserve">
+    <value>Lọc theo tình trạng công tác:</value>
+  </data>
+  <data name="cbxHideAfterTagRemoved1" xml:space="preserve">
+    <value>Đóng hộp thoại này sau khi đưa thẻ ra khỏi thiết bị đọc.</value>
+  </data>
+  <data name="cbxOnlyShowRecordsNeedToUpdate1" xml:space="preserve">
+    <value>Chỉ hiển thị những lượt phát hành cần cập nhật dữ liệu thành viên</value>
+  </data>
+  <data name="cbxReviewData1" xml:space="preserve">
+    <value>Kiểm tra lại dữ liệu trước khi tiến hành tích hợp vào hệ thống.</value>
+  </data>
+  <data name="cbxShowCanceledPersoes1" xml:space="preserve">
+    <value>Hiển thị những lượt phát hành đã bị hủy</value>
+  </data>
+  <data name="cbxShowInactiveUsers1" xml:space="preserve">
+    <value>Hiển thị những tài khoản đã bị hủy</value>
+  </data>
+  <data name="cbxShowTeacherColumns1" xml:space="preserve">
+    <value>Hiện đầy đủ thông tin của thành viên</value>
+  </data>
+  <data name="chkAutoCloseNode1" xml:space="preserve">
+    <value>Tự động rút gọn danh sách.</value>
+  </data>
+  <data name="colActive1" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="ColActiveCode1" xml:space="preserve">
+    <value>ActiveCode</value>
+  </data>
+  <data name="colActiveCodeNew1" xml:space="preserve">
+    <value>ActiveCodeNew</value>
+  </data>
+  <data name="colAppName1" xml:space="preserve">
+    <value>Tên Ứng Dụng</value>
+  </data>
+  <data name="colBirthDate1" xml:space="preserve">
+    <value>Ngày Sinh</value>
+  </data>
+  <data name="colCardStatus1" xml:space="preserve">
+    <value>TT Thẻ</value>
+  </data>
+  <data name="colCardType1" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="colCompany1" xml:space="preserve">
+    <value>Công Ty</value>
+  </data>
+  <data name="colCompanyName1" xml:space="preserve">
+    <value>Công Ty</value>
+  </data>
+  <data name="colContactName1" xml:space="preserve">
+    <value>Tên Người Liên Hệ</value>
+  </data>
+  <data name="colCustomerName1" xml:space="preserve">
+    <value>Họ &amp; Tên</value>
+  </data>
+  <data name="colDateIn1" xml:space="preserve">
+    <value>Ngày giờ vào</value>
+  </data>
+  <data name="colDateOut1" xml:space="preserve">
+    <value>Ngày Giờ Ra</value>
+  </data>
+  <data name="colDegree1" xml:space="preserve">
+    <value>Trình Độ</value>
+  </data>
+  <data name="colDescription1" xml:space="preserve">
+    <value>Mô Tả</value>
+  </data>
+  <data name="colEmail1" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="colExpirationDate1" xml:space="preserve">
+    <value>Ngày Hết Hạn</value>
+  </data>
+  <data name="colExpireDate1" xml:space="preserve">
+    <value>Ngày Hết Hạn</value>
+  </data>
+  <data name="colExpiredTime1" xml:space="preserve">
+    <value>Thời Hạn Thẻ</value>
+  </data>
+  <data name="colFailedReason1" xml:space="preserve">
+    <value>Nguyên Nhân Thất Bại</value>
+  </data>
+  <data name="colFirstName11" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="colFirstName2" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="colFullName1" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="colGroupName1" xml:space="preserve">
+    <value>Tên Nhóm</value>
+  </data>
+  <data name="colImageIn1" xml:space="preserve">
+    <value>Ảnh Vào</value>
+  </data>
+  <data name="colImageOut1" xml:space="preserve">
+    <value>Ảnh Ra</value>
+  </data>
+  <data name="colImportedOn1" xml:space="preserve">
+    <value>Thời Gian Nhập</value>
+  </data>
+  <data name="colIsMember1" xml:space="preserve">
+    <value>Là Thành Viên</value>
+  </data>
+  <data name="colLastName11" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="colLastName2" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="colLoginTime1" xml:space="preserve">
+    <value>Thời Gian Đăng Nhập</value>
+  </data>
+  <data name="colMasterCode1" xml:space="preserve">
+    <value>MasterCode</value>
+  </data>
+  <data name="colMemberCode11" xml:space="preserve">
+    <value>Mã NV</value>
+  </data>
+  <data name="colMemberCode2" xml:space="preserve">
+    <value>Mã Thành Viên</value>
+  </data>
+  <data name="colMemberFullName1" xml:space="preserve">
+    <value>Họ Và Tên</value>
+  </data>
+  <data name="colMemberName1" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="colNotes1" xml:space="preserve">
+    <value>Ghi Chú</value>
+  </data>
+  <data name="colOrgName1" xml:space="preserve">
+    <value>Tên Tổ Chức</value>
+  </data>
+  <data name="colPermanentAddress1" xml:space="preserve">
+    <value>Địa Chỉ Thường Trú</value>
+  </data>
+  <data name="colPersoDate1" xml:space="preserve">
+    <value>Ngày Phát Hành</value>
+  </data>
+  <data name="colPersoStatus1" xml:space="preserve">
+    <value>TT Phát Hành</value>
+  </data>
+  <data name="colPhone1" xml:space="preserve">
+    <value>Số ĐTDD</value>
+  </data>
+  <data name="colPhoneNo1" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="colPhoneNumber1" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="colPhysicalStatus1" xml:space="preserve">
+    <value>Trạng Thái Thẻ</value>
+  </data>
+  <data name="colPinCode1" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="colPinCodeNew1" xml:space="preserve">
+    <value>PinCodeNew</value>
+  </data>
+  <data name="colPosition1" xml:space="preserve">
+    <value>Chức Vụ</value>
+  </data>
+  <data name="colPrintedStatus1" xml:space="preserve">
+    <value>Trạng Thái In</value>
+  </data>
+  <data name="colResult1" xml:space="preserve">
+    <value>Kết Quả</value>
+  </data>
+  <data name="colSerialCard1" xml:space="preserve">
+    <value>Mã Số Thẻ</value>
+  </data>
+  <data name="colSerialNumber1" xml:space="preserve">
+    <value>Mã Thẻ</value>
+  </data>
+  <data name="colSheetName1" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="colStartDate1" xml:space="preserve">
+    <value>Ngày Phát Hành</value>
+  </data>
+  <data name="colSttBroken1" xml:space="preserve">
+    <value>Đã Bị Hư</value>
+  </data>
+  <data name="colSttCanceled1" xml:space="preserve">
+    <value>Đã Bị Hủy</value>
+  </data>
+  <data name="colSttLocked1" xml:space="preserve">
+    <value>Đã Bị Khóa</value>
+  </data>
+  <data name="colSttLost1" xml:space="preserve">
+    <value>Đã Bị Mất</value>
+  </data>
+  <data name="colSttPersonalized1" xml:space="preserve">
+    <value>Đã Phát Hành</value>
+  </data>
+  <data name="colSubOrgName1" xml:space="preserve">
+    <value>Tổ Chức Con</value>
+  </data>
+  <data name="colTemporaryAddress1" xml:space="preserve">
+    <value>Địa Chỉ Tạm Trú</value>
+  </data>
+  <data name="colTitle1" xml:space="preserve">
+    <value>Chức Danh</value>
+  </data>
+  <data name="colTrackData1" xml:space="preserve">
+    <value>Track Từ</value>
+  </data>
+  <data name="colTrackOneData1" xml:space="preserve">
+    <value>Dữ Liệu Track 1</value>
+  </data>
+  <data name="colType1" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="colTypeCrypto1" xml:space="preserve">
+    <value>TypeCrypto</value>
+  </data>
+  <data name="colUserName1" xml:space="preserve">
+    <value>Tên Đăng Nhập</value>
+  </data>
+  <data name="colWorking1" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="dgvResult1" xml:space="preserve">
+    <value>Loại Thẻ</value>
+  </data>
+  <data name="FrmAboutSworld1" xml:space="preserve">
+    <value>Giới Thiệu sWorld</value>
+  </data>
+  <data name="FrmChangePassword1" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="FrmChangeUserGroup1" xml:space="preserve">
+    <value>Chọn Nhóm Mới</value>
+  </data>
+  <data name="FrmChooseExpDate1" xml:space="preserve">
+    <value>Chọn Ngày Hết Hạn</value>
+  </data>
+  <data name="FrmClearCardData1" xml:space="preserve">
+    <value>Xóa Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmConfigService1" xml:space="preserve">
+    <value>Cấu Hình Địa Chỉ Máy Chủ</value>
+  </data>
+  <data name="FrmConfirmChangeStatus1" xml:space="preserve">
+    <value>Xác Nhận</value>
+  </data>
+  <data name="FrmConfirmClearData1" xml:space="preserve">
+    <value>Xác Nhận Xóa Dữ liệu</value>
+  </data>
+  <data name="FrmGroupDetail1" xml:space="preserve">
+    <value>Title is depend on operating mode</value>
+  </data>
+  <data name="FrmImportCard1" xml:space="preserve">
+    <value>Nhập Thẻ</value>
+  </data>
+  <data name="FrmLogin1" xml:space="preserve">
+    <value>sWorld - Đăng Nhập</value>
+  </data>
+  <data name="FrmMemberData1" xml:space="preserve">
+    <value>Thông Tin Thành Viên</value>
+  </data>
+  <data name="FrmPersoProcess1" xml:space="preserve">
+    <value>Cấp Thẻ Cho Thành Viên</value>
+  </data>
+  <data name="FrmPieChartSetup1" xml:space="preserve">
+    <value>Thiết Lập Đồ Thị</value>
+  </data>
+  <data name="FrmReadCardData1" xml:space="preserve">
+    <value>Đọc Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmResetPassword1" xml:space="preserve">
+    <value>Cài Lại Mật Khẩu</value>
+  </data>
+  <data name="FrmUpdateCardData1" xml:space="preserve">
+    <value>Đồng Bộ Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="FrmUpdatePersonalInfo1" xml:space="preserve">
+    <value>Cập Nhật Thông Tin Cá Nhân</value>
+  </data>
+  <data name="groupBoxMarginPieChartSetup1" xml:space="preserve">
+    <value>Canh lề</value>
+  </data>
+  <data name="groupBoxMemberInfo1" xml:space="preserve">
+    <value>Thông tin thành viên</value>
+  </data>
+  <data name="groupBoxPersoStatusStatistics1" xml:space="preserve">
+    <value>Thống kê theo tình trạng phát hành</value>
+  </data>
+  <data name="groupBoxPhysicalStatistics1" xml:space="preserve">
+    <value>Thống kê theo tình trạng vật lý</value>
+  </data>
+  <data name="groupBoxShadingPieChartSetup1" xml:space="preserve">
+    <value>Kiểu đổ bóng</value>
+  </data>
+  <data name="labelCompanyName1" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="labelCopyright1" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="lbInfo_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Thông tin tổ chức:</value>
+  </data>
+  <data name="lbl10_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Chức vụ:</value>
+  </data>
+  <data name="lbl10_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột chức vụ:</value>
+  </data>
+  <data name="lbl10_FrmEditUser1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl10_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrUserInfo1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl11_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột điện thoại:</value>
+  </data>
+  <data name="lbl11_FrmEditUser1" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl11_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrUserInfo1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl12_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl12_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột email:</value>
+  </data>
+  <data name="lbl12_FrmEditUser1" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl12_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl12_UsrUserInfo1" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl13_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>ĐC tạm trú:</value>
+  </data>
+  <data name="lbl13_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột ĐC thường trú:</value>
+  </data>
+  <data name="lbl13_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Người liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl13_UsrUserInfo1" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl14_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl14_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>ĐC thường trú:</value>
+  </data>
+  <data name="lbl14_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột ĐC tạm trú:</value>
+  </data>
+  <data name="lbl14_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl14_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Email liên hệ:</value>
+  </data>
+  <data name="lbl14_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Họ và tên:</value>
+  </data>
+  <data name="lbl15_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột họ và tên:</value>
+  </data>
+  <data name="lbl15_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Điện thoại liên hệ:</value>
+  </data>
+  <data name="lbl15_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl16_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột số ĐTDD:</value>
+  </data>
+  <data name="lbl16_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>ĐTDD liên hệ:</value>
+  </data>
+  <data name="lbl16_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl17_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl17_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl17_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột email:</value>
+  </data>
+  <data name="lbl17_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl17_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Ghi chú:</value>
+  </data>
+  <data name="lbl18_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl18_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột địa chỉ:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrgAcquirerManager1" xml:space="preserve">
+    <value>Có thể chọn một hoặc nhiều tổ chức đồng phát hành thẻ.</value>
+  </data>
+  <data name="lbl1_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Thông tin thành viên</value>
+  </data>
+  <data name="lbl1_FrmAddUser1" xml:space="preserve">
+    <value>Tạo tài khoản mới cho một cá nhân là thành viên hoặc không là thành viên vào hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmConnectionConfig1" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmEditUser1" xml:space="preserve">
+    <value>Họ và chữ lót:</value>
+  </data>
+  <data name="lbl1_FrmIntegrateData1" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmReadExcelData1" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_FrmReviewData1" xml:space="preserve">
+    <value>Phân tích dữ liệu từ tập tin MS Excel và đồng bộ với cơ sở dữ liệu của hệ thống.</value>
+  </data>
+  <data name="lbl1_UsrAccountInfo1" xml:space="preserve">
+    <value>Nhập các thông tin của tài khoản. Lưu ý: tên đăng nhập có chiều dài tối đa 255 ký tự và không được đặt trùng với các tài khoản hiện có. Mật khẩu phải có độ mạnh tối thiểu ở mức độ trung bình. Để tạo được một mật khẩu mạnh, bạn có thể làm theo các gợi ý dưới đây:
+
+- Chiều dài từ 8 đến 16 ký tự
+- Có ít nhất một ký tự viết hoa (A, B, C... Z)
+- Có ít nhất một ký tự viết thường (a, b, c... z)
+- Có ít nhất một ký tự số (1, 2, 3... 9)
+- Có ít nhất một ký tự đặc biệt (@, #, $, %...)</value>
+  </data>
+  <data name="lbl1_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_UsrMemberList1" xml:space="preserve">
+    <value>Chọn thông tin cá nhân của một thành viên từ hệ thống.</value>
+  </data>
+  <data name="lbl1_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Mã tổ chức:</value>
+  </data>
+  <data name="lbl1_UsrUserInfo1" xml:space="preserve">
+    <value>This message is depend on operating mode.</value>
+  </data>
+  <data name="lbl2_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Mã thành viên:</value>
+  </data>
+  <data name="lbl2_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột mã TV:</value>
+  </data>
+  <data name="lbl2_FrmEditUser1" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl2_lbl1_FrmIntegrateData1" xml:space="preserve">
+    <value>Danh sách thành viên bị lỗi khi cập nhật vào hệ thống.</value>
+  </data>
+  <data name="lbl2_UsrAccountInfo1" xml:space="preserve">
+    <value>Tên đăng nhập:</value>
+  </data>
+  <data name="lbl2_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Tên tổ chức:</value>
+  </data>
+  <data name="lbl2_UsrUserInfo1" xml:space="preserve">
+    <value>Họ và chữ lót:</value>
+  </data>
+  <data name="lbl3_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Họ và tên đệm:</value>
+  </data>
+  <data name="lbl3_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột họ và tên đệm:</value>
+  </data>
+  <data name="lbl3_FrmEditUser1" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl3_UsrAccountInfo1" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="lbl3_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="lbl3_UsrUserInfo1" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl4_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Tên:</value>
+  </data>
+  <data name="lbl4_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột tên:</value>
+  </data>
+  <data name="lbl4_FrmEditUser1" xml:space="preserve">
+    <value>Số CMND:</value>
+  </data>
+  <data name="lbl4_UsrAccountInfo1" xml:space="preserve">
+    <value>Nhập lại:</value>
+  </data>
+  <data name="lbl4_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Vùng/Miền:</value>
+  </data>
+  <data name="lbl4_UsrUserInfo1" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl5_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl5_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột ngày sinh:</value>
+  </data>
+  <data name="lbl5_FrmEditUser1" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="lbl5_UsrAccountInfo1" xml:space="preserve">
+    <value>Nhóm tài khoản:</value>
+  </data>
+  <data name="lbl5_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Thành phố:</value>
+  </data>
+  <data name="lbl5_UsrUserInfo1" xml:space="preserve">
+    <value>Số CMND:</value>
+  </data>
+  <data name="lbl6_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="lbl6_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột giới tính:</value>
+  </data>
+  <data name="lbl6_FrmEditUser1" xml:space="preserve">
+    <value>Nơi cấp:</value>
+  </data>
+  <data name="lbl6_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="lbl6_UsrUserInfo1" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="lbl7_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Quốc tịch:</value>
+  </data>
+  <data name="lbl7_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột quốc tịch:</value>
+  </data>
+  <data name="lbl7_FrmEditUser1" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl7_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Mã nước:</value>
+  </data>
+  <data name="lbl7_UsrUserInfo1" xml:space="preserve">
+    <value>Nơi cấp:</value>
+  </data>
+  <data name="lbl8_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Công ty:</value>
+  </data>
+  <data name="lbl8_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột công ty:</value>
+  </data>
+  <data name="lbl8_FrmEditUser1" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="lbl8_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrUserInfo1" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="lbl9_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Trình độ:</value>
+  </data>
+  <data name="lbl9_FrmConnectionConfig1" xml:space="preserve">
+    <value>Cột trình độ:</value>
+  </data>
+  <data name="lbl9_FrmEditUser1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl9_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl9_UsrUserInfo1" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="lblAdressService1" xml:space="preserve">
+    <value>Địa chỉ máy chủ:</value>
+  </data>
+  <data name="lblAnglePieChartSetup1" xml:space="preserve">
+    <value>Góc xoay:</value>
+  </data>
+  <data name="lblAreSureConfirmClearData1" xml:space="preserve">
+    <value>Bạn có chắc muốn xóa dữ liệu trên thẻ này không? Lưu ý là việc này đồng nghĩa với việc lượt phát hành thẻ tương ứng (nếu có) sẽ bị hủy.</value>
+  </data>
+  <data name="lblBiHuy1" xml:space="preserve">
+    <value>Bị hủy:</value>
+  </data>
+  <data name="lblBiKhoa1" xml:space="preserve">
+    <value>Bị khóa:</value>
+  </data>
+  <data name="lblBinhThuong1" xml:space="preserve">
+    <value>Bình thường:</value>
+  </data>
+  <data name="lblChangePassUserCurrent1" xml:space="preserve">
+    <value>Thay đổi mật khẩu của người dùng hiện tại</value>
+  </data>
+  <data name="lblChangePassword1" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="lblCheckFunctionforUser1" xml:space="preserve">
+    <value>Đánh dấu chọn vào các chức năng mà bạn cho phép các tài khoản trong nhóm này được quyền thực hiện. Việc cấp quyền cần được xem xét cẩn thận.</value>
+  </data>
+  <data name="lblChooseNewGroup1" xml:space="preserve">
+    <value>Chọn một nhóm mới trong khung bên dưới rồi nhấn "Xác Nhận".</value>
+  </data>
+  <data name="lblChooseReader1" xml:space="preserve">
+    <value>Chọn thiết bị đọc thẻ:</value>
+  </data>
+  <data name="lblChooseSubjectPerso1" xml:space="preserve">
+    <value>Chọn chủ thể phát hành thẻ:</value>
+  </data>
+  <data name="lblChuaIn1" xml:space="preserve">
+    <value>Chưa in:</value>
+  </data>
+  <data name="lblChucVu1" xml:space="preserve">
+    <value>Chức vụ:</value>
+  </data>
+  <data name="lblClearCardData1" xml:space="preserve">
+    <value>Xóa Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblColorEdgePieChartSetup1" xml:space="preserve">
+    <value>Kiểu màu cạnh:</value>
+  </data>
+  <data name="lblConfigService1" xml:space="preserve">
+    <value>Để cấu hình địa chỉ máy chủ sWorld, vui lòng nhập thông số vào khung bên dưới rồi nhấn "Lưu Lại".</value>
+  </data>
+  <data name="lblConfimMessage1" xml:space="preserve">
+    <value>[Confirmation Message]</value>
+  </data>
+  <data name="lblCreateNewPass1" xml:space="preserve">
+    <value>Tạo một mật khẩu mới cho người dùng đã chọn</value>
+  </data>
+  <data name="lblCurrentPass1" xml:space="preserve">
+    <value>Mật khẩu hiện tại:</value>
+  </data>
+  <data name="lblCurrentStatus1" xml:space="preserve">
+    <value>Trạng thái hiện tại:</value>
+  </data>
+  <data name="lblDaBiHu1" xml:space="preserve">
+    <value>Đã bị hư:</value>
+  </data>
+  <data name="lblDaBiMat1" xml:space="preserve">
+    <value>Đã bị mất:</value>
+  </data>
+  <data name="lblDaIn1" xml:space="preserve">
+    <value>Đã in:</value>
+  </data>
+  <data name="lblDienThoai1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lblDownPieChartSetup1" xml:space="preserve">
+    <value>Dưới:</value>
+  </data>
+  <data name="lblDuongDanDuLieu1" xml:space="preserve">
+    <value>Đường Dẫn Tập Tin Dữ Liệu Khách Hàng:</value>
+  </data>
+  <data name="lblEdgePieChartSetup1" xml:space="preserve">
+    <value>Độ rộng cạnh:</value>
+  </data>
+  <data name="lblEmail1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblFrom1" xml:space="preserve">
+    <value>lblFrom</value>
+  </data>
+  <data name="lblGuiChooseExpDate1" xml:space="preserve">
+    <value>Ngày hết hạn phải trễ hơn ngày hiện tại. Thời điểm hết hạn của lượt phát hành sẽ là 0 giờ của ngày mà bạn chọn.</value>
+  </data>
+  <data name="lblGuiChooseReader1" xml:space="preserve">
+    <value>Nếu thiết bị của bạn không được liệt kê trong khung trên, hãy đảm bảo thiết bị đã được kết nối đúng cách với máy tính. Sau đó, nhấn nút "Tìm Thiết Bị".</value>
+  </data>
+  <data name="lblGuiClearCardData1" xml:space="preserve">
+    <value>Quét thẻ để xóa dữ liệu của tất cả ứng dụng trên thẻ và phục hồi khóa mặc định.</value>
+  </data>
+  <data name="lblGUIMemberData1" xml:space="preserve">
+    <value>Thông tin của thành viên được lưu trong thẻ.</value>
+  </data>
+  <data name="lblGuiPersoProcess1" xml:space="preserve">
+    <value>Quét thẻ để cấp thẻ cho thành viên đang được chọn, đồng thời ghi dữ liệu của thành viên vào thẻ.</value>
+  </data>
+  <data name="lblGuiReadCardData1" xml:space="preserve">
+    <value>Quét thẻ để đọc dữ liệu thành viên lưu trong thẻ.</value>
+  </data>
+  <data name="lblGuiUpdateCardData1" xml:space="preserve">
+    <value>Quét thẻ để kiểm tra và đồng bộ dữ liệu các ứng dụng trên thẻ nếu có sự thay đổi</value>
+  </data>
+  <data name="lblHeightPieChartSetup1" xml:space="preserve">
+    <value>Chiều cao:</value>
+  </data>
+  <data name="lblHetHan1" xml:space="preserve">
+    <value>Hết hạn:</value>
+  </data>
+  <data name="lblImportCard1" xml:space="preserve">
+    <value>Nhập Thẻ</value>
+  </data>
+  <data name="lblImportInfobaseGroup1" xml:space="preserve">
+    <value>Nhập các thông tin cơ bản của nhóm. Lưu ý: tên nhóm có chiều dài tối đa 255 ký tự và không được đặt trùng với các nhóm hiện có.</value>
+  </data>
+  <data name="lblInstruction1" xml:space="preserve">
+    <value>Hãy nhập các trường bên dưới để thay đổi mật khẩu. Mật khẩu mới phải có độ mạnh tối thiểu ở mức độ trung bình.</value>
+  </data>
+  <data name="lblIsLoading1" xml:space="preserve">
+    <value>Đang tải dữ liệu, vui lòng chờ...</value>
+  </data>
+  <data name="lblLeftAreaTitle1" xml:space="preserve">
+    <value>DANH SÁCH NHÓM</value>
+  </data>
+  <data name="lblLeftAreaTitleforListPartner1" xml:space="preserve">
+    <value>DANH SÁCH ĐỐI TÁC</value>
+  </data>
+  <data name="lblLeftPieChartSetup1" xml:space="preserve">
+    <value>Trái:</value>
+  </data>
+  <data name="lblListMemberWatingIssueCard1" xml:space="preserve">
+    <value>Danh sách thành viên chờ cấp thẻ:</value>
+  </data>
+  <data name="lblListResultClearCardData1" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultImportCardData1" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultReadCardData1" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblListResultUpdateCardData1" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblLoading11" xml:space="preserve">
+    <value>Đang tải dữ liệu, xin hãy chờ...</value>
+  </data>
+  <data name="lblLoading21" xml:space="preserve">
+    <value>Đang tải dữ liệu, xin hãy chờ...</value>
+  </data>
+  <data name="lblLoaiThe1" xml:space="preserve">
+    <value>Loại thẻ:</value>
+  </data>
+  <data name="lblMaNhanVien1" xml:space="preserve">
+    <value>Mã thành viên:</value>
+  </data>
+  <data name="lblMemberData1" xml:space="preserve">
+    <value>Thông Tin Thành Viên</value>
+  </data>
+  <data name="lblMoTa1" xml:space="preserve">
+    <value>Mô tả:</value>
+  </data>
+  <data name="lblNameGroup1" xml:space="preserve">
+    <value>Tên nhóm:</value>
+  </data>
+  <data name="lblNewPass1" xml:space="preserve">
+    <value>Mật khẩu mới:</value>
+  </data>
+  <data name="lblNhapKhoaChuThePhatHanh1" xml:space="preserve">
+    <value>Nhập Khóa Của Chủ Thể Phát Hành</value>
+  </data>
+  <data name="lblNote1" xml:space="preserve">
+    <value>Gửi tin nhắn cho người liên hệ.</value>
+  </data>
+  <data name="lblNoteConfirmClearData1" xml:space="preserve">
+    <value>(Chương trình sẽ tự động hủy lượt phát hành tương ứng)</value>
+  </data>
+  <data name="lblNotes1" xml:space="preserve">
+    <value>Chú thích:</value>
+  </data>
+  <data name="lblNote_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Thêm một tổ chức mới vào hệ thống.</value>
+  </data>
+  <data name="lblNote_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Tạo thành viên mới cho tổ chức vào hệ thống.</value>
+  </data>
+  <data name="lblNotification11" xml:space="preserve">
+    <value>Vui lòng nhập ít nhất 2 ký tự</value>
+  </data>
+  <data name="lblNotification21" xml:space="preserve">
+    <value>Vui lòng nhập ít nhất 2 ký tự</value>
+  </data>
+  <data name="lblNotPerso1" xml:space="preserve">
+    <value>Chưa phát hành:</value>
+  </data>
+  <data name="lblPartnerKey1" xml:space="preserve">
+    <value>Tổ chức đồng phát hành:</value>
+  </data>
+  <data name="lblPassword1" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="lblPerso1" xml:space="preserve">
+    <value>Đã phát hành:</value>
+  </data>
+  <data name="lblPersoProcess1" xml:space="preserve">
+    <value>Cấp Thẻ Cho Thành Viên</value>
+  </data>
+  <data name="lblPhongBan1" xml:space="preserve">
+    <value>Tổ chức:</value>
+  </data>
+  <data name="lblProductName1" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblReadCardData1" xml:space="preserve">
+    <value>Đọc Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblReasonSuggestion1" xml:space="preserve">
+    <value>Nhập lý do (việc này nhằm giúp cho bạn dễ quản lý thông tin sau này):</value>
+  </data>
+  <data name="lblReSetupPassWord1" xml:space="preserve">
+    <value>Cài Lại Mật Khẩu</value>
+  </data>
+  <data name="lblResultListIssue1" xml:space="preserve">
+    <value>Danh sách kết quả:</value>
+  </data>
+  <data name="lblReTypePass1" xml:space="preserve">
+    <value>Nhập lại mật khẩu mới:</value>
+  </data>
+  <data name="lblRightAreaTitle1" xml:space="preserve">
+    <value>THÔNG TIN TỔ CHỨC</value>
+  </data>
+  <data name="lblRightAreaTitleCardStatistics1" xml:space="preserve">
+    <value>THỐNG KÊ THẺ</value>
+  </data>
+  <data name="lblRightAreaTitleforListMember1" xml:space="preserve">
+    <value>DANH SÁCH THÀNH VIÊN</value>
+  </data>
+  <data name="lblRightAreaTitleListCard1" xml:space="preserve">
+    <value>DANH SÁCH THẺ</value>
+  </data>
+  <data name="lblRightAreaTitlePerso1" xml:space="preserve">
+    <value>DANH SÁCH LƯỢT PHÁT HÀNH</value>
+  </data>
+  <data name="lblRightPieChartSetup1" xml:space="preserve">
+    <value>Phải:</value>
+  </data>
+  <data name="lblSerialNumber1" xml:space="preserve">
+    <value>Mã Thẻ:</value>
+  </data>
+  <data name="lblSoLuongTheCanPhatHanh1" xml:space="preserve">
+    <value>Số lượng thẻ cần phát hành:</value>
+  </data>
+  <data name="lblStatus1" xml:space="preserve">
+    <value>Chưa kết nối với thiết bị đọc</value>
+  </data>
+  <data name="lblStatusBroken1" xml:space="preserve">
+    <value>Đã bị hư:</value>
+  </data>
+  <data name="lblStatusLost1" xml:space="preserve">
+    <value>Đã bị mất:</value>
+  </data>
+  <data name="lblStatusNormal1" xml:space="preserve">
+    <value>Bình thường:</value>
+  </data>
+  <data name="lblTeacherTableDescription1" xml:space="preserve">
+    <value>Thành viên đang được chọn là thành viên sẽ được cấp thẻ trong lượt kế tiếp. Bạn cũng có thể thay đổi thứ tự thành viên nếu muốn.</value>
+  </data>
+  <data name="lblTenNhanVien1" xml:space="preserve">
+    <value>Tên thành viên:</value>
+  </data>
+  <data name="lblTenUngDung1" xml:space="preserve">
+    <value>Tên ứng dụng:</value>
+  </data>
+  <data name="lblThemUngDung1" xml:space="preserve">
+    <value>Thêm Ứng Dụng</value>
+  </data>
+  <data name="lblThoiHanThe1" xml:space="preserve">
+    <value>Thời hạn thẻ:</value>
+  </data>
+  <data name="lblTitleIntegratingLog1" xml:space="preserve">
+    <value>LỊCH SỬ TÍCH HỢP DỮ LIỆU</value>
+  </data>
+  <data name="lblTitle_frmAddOrEditGroup1" xml:space="preserve">
+    <value>Thêm Nhóm Tổ Chức Con</value>
+  </data>
+  <data name="lblTitle_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Nhập Thông Tin Thành Viên</value>
+  </data>
+  <data name="lblTo1" xml:space="preserve">
+    <value>Đến:</value>
+  </data>
+  <data name="lblTongCong11" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblTongCong21" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblTongCong31" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblTotal1" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="lblUpdateCardData1" xml:space="preserve">
+    <value>Đồng Bộ Dữ Liệu Trên Thẻ</value>
+  </data>
+  <data name="lblUpdateInfoChoosed1" xml:space="preserve">
+    <value>Cập nhật các thông tin cá nhân của tài khoản được chọn</value>
+  </data>
+  <data name="lblUpdateInfoUser1" xml:space="preserve">
+    <value>Cập Nhật Thông Tin Cá Nhân</value>
+  </data>
+  <data name="lblUpPieChartSetup1" xml:space="preserve">
+    <value>Trên:</value>
+  </data>
+  <data name="lblUserName1" xml:space="preserve">
+    <value>Tài khoản:</value>
+  </data>
+  <data name="lblViTriCot_HoTen1" xml:space="preserve">
+    <value>Vị trí của cột họ và tên khách hàng:</value>
+  </data>
+  <data name="lblViTriCot_SoDienThoai1" xml:space="preserve">
+    <value>Vị trí của cột số điện thoại khách hàng:</value>
+  </data>
+  <data name="lblViTriCot_TenCongTy1" xml:space="preserve">
+    <value>Vị trí của cột tên công ty:</value>
+  </data>
+  <data name="lblViTriCot_ThoiGianThe1" xml:space="preserve">
+    <value>Vị trí của cột thời hạn thẻ:</value>
+  </data>
+  <data name="lblViTriTieuDeMoiSheet1" xml:space="preserve">
+    <value>Vị trí dòng tiêu đề của mỗi sheet:</value>
+  </data>
+  <data name="lbTitle_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Thêm Tổ Chức Vào Hệ Thống</value>
+  </data>
+  <data name="MainForm1" xml:space="preserve">
+    <value>Hệ Thống Phát Hành Thẻ</value>
+  </data>
+  <data name="MenuAppManager1" xml:space="preserve">
+    <value>Ứng dụng trên thẻ</value>
+  </data>
+  <data name="MenuAttendance1" xml:space="preserve">
+    <value>Quét thẻ vào/ra</value>
+  </data>
+  <data name="MenuAttendanceHistory1" xml:space="preserve">
+    <value>Thống kê quét thẻ vào/ra</value>
+  </data>
+  <data name="MenuCardChip1" xml:space="preserve">
+    <value>Thẻ chíp</value>
+  </data>
+  <data name="MenuCardMagnetic1" xml:space="preserve">
+    <value>Thẻ từ</value>
+  </data>
+  <data name="MenuCardManager1" xml:space="preserve">
+    <value>Quản lý thẻ</value>
+  </data>
+  <data name="MenuCardPerso1" xml:space="preserve">
+    <value>Cấp phát thẻ</value>
+  </data>
+  <data name="MenuCardPersoManager1" xml:space="preserve">
+    <value>Quản lý phát hành</value>
+  </data>
+  <data name="MenuCardStatistics1" xml:space="preserve">
+    <value>Thống kê thẻ</value>
+  </data>
+  <data name="MenuChangePassword1" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="MenuClearCard1" xml:space="preserve">
+    <value>Xóa dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuClearEmptyCard1" xml:space="preserve">
+    <value>Xóa trắng thẻ...</value>
+  </data>
+  <data name="MenuExit1" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="MenuHome1" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="MenuKeyManager1" xml:space="preserve">
+    <value>Khóa</value>
+  </data>
+  <data name="MenuLogout1" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="MenuManager1" xml:space="preserve">
+    <value>Quản lý</value>
+  </data>
+  <data name="MenuManual1" xml:space="preserve">
+    <value>Hướng dẫn sử dụng</value>
+  </data>
+  <data name="MenuMemberManager1" xml:space="preserve">
+    <value>Thành viên</value>
+  </data>
+  <data name="MenuOrgAcquirerManager1" xml:space="preserve">
+    <value>Tổ chức chấp nhận thẻ</value>
+  </data>
+  <data name="MenuOrgManager1" xml:space="preserve">
+    <value>Tổ chức</value>
+  </data>
+  <data name="MenuPartnerOfMasterManager1" xml:space="preserve">
+    <value>Tổ chức liên kết phát hành thẻ</value>
+  </data>
+  <data name="MenuReadCard1" xml:space="preserve">
+    <value>Đọc dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuRelatives1" xml:space="preserve">
+    <value>Người liên hệ</value>
+  </data>
+  <data name="MenuSupport1" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+  <data name="MenuSystemInfo1" xml:space="preserve">
+    <value>Thông tin chương trình</value>
+  </data>
+  <data name="MenuUpdateCard1" xml:space="preserve">
+    <value>Đồng bộ dữ liệu thẻ...</value>
+  </data>
+  <data name="MenuUpdateUser1" xml:space="preserve">
+    <value>Cập nhật thông tin cá nhân</value>
+  </data>
+  <data name="MenuUserManager1" xml:space="preserve">
+    <value>Nhóm - tài khoản</value>
+  </data>
+  <data name="MenuUtilities1" xml:space="preserve">
+    <value>Tiện ích</value>
+  </data>
+  <data name="MenuVoucherCard1" xml:space="preserve">
+    <value>Quản lý phiếu</value>
+  </data>
+  <data name="MenuVoucherCardConfigRule1" xml:space="preserve">
+    <value>Cấu hình phiếu</value>
+  </data>
+  <data name="MenuVoucherCardCreateRule1" xml:space="preserve">
+    <value>Tạo phiếu</value>
+  </data>
+  <data name="MenuWirteKey1" xml:space="preserve">
+    <value>Cài khóa và Nhập thẻ...</value>
+  </data>
+  <data name="mnuChangePassword1" xml:space="preserve">
+    <value>Đổi Mật Khẩu...</value>
+  </data>
+  <data name="mnuExit1" xml:space="preserve">
+    <value>Thoát...</value>
+  </data>
+  <data name="mnuHome1" xml:space="preserve">
+    <value>Trang chính</value>
+  </data>
+  <data name="mnuLogout1" xml:space="preserve">
+    <value>Đăng Xuất...</value>
+  </data>
+  <data name="mnuOptions1" xml:space="preserve">
+    <value>Cấu Hình Hệ Thống...</value>
+  </data>
+  <data name="mnuSystem1" xml:space="preserve">
+    <value>Hệ Thống</value>
+  </data>
+  <data name="okButton1" xml:space="preserve">
+    <value>&amp;Đóng</value>
+  </data>
+  <data name="PartnerCode1" xml:space="preserve">
+    <value>PartnerCode</value>
+  </data>
+  <data name="rbtnLoginFail1" xml:space="preserve">
+    <value>Thất bại</value>
+  </data>
+  <data name="rbtnLoginFailed1" xml:space="preserve">
+    <value>Thất bại</value>
+  </data>
+  <data name="rbtnLoginSuccess1" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
+  <data name="rbtnNotPerso1" xml:space="preserve">
+    <value>Chưa phát hành</value>
+  </data>
+  <data name="rbtnNotWorking1" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="rbtnPerso1" xml:space="preserve">
+    <value>Đã phát hành</value>
+  </data>
+  <data name="rbtnShadowStyleGradualPieChartSetup1" xml:space="preserve">
+    <value>Nhạt dần</value>
+  </data>
+  <data name="rbtnShadowStyleNonePieChartSetup1" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="rbtnShadowStyleUniformPieChartSetup1" xml:space="preserve">
+    <value>Đồng nhất</value>
+  </data>
+  <data name="rbtnStatusBroken1" xml:space="preserve">
+    <value>Đã bị hư</value>
+  </data>
+  <data name="rbtnStatusCanceled1" xml:space="preserve">
+    <value>Đã bị hủy</value>
+  </data>
+  <data name="rbtnStatusLocked1" xml:space="preserve">
+    <value>Đang bị khóa</value>
+  </data>
+  <data name="rbtnStatusLost1" xml:space="preserve">
+    <value>Đã bị mất</value>
+  </data>
+  <data name="rbtnStatusNormal1" xml:space="preserve">
+    <value>Bình thường</value>
+  </data>
+  <data name="rbtnSttCanceled1" xml:space="preserve">
+    <value>Đã Bị Hủy</value>
+  </data>
+  <data name="rbtnSttExpired1" xml:space="preserve">
+    <value>Đã Hết Hạn</value>
+  </data>
+  <data name="rbtnSttLocked1" xml:space="preserve">
+    <value>Đang Bị Khóa</value>
+  </data>
+  <data name="rbtnSttNormal1" xml:space="preserve">
+    <value>Bình Thường</value>
+  </data>
+  <data name="rbtnWorking1" xml:space="preserve">
+    <value>Đang Công Tác</value>
+  </data>
+  <data name="rbtnWorkingAbroad1" xml:space="preserve">
+    <value>Đi Nước Ngoài</value>
+  </data>
+  <data name="textBoxDescription1" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="UsrLoginHistory1" xml:space="preserve">
+    <value>LỊCH SỬ ĐĂNG NHẬP</value>
+  </data>
+  <data name="BaseMessAddSuccess" xml:space="preserve">
+    <value>Đã thêm {0} vào hệ thống thành công!</value>
+  </data>
+  <data name="BaseMessNonMember" xml:space="preserve">
+    <value>Bạn chưa phải {0} để gửi tin nhắn!</value>
+  </data>
+  <data name="BaseMessRemove" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa {0} không?</value>
+  </data>
+  <data name="BaseMessRemoveSuccess" xml:space="preserve">
+    <value>Đã xóa {0} khỏi hệ thống thành công!</value>
+  </data>
+  <data name="BaseMessSelect" xml:space="preserve">
+    <value>Bạn chưa chọn {0}!</value>
+  </data>
+  <data name="BaseMessSMSSuccess" xml:space="preserve">
+    <value>Đã gửi {0} thành công!</value>
+  </data>
+  <data name="BaseMessStop" xml:space="preserve">
+    <value>Bạn có chắc muốn ngừng quá trình {0} thẻ và đóng hộp thoại này không?</value>
+  </data>
+  <data name="BaseMessUpdateSuccess" xml:space="preserve">
+    <value>Đã cập nhật {0} vào hệ thống thành công!</value>
+  </data>
+  <data name="BaseMessValidate" xml:space="preserve">
+    <value>Bạn chưa nhập {0}!</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>thành viên</value>
+  </data>
+  <data name="Reader" xml:space="preserve">
+    <value>thiết bị đọc</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>tin nhắn</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Thao Tác Sai</value>
+  </data>
+  <data name="BaseMessDataFail" xml:space="preserve">
+    <value>{0} bạn nhập chưa đúng!</value>
+  </data>
+  <data name="AccActionSupport" xml:space="preserve">
+    <value>chỉ hỗ trợ thao tác trên từng tài khoản</value>
+  </data>
+  <data name="Allocation" xml:space="preserve">
+    <value>cấp</value>
+  </data>
+  <data name="AppCancelFail" xml:space="preserve">
+    <value>Hủy ứng dụng thất bại</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>tên ứng dụng</value>
+  </data>
+  <data name="BaseMessCharOverLoad" xml:space="preserve">
+    <value>{0} không được vượt quá 255 ký tự!</value>
+  </data>
+  <data name="BaseMessDateFail" xml:space="preserve">
+    <value>Ngày bắt đầu {0} ngày kết thúc!</value>
+  </data>
+  <data name="BaseMessfalse" xml:space="preserve">
+    <value>{0}không đúng!</value>
+  </data>
+  <data name="BaseMessFunction" xml:space="preserve">
+    <value>Chức năng này {0}!</value>
+  </data>
+  <data name="BaseMessInvalid" xml:space="preserve">
+    <value>{0} không hợp lệ!</value>
+  </data>
+  <data name="BaseMessPassWeak" xml:space="preserve">
+    <value>Mật khẩu quá yếu, {0} mật khẩu khác!</value>
+  </data>
+  <data name="BaseMessProgram" xml:space="preserve">
+    <value>Chương trình chỉ cho phép {0}!</value>
+  </data>
+  <data name="CancelAcc" xml:space="preserve">
+    <value>tài khoản cần hủy</value>
+  </data>
+  <data name="CancelAcceptOrg" xml:space="preserve">
+    <value>tổ chức chấp nhận thẻ cần hủy</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>ứng dụng cần hủy</value>
+  </data>
+  <data name="CancelCoReleaseOrg" xml:space="preserve">
+    <value>tổ chức liên kết cần hủy</value>
+  </data>
+  <data name="CancelCoupon" xml:space="preserve">
+    <value>cấu hình phiếu cần hủy</value>
+  </data>
+  <data name="CancelGroup" xml:space="preserve">
+    <value>nhóm cần hủy</value>
+  </data>
+  <data name="CancelLostMark" xml:space="preserve">
+    <value>thẻ cần hủy đánh dấu mất</value>
+  </data>
+  <data name="CancelMem" xml:space="preserve">
+    <value>thành viên cần hủy</value>
+  </data>
+  <data name="CancelOrg" xml:space="preserve">
+    <value>tổ chức cần hủy</value>
+  </data>
+  <data name="CancelRelease" xml:space="preserve">
+    <value>lượt phát hành cần hủy</value>
+  </data>
+  <data name="CancelSubOrg" xml:space="preserve">
+    <value>tổ chức con cần hủy</value>
+  </data>
+  <data name="CardRequiredMem" xml:space="preserve">
+    <value>thành viên cần cấp thẻ</value>
+  </data>
+  <data name="ChangeGroup" xml:space="preserve">
+    <value>đổi nhóm cho từng tài khoản</value>
+  </data>
+  <data name="ChangeGroupAcc" xml:space="preserve">
+    <value>tài khoản cần đổi nhóm</value>
+  </data>
+  <data name="ChangePassAcc" xml:space="preserve">
+    <value>tài khoản cần cài lại mật khẩu</value>
+  </data>
+  <data name="CheckSameColumn" xml:space="preserve">
+    <value>Có các cột trùng vị trí với nhau, xin hãy kiểm tra lại!</value>
+  </data>
+  <data name="ClearData" xml:space="preserve">
+    <value>xóa dữ liệu</value>
+  </data>
+  <data name="CMND" xml:space="preserve">
+    <value>Số CMND</value>
+  </data>
+  <data name="CoReleaseOrg" xml:space="preserve">
+    <value>Tổ chức đồng phát hành thẻ</value>
+  </data>
+  <data name="CountryCode" xml:space="preserve">
+    <value>Mã nước</value>
+  </data>
+  <data name="CurrentPass" xml:space="preserve">
+    <value>mật khẩu hiện tại</value>
+  </data>
+  <data name="DamageMark" xml:space="preserve">
+    <value>thẻ cần đánh dấu hư</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="Email1" xml:space="preserve">
+    <value>email</value>
+  </data>
+  <data name="ExcelPath" xml:space="preserve">
+    <value>Vui lòng chọn đường dẫn đến tập tin dữ liệu MS Excel!</value>
+  </data>
+  <data name="ExtensionRelease" xml:space="preserve">
+    <value>lượt phát hành cần gia hạn</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Số fax</value>
+  </data>
+  <data name="FirstDataPosition" xml:space="preserve">
+    <value>Bạn chưa nhập vị trí dòng dữ liệu đầu tiên!</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>tên</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>giới tính</value>
+  </data>
+  <data name="GiftVoucher_CancelVoucher" xml:space="preserve">
+    <value>Hủy cấu hình phiếu thất bại!</value>
+  </data>
+  <data name="GroupAcc" xml:space="preserve">
+    <value>nhóm tài khoản</value>
+  </data>
+  <data name="GroupId" xml:space="preserve">
+    <value>mã nhóm</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>tên nhóm</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>họ và tên đệm</value>
+  </data>
+  <data name="Less" xml:space="preserve">
+    <value>nhỏ hơn</value>
+  </data>
+  <data name="LockAcc" xml:space="preserve">
+    <value>tài khoản cần khóa</value>
+  </data>
+  <data name="LostMark" xml:space="preserve">
+    <value>thẻ cần đánh dấu mất</value>
+  </data>
+  <data name="MemCancelFail" xml:space="preserve">
+    <value>Hủy thành viên thất bại</value>
+  </data>
+  <data name="MemId" xml:space="preserve">
+    <value>mã thành viên</value>
+  </data>
+  <data name="MemName" xml:space="preserve">
+    <value>tên thành viên</value>
+  </data>
+  <data name="NewGroup" xml:space="preserve">
+    <value>nhóm mới</value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>mật khẩu mới</value>
+  </data>
+  <data name="OrgId" xml:space="preserve">
+    <value>mã tổ chức</value>
+  </data>
+  <data name="OrgName" xml:space="preserve">
+    <value>tên tổ chức</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>số điện thoại</value>
+  </data>
+  <data name="ReadData" xml:space="preserve">
+    <value>đọc dữ liệu</value>
+  </data>
+  <data name="ReNewPass" xml:space="preserve">
+    <value>lại mật khẩu mới</value>
+  </data>
+  <data name="RePass" xml:space="preserve">
+    <value>Mật khẩu nhập lại</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>vui lòng chọn</value>
+  </data>
+  <data name="ServiceValue" xml:space="preserve">
+    <value>Giá trị cổng dịch vụ</value>
+  </data>
+  <data name="ShortName" xml:space="preserve">
+    <value>tên viết tắt</value>
+  </data>
+  <data name="SubOrgCancelFail" xml:space="preserve">
+    <value>Hủy tổ chức con thất bại</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>tiêu đề</value>
+  </data>
+  <data name="UnLockAcc" xml:space="preserve">
+    <value>tài khoản cần mở khóa</value>
+  </data>
+  <data name="UnlockRelease" xml:space="preserve">
+    <value>lượt phát hành cần mở khóa</value>
+  </data>
+  <data name="UpdateAcc" xml:space="preserve">
+    <value>tài khoản cần cập nhật</value>
+  </data>
+  <data name="UpdateGroup" xml:space="preserve">
+    <value>nhóm cần cập nhật</value>
+  </data>
+  <data name="UpdateProfile" xml:space="preserve">
+    <value>cập nhật thông tin cá nhân cho từng tài khoản</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>tên đăng nhập</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>ZipCode</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email liên hệ</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="MeneCash" xml:space="preserve">
+    <value>Nạp/Trừ Tiền</value>
+  </data>
+  <data name="MenuEcashConfig" xml:space="preserve">
+    <value>Cấu hình dịch vụ</value>
+  </data>
+  <data name="MenuEcashGroupItem" xml:space="preserve">
+    <value>Nhóm dịch vụ</value>
+  </data>
+  <data name="MenuPayIn" xml:space="preserve">
+    <value>Nạp tiền</value>
+  </data>
+  <data name="MenuEcashStatisticTopUp" xml:space="preserve">
+    <value>Thống Kê Nạp Tiền</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>số tiền</value>
+  </data>
+  <data name="BaseMessCancelRequest" xml:space="preserve">
+    <value>Bạn có chắc muốn hủy {0} này không?</value>
+  </data>
+  <data name="CancelCardConfig" xml:space="preserve">
+    <value>cấu hình dịch vụ</value>
+  </data>
+  <data name="CardConfigNameConfig" xml:space="preserve">
+    <value>tên cấu hình</value>
+  </data>
+  <data name="CardConfigValidateAmount" xml:space="preserve">
+    <value>15 số</value>
+  </data>
+  <data name="CardConfigValidateAmountisNumber" xml:space="preserve">
+    <value>chỉ nhập số</value>
+  </data>
+  <data name="CancelCardGroup" xml:space="preserve">
+    <value>nhóm</value>
+  </data>
+  <data name="CancelCardItem" xml:space="preserve">
+    <value> cập nhật danh mục</value>
+  </data>
+  <data name="GroupCancelFail" xml:space="preserve">
+    <value>Hủy nhóm thất bại</value>
+  </data>
+  <data name="UpdateCardGroup" xml:space="preserve">
+    <value>cập nhật nhóm</value>
+  </data>
+  <data name="MenuEcashDeDuct" xml:space="preserve">
+    <value>Trừ tiền</value>
+  </data>
+  <data name="BaseMessAddGroup" xml:space="preserve">
+    <value>Bạn có chắc muốn {0} này vào hệ thống ?</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditConfig" xml:space="preserve">
+    <value>Tên cấu hình dịch vụ:</value>
+  </data>
+  <data name="MenuEcashStatisticDeduct" xml:space="preserve">
+    <value>Thống kê trừ tiền</value>
+  </data>
+  <data name="MenuEcashNameItem" xml:space="preserve">
+    <value>tên dịch vụ</value>
+  </data>
+  <data name="BaseMessValidateofDeduct" xml:space="preserve">
+    <value>Bạn chưa chọn {0} trừ tiền!</value>
+  </data>
+  <data name="NameItemDeduct" xml:space="preserve">
+    <value>dịch vụ </value>
+  </data>
+  <data name="MenuEcashTopUp" xml:space="preserve">
+    <value>nạp tiền</value>
+  </data>
+  <data name="CardConfigValidateAmountItem" xml:space="preserve">
+    <value>11 số</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CloseEcashDeDuct" xml:space="preserve">
+    <value>trừ tiền</value>
+  </data>
+  <data name="CancelCardNameGroup" xml:space="preserve">
+    <value>tên nhóm</value>
+  </data>
+  <data name="lblCMND" xml:space="preserve">
+    <value>CMND</value>
+  </data>
+  <data name="lblNgayCap" xml:space="preserve">
+    <value>Ngày cấp</value>
+  </data>
+  <data name="lblNoiCap" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>địa chỉ</value>
+  </data>
+  <data name="PhoneFirst" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="SaiGonPearlConfigApartment" xml:space="preserve">
+    <value>1 cấu hình</value>
+  </data>
+  <data name="ImportExcelApartent" xml:space="preserve">
+    <value>Cập nhật thông tin phí quản lý, tiền nước</value>
+  </data>
+  <data name="MenuDeviceDoorManager" xml:space="preserve">
+    <value>Thông tin thiết bị vào/ra</value>
+  </data>
+  <data name="MenuDoorInStatistics" xml:space="preserve">
+    <value>Thống kê vào/ra cửa</value>
+  </data>
+  <data name="MenuTimeKeeping" xml:space="preserve">
+    <value>Chấm công</value>
+  </data>
+  <data name="MenuTimeLogging" xml:space="preserve">
+    <value>Nhật ký vào/ra cửa</value>
+  </data>
+  <data name="MenuTimeManager" xml:space="preserve">
+    <value>Quản lý thời gian</value>
+  </data>
+</root>

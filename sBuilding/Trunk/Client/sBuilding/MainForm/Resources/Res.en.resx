@@ -1,0 +1,3237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccActionSupport" xml:space="preserve">
+    <value>only support operations on each account</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>address</value>
+  </data>
+  <data name="Allocation" xml:space="preserve">
+    <value>allocation</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>amount of money</value>
+  </data>
+  <data name="AppCancelFail" xml:space="preserve">
+    <value>AppCancelFail</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>AppName</value>
+  </data>
+  <data name="BaseMessAddGroup" xml:space="preserve">
+    <value>Are you sure you want to {0} into the system?</value>
+  </data>
+  <data name="BaseMessAddSuccess" xml:space="preserve">
+    <value>Added {0} into the system!</value>
+  </data>
+  <data name="BaseMessCancelRequest" xml:space="preserve">
+    <value>Are you sure you want to cancel this {0}?</value>
+  </data>
+  <data name="BaseMessCharOverLoad" xml:space="preserve">
+    <value>{0} can not exceed 255 characters!</value>
+  </data>
+  <data name="BaseMessDataFail" xml:space="preserve">
+    <value>{0} you entered is incorrect!</value>
+  </data>
+  <data name="BaseMessDateFail" xml:space="preserve">
+    <value>Start date {0} end date !</value>
+  </data>
+  <data name="BaseMessfalse" xml:space="preserve">
+    <value>{0} incorrect!</value>
+  </data>
+  <data name="BaseMessFunction" xml:space="preserve">
+    <value>This function {0}!</value>
+  </data>
+  <data name="BaseMessInvalid" xml:space="preserve">
+    <value>{0} is invalid!</value>
+  </data>
+  <data name="BaseMessNonMember" xml:space="preserve">
+    <value>You do not have to {0} to send messages!</value>
+  </data>
+  <data name="BaseMessPassWeak" xml:space="preserve">
+    <value>Password too weak, {0} password!</value>
+  </data>
+  <data name="BaseMessProgram" xml:space="preserve">
+    <value>The program only allows {0}!</value>
+  </data>
+  <data name="BaseMessRemove" xml:space="preserve">
+    <value>Are you sure you want to delete {0} not?</value>
+  </data>
+  <data name="BaseMessRemoveSuccess" xml:space="preserve">
+    <value>Deleted {0} from the system successfully!</value>
+  </data>
+  <data name="BaseMessSelect" xml:space="preserve">
+    <value>You have not selected {0}!</value>
+  </data>
+  <data name="BaseMessSMSSuccess" xml:space="preserve">
+    <value>{0} has been sent successfully!</value>
+  </data>
+  <data name="BaseMessStop" xml:space="preserve">
+    <value>Are you sure you want to stop the {0} card and close it?</value>
+  </data>
+  <data name="BaseMessUpdateSuccess" xml:space="preserve">
+    <value>{0} updated successfully into the system!</value>
+  </data>
+  <data name="BaseMessValidate" xml:space="preserve">
+    <value>You did not enter {0}!</value>
+  </data>
+  <data name="BaseMessValidateofDeduct" xml:space="preserve">
+    <value>You have not selected {0} except money!</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel1" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnClose1" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnConfirm1" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnCreateNew" xml:space="preserve">
+    <value>Create a login account for the individual is not a member.</value>
+  </data>
+  <data name="btnCreateNew1" xml:space="preserve">
+    <value>Create a login account for the individual is not a member.</value>
+  </data>
+  <data name="btnExportData" xml:space="preserve">
+    <value>Export Data</value>
+  </data>
+  <data name="btnExportData1" xml:space="preserve">
+    <value>Export Data</value>
+  </data>
+  <data name="btnGenerateSerialNumber" xml:space="preserve">
+    <value>Birth Number</value>
+  </data>
+  <data name="btnGenerateSerialNumber1" xml:space="preserve">
+    <value>Birth Number</value>
+  </data>
+  <data name="btnImportData" xml:space="preserve">
+    <value>Load Data</value>
+  </data>
+  <data name="btnImportData1" xml:space="preserve">
+    <value>Load Data</value>
+  </data>
+  <data name="btnListDevices" xml:space="preserve">
+    <value>Find Device</value>
+  </data>
+  <data name="btnListDevices1" xml:space="preserve">
+    <value>Find Device</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btnLogin1" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Integrated</value>
+  </data>
+  <data name="btnNext1" xml:space="preserve">
+    <value>Integrated</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnOK1" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="btnPause1" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="btnRefresh1" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSave1" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveData" xml:space="preserve">
+    <value>Save Data</value>
+  </data>
+  <data name="btnSaveData1" xml:space="preserve">
+    <value>Save Data</value>
+  </data>
+  <data name="btnStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="btnStart1" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="btnUseExisting" xml:space="preserve">
+    <value>Create a login account for a member of the school</value>
+  </data>
+  <data name="btnUseExisting1" xml:space="preserve">
+    <value>Create a login account for a member of the school</value>
+  </data>
+  <data name="CancelAcc" xml:space="preserve">
+    <value>Cancel Account</value>
+  </data>
+  <data name="CancelAcceptOrg" xml:space="preserve">
+    <value>Cancel Accept Organization</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>Cancel Application</value>
+  </data>
+  <data name="CancelCardConfig" xml:space="preserve">
+    <value>Service Configuration</value>
+  </data>
+  <data name="CancelCardGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="CancelCardItem" xml:space="preserve">
+    <value>Cancel Card Item</value>
+  </data>
+  <data name="CancelCardNameGroup" xml:space="preserve">
+    <value> Group Name</value>
+  </data>
+  <data name="CancelCoReleaseOrg" xml:space="preserve">
+    <value>Cancel Release Organization</value>
+  </data>
+  <data name="CancelCoupon" xml:space="preserve">
+    <value>Cancel Coupon Configuration</value>
+  </data>
+  <data name="CancelGroup" xml:space="preserve">
+    <value>Cancel Group</value>
+  </data>
+  <data name="CancelLostMark" xml:space="preserve">
+    <value>Cancel Lost Mark Card</value>
+  </data>
+  <data name="CancelMem" xml:space="preserve">
+    <value>Cancel Member</value>
+  </data>
+  <data name="CancelOrg" xml:space="preserve">
+    <value>Cancel Organization</value>
+  </data>
+  <data name="CancelRelease" xml:space="preserve">
+    <value>Cancel Release</value>
+  </data>
+  <data name="CancelSubOrg" xml:space="preserve">
+    <value>Cancel Suborganization</value>
+  </data>
+  <data name="CardConfigNameConfig" xml:space="preserve">
+    <value>Configuration Name</value>
+  </data>
+  <data name="CardConfigValidateAmount" xml:space="preserve">
+    <value>15 number</value>
+  </data>
+  <data name="CardConfigValidateAmountisNumber" xml:space="preserve">
+    <value>only enter the number</value>
+  </data>
+  <data name="CardConfigValidateAmountItem" xml:space="preserve">
+    <value>11 number</value>
+  </data>
+  <data name="CardRequiredMem" xml:space="preserve">
+    <value>Members need cards</value>
+  </data>
+  <data name="cbxDontAskLater" xml:space="preserve">
+    <value>No need to ask at the following times.</value>
+  </data>
+  <data name="cbxDontAskLater1" xml:space="preserve">
+    <value>No need to ask at the following times.</value>
+  </data>
+  <data name="cbxFilterByCardType" xml:space="preserve">
+    <value>Filter by type of card:</value>
+  </data>
+  <data name="cbxFilterByCardType1" xml:space="preserve">
+    <value>Filter by type of card:</value>
+  </data>
+  <data name="cbxFilterByChangedType" xml:space="preserve">
+    <value>Filter by type of change:</value>
+  </data>
+  <data name="cbxFilterByChangedType1" xml:space="preserve">
+    <value>Filter by type of change:</value>
+  </data>
+  <data name="cbxFilterByDegree" xml:space="preserve">
+    <value>Filter by level:</value>
+  </data>
+  <data name="cbxFilterByDegree1" xml:space="preserve">
+    <value>Filter by level:</value>
+  </data>
+  <data name="cbxFilterByLoginResult" xml:space="preserve">
+    <value>Filter by results:</value>
+  </data>
+  <data name="cbxFilterByLoginResult1" xml:space="preserve">
+    <value>Filter by results:</value>
+  </data>
+  <data name="cbxFilterByLoginTime" xml:space="preserve">
+    <value>Filter by period:</value>
+  </data>
+  <data name="cbxFilterByLoginTime1" xml:space="preserve">
+    <value>Filter by period:</value>
+  </data>
+  <data name="cbxFilterByMemberCode" xml:space="preserve">
+    <value>Filter by Member code:</value>
+  </data>
+  <data name="cbxFilterByMemberCode1" xml:space="preserve">
+    <value>Filter by Member code:</value>
+  </data>
+  <data name="cbxFilterByMemberName" xml:space="preserve">
+    <value>Filter by Member name:</value>
+  </data>
+  <data name="cbxFilterByMemberName1" xml:space="preserve">
+    <value>Filter by Member name:</value>
+  </data>
+  <data name="cbxFilterByPersoDate" xml:space="preserve">
+    <value>Filter by release date:</value>
+  </data>
+  <data name="cbxFilterByPersoDate1" xml:space="preserve">
+    <value>Filter by release date:</value>
+  </data>
+  <data name="cbxFilterByPersoStatus" xml:space="preserve">
+    <value>Filter by status:</value>
+  </data>
+  <data name="cbxFilterByPersoStatus1" xml:space="preserve">
+    <value>Filter by status:</value>
+  </data>
+  <data name="cbxFilterByPersoStatusMember" xml:space="preserve">
+    <value>Filter by release status:</value>
+  </data>
+  <data name="cbxFilterByPersoStatusMember1" xml:space="preserve">
+    <value>Filter by release status:</value>
+  </data>
+  <data name="cbxFilterByPhysicalStt" xml:space="preserve">
+    <value>Filter by physical state:</value>
+  </data>
+  <data name="cbxFilterByPhysicalStt1" xml:space="preserve">
+    <value>Filter by physical state:</value>
+  </data>
+  <data name="cbxFilterByPrintedStatus" xml:space="preserve">
+    <value>Print filter by status:</value>
+  </data>
+  <data name="cbxFilterByPrintedStatus1" xml:space="preserve">
+    <value>Print filter by status:</value>
+  </data>
+  <data name="cbxFilterByUserName" xml:space="preserve">
+    <value>Filter by account:</value>
+  </data>
+  <data name="cbxFilterByUserName1" xml:space="preserve">
+    <value>Filter by account:</value>
+  </data>
+  <data name="cbxFilterByUserStatus" xml:space="preserve">
+    <value>Filter by account status:</value>
+  </data>
+  <data name="cbxFilterByUserStatus1" xml:space="preserve">
+    <value>Filter by account status:</value>
+  </data>
+  <data name="cbxFilterByWorkingStatus" xml:space="preserve">
+    <value>Filter by working status:</value>
+  </data>
+  <data name="cbxFilterByWorkingStatus1" xml:space="preserve">
+    <value>Filter by working status:</value>
+  </data>
+  <data name="cbxHideAfterTagRemoved" xml:space="preserve">
+    <value>Close the dialog box after putting out the card reading device.</value>
+  </data>
+  <data name="cbxHideAfterTagRemoved1" xml:space="preserve">
+    <value>Close the dialog box after putting out the card reading device.</value>
+  </data>
+  <data name="cbxOnlyShowRecordsNeedToUpdate" xml:space="preserve">
+    <value>Only show the plays released updated data need members</value>
+  </data>
+  <data name="cbxOnlyShowRecordsNeedToUpdate1" xml:space="preserve">
+    <value>Only show the plays released updated data need members</value>
+  </data>
+  <data name="cbxReviewData" xml:space="preserve">
+    <value>Check your data prior to integration into the system.</value>
+  </data>
+  <data name="cbxReviewData1" xml:space="preserve">
+    <value>Check your data prior to integration into the system.</value>
+  </data>
+  <data name="cbxShowCanceledPersoes" xml:space="preserve">
+    <value>Show the release was canceled visits</value>
+  </data>
+  <data name="cbxShowCanceledPersoes1" xml:space="preserve">
+    <value>Show the release was canceled visits</value>
+  </data>
+  <data name="cbxShowInactiveUsers" xml:space="preserve">
+    <value>Show inactive users</value>
+  </data>
+  <data name="cbxShowInactiveUsers1" xml:space="preserve">
+    <value>Show inactive users</value>
+  </data>
+  <data name="cbxShowTeacherColumns" xml:space="preserve">
+    <value>Full information of members</value>
+  </data>
+  <data name="cbxShowTeacherColumns1" xml:space="preserve">
+    <value>Full information of members</value>
+  </data>
+  <data name="ChangeGroup" xml:space="preserve">
+    <value>Change group</value>
+  </data>
+  <data name="ChangeGroupAcc" xml:space="preserve">
+    <value>Change group account</value>
+  </data>
+  <data name="ChangePassAcc" xml:space="preserve">
+    <value>Change password account</value>
+  </data>
+  <data name="CheckSameColumn" xml:space="preserve">
+    <value>Have identical positions on the column, please check back!</value>
+  </data>
+  <data name="chkAutoCloseNode" xml:space="preserve">
+    <value>Automatically shortened list.</value>
+  </data>
+  <data name="chkAutoCloseNode1" xml:space="preserve">
+    <value>Automatically shortened list.</value>
+  </data>
+  <data name="ClearData" xml:space="preserve">
+    <value>Clear Data</value>
+  </data>
+  <data name="CloseEcashDeDuct" xml:space="preserve">
+    <value>Close Ecash DeDuct</value>
+  </data>
+  <data name="CMND" xml:space="preserve">
+    <value>Identity number</value>
+  </data>
+  <data name="colActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="colActive1" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ColActiveCode" xml:space="preserve">
+    <value>ActiveCode</value>
+  </data>
+  <data name="ColActiveCode1" xml:space="preserve">
+    <value>ActiveCode</value>
+  </data>
+  <data name="colActiveCodeNew" xml:space="preserve">
+    <value>ActiveCodeNew</value>
+  </data>
+  <data name="colActiveCodeNew1" xml:space="preserve">
+    <value>ActiveCodeNew</value>
+  </data>
+  <data name="colAppName" xml:space="preserve">
+    <value>Application Name</value>
+  </data>
+  <data name="colAppName1" xml:space="preserve">
+    <value>Application Name</value>
+  </data>
+  <data name="colBirthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="colBirthDate1" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="colCardStatus" xml:space="preserve">
+    <value>Card Status</value>
+  </data>
+  <data name="colCardStatus1" xml:space="preserve">
+    <value>Card Status</value>
+  </data>
+  <data name="colCardType" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="colCardType1" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="colCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="colCompany1" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="colCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="colCompanyName1" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="colContactName" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="colContactName1" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="colCustomerName" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="colCustomerName1" xml:space="preserve">
+    <value>CustomerName</value>
+  </data>
+  <data name="colDateIn" xml:space="preserve">
+    <value>Date In</value>
+  </data>
+  <data name="colDateIn1" xml:space="preserve">
+    <value>Date In</value>
+  </data>
+  <data name="colDateOut" xml:space="preserve">
+    <value>Date Out</value>
+  </data>
+  <data name="colDateOut1" xml:space="preserve">
+    <value>Date Out</value>
+  </data>
+  <data name="colDegree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="colDegree1" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="colDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="colDescription1" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="colEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="colEmail1" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="colExpirationDate" xml:space="preserve">
+    <value>ExpirationDate</value>
+  </data>
+  <data name="colExpirationDate1" xml:space="preserve">
+    <value>ExpirationDate</value>
+  </data>
+  <data name="colExpireDate" xml:space="preserve">
+    <value>ExpirationDate</value>
+  </data>
+  <data name="colExpireDate1" xml:space="preserve">
+    <value>ExpirationDate</value>
+  </data>
+  <data name="colExpiredTime" xml:space="preserve">
+    <value>Expired Time</value>
+  </data>
+  <data name="colExpiredTime1" xml:space="preserve">
+    <value>Expired Time</value>
+  </data>
+  <data name="colFailedReason" xml:space="preserve">
+    <value>Failed Reason</value>
+  </data>
+  <data name="colFailedReason1" xml:space="preserve">
+    <value>FailedReason</value>
+  </data>
+  <data name="colFirstName" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="colFirstName1" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="colFirstName11" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="colFirstName2" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="colFullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colFullName1" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colGroupName" xml:space="preserve">
+    <value>Group name</value>
+  </data>
+  <data name="colGroupName1" xml:space="preserve">
+    <value>Group name</value>
+  </data>
+  <data name="colImageIn" xml:space="preserve">
+    <value>Image In</value>
+  </data>
+  <data name="colImageIn1" xml:space="preserve">
+    <value>Image In</value>
+  </data>
+  <data name="colImageOut" xml:space="preserve">
+    <value>Image Out</value>
+  </data>
+  <data name="colImageOut1" xml:space="preserve">
+    <value>Image Out</value>
+  </data>
+  <data name="colImportedOn" xml:space="preserve">
+    <value>Imported Time</value>
+  </data>
+  <data name="colImportedOn1" xml:space="preserve">
+    <value>Imported Time</value>
+  </data>
+  <data name="colIsMember" xml:space="preserve">
+    <value>Is Member</value>
+  </data>
+  <data name="colIsMember1" xml:space="preserve">
+    <value>Is Member</value>
+  </data>
+  <data name="colLastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="colLastName1" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="colLastName11" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="colLastName2" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="colLoginTime" xml:space="preserve">
+    <value>Login Time</value>
+  </data>
+  <data name="colLoginTime1" xml:space="preserve">
+    <value>Login Time</value>
+  </data>
+  <data name="colMasterCode" xml:space="preserve">
+    <value>MasterCode</value>
+  </data>
+  <data name="colMasterCode1" xml:space="preserve">
+    <value>MasterCode</value>
+  </data>
+  <data name="colMemberCode" xml:space="preserve">
+    <value>Member Code</value>
+  </data>
+  <data name="colMemberCode1" xml:space="preserve">
+    <value>Member Code</value>
+  </data>
+  <data name="colMemberCode11" xml:space="preserve">
+    <value>Member Code</value>
+  </data>
+  <data name="colMemberCode2" xml:space="preserve">
+    <value>Member Code</value>
+  </data>
+  <data name="colMemberFullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colMemberFullName1" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colMemberName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colMemberName1" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="colNotes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="colNotes1" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="colOrgName" xml:space="preserve">
+    <value>Organization Name</value>
+  </data>
+  <data name="colOrgName1" xml:space="preserve">
+    <value>Organization Name</value>
+  </data>
+  <data name="colPermanentAddress" xml:space="preserve">
+    <value>Permanent address</value>
+  </data>
+  <data name="colPermanentAddress1" xml:space="preserve">
+    <value>Permanent address</value>
+  </data>
+  <data name="colPersoDate" xml:space="preserve">
+    <value>Release date</value>
+  </data>
+  <data name="colPersoDate1" xml:space="preserve">
+    <value>Release date</value>
+  </data>
+  <data name="colPersoStatus" xml:space="preserve">
+    <value>Release status</value>
+  </data>
+  <data name="colPersoStatus1" xml:space="preserve">
+    <value>Release status</value>
+  </data>
+  <data name="colPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhone1" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhoneNo" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhoneNo1" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhoneNumber" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhoneNumber1" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhysicalStatus" xml:space="preserve">
+    <value>Physical Status</value>
+  </data>
+  <data name="colPhysicalStatus1" xml:space="preserve">
+    <value>Physical Status</value>
+  </data>
+  <data name="colPinCode" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="colPinCode1" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="colPinCodeNew" xml:space="preserve">
+    <value>PinCodeNew</value>
+  </data>
+  <data name="colPinCodeNew1" xml:space="preserve">
+    <value>PinCodeNew</value>
+  </data>
+  <data name="colPosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="colPosition1" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="colPrintedStatus" xml:space="preserve">
+    <value>Printed Status</value>
+  </data>
+  <data name="colPrintedStatus1" xml:space="preserve">
+    <value>Printed Status</value>
+  </data>
+  <data name="colResult" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="colResult1" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="colSerialCard" xml:space="preserve">
+    <value>Serial Card</value>
+  </data>
+  <data name="colSerialCard1" xml:space="preserve">
+    <value>Serial Card</value>
+  </data>
+  <data name="colSerialNumber" xml:space="preserve">
+    <value>Serial Number</value>
+  </data>
+  <data name="colSerialNumber1" xml:space="preserve">
+    <value>Serial Number</value>
+  </data>
+  <data name="colSheetName" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="colSheetName1" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="colStartDate" xml:space="preserve">
+    <value>Release date</value>
+  </data>
+  <data name="colStartDate1" xml:space="preserve">
+    <value>Release date</value>
+  </data>
+  <data name="colSttBroken" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="colSttBroken1" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="colSttCanceled" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="colSttCanceled1" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="colSttLocked" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="colSttLocked1" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="colSttLost" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="colSttLost1" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="colSttPersonalized" xml:space="preserve">
+    <value>Personalized</value>
+  </data>
+  <data name="colSttPersonalized1" xml:space="preserve">
+    <value>Personalized</value>
+  </data>
+  <data name="colSubOrgName" xml:space="preserve">
+    <value>Suborganization</value>
+  </data>
+  <data name="colSubOrgName1" xml:space="preserve">
+    <value>Suborganization</value>
+  </data>
+  <data name="colTemporaryAddress" xml:space="preserve">
+    <value>Address shelter</value>
+  </data>
+  <data name="colTemporaryAddress1" xml:space="preserve">
+    <value>Address shelter</value>
+  </data>
+  <data name="colTitle" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="colTitle1" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="colTrackData" xml:space="preserve">
+    <value>Track Data</value>
+  </data>
+  <data name="colTrackData1" xml:space="preserve">
+    <value>Track Data</value>
+  </data>
+  <data name="colTrackOneData" xml:space="preserve">
+    <value>Track Data</value>
+  </data>
+  <data name="colTrackOneData1" xml:space="preserve">
+    <value>Track Data</value>
+  </data>
+  <data name="colType" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="colType1" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="colTypeCrypto" xml:space="preserve">
+    <value>Type Crypto</value>
+  </data>
+  <data name="colTypeCrypto1" xml:space="preserve">
+    <value>Type Crypto</value>
+  </data>
+  <data name="colUserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="colUserName1" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="colWorking" xml:space="preserve">
+    <value>not working</value>
+  </data>
+  <data name="colWorking1" xml:space="preserve">
+    <value>not working</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Contact Email</value>
+  </data>
+  <data name="CoReleaseOrg" xml:space="preserve">
+    <value>Concomitant release organization</value>
+  </data>
+  <data name="CountryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="CurrentPass" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="DamageMark" xml:space="preserve">
+    <value>Damage Mark</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="dgvResult" xml:space="preserve">
+    <value>Card type</value>
+  </data>
+  <data name="dgvResult1" xml:space="preserve">
+    <value>Card type</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Email1" xml:space="preserve">
+    <value>email</value>
+  </data>
+  <data name="ExcelPath" xml:space="preserve">
+    <value>Please select the file path to the data to MS Excel!</value>
+  </data>
+  <data name="ExtensionRelease" xml:space="preserve">
+    <value>release times to be extend</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FirstDataPosition" xml:space="preserve">
+    <value>You have not entered location data line first!</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="FrmAboutSworld" xml:space="preserve">
+    <value>About sWorld</value>
+  </data>
+  <data name="FrmAboutSworld1" xml:space="preserve">
+    <value>About sWorld</value>
+  </data>
+  <data name="FrmChangePassword" xml:space="preserve">
+    <value>Change Passworld</value>
+  </data>
+  <data name="FrmChangePassword1" xml:space="preserve">
+    <value>Change Passworld</value>
+  </data>
+  <data name="FrmChangeUserGroup" xml:space="preserve">
+    <value>Change User Group</value>
+  </data>
+  <data name="FrmChangeUserGroup1" xml:space="preserve">
+    <value>Change User Group</value>
+  </data>
+  <data name="FrmChooseExpDate" xml:space="preserve">
+    <value>Choose Expired date</value>
+  </data>
+  <data name="FrmChooseExpDate1" xml:space="preserve">
+    <value>Choose Expired date</value>
+  </data>
+  <data name="FrmClearCardData" xml:space="preserve">
+    <value>Clear Card Data</value>
+  </data>
+  <data name="FrmClearCardData1" xml:space="preserve">
+    <value>Clear Card Data</value>
+  </data>
+  <data name="FrmConfigService" xml:space="preserve">
+    <value>Address Server Configuration</value>
+  </data>
+  <data name="FrmConfigService1" xml:space="preserve">
+    <value>Address Server Configuration</value>
+  </data>
+  <data name="FrmConfirmChangeStatus" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="FrmConfirmChangeStatus1" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="FrmConfirmClearData" xml:space="preserve">
+    <value>Clear Data validation</value>
+  </data>
+  <data name="FrmConfirmClearData1" xml:space="preserve">
+    <value>Clear Data validation</value>
+  </data>
+  <data name="FrmGroupDetail" xml:space="preserve">
+    <value>Title is depend on operating mode</value>
+  </data>
+  <data name="FrmGroupDetail1" xml:space="preserve">
+    <value>Title is depend on operating mode</value>
+  </data>
+  <data name="FrmImportCard" xml:space="preserve">
+    <value>card entry</value>
+  </data>
+  <data name="FrmImportCard1" xml:space="preserve">
+    <value>card entry</value>
+  </data>
+  <data name="FrmLogin" xml:space="preserve">
+    <value>sWorld - Login</value>
+  </data>
+  <data name="FrmLogin1" xml:space="preserve">
+    <value>sWorld - Login</value>
+  </data>
+  <data name="FrmMemberData" xml:space="preserve">
+    <value>Member Data</value>
+  </data>
+  <data name="FrmMemberData1" xml:space="preserve">
+    <value>Member Data</value>
+  </data>
+  <data name="FrmPersoProcess" xml:space="preserve">
+    <value>Issued card to Members</value>
+  </data>
+  <data name="FrmPersoProcess1" xml:space="preserve">
+    <value>Issued card to Members</value>
+  </data>
+  <data name="FrmPieChartSetup" xml:space="preserve">
+    <value>Chart Settings</value>
+  </data>
+  <data name="FrmPieChartSetup1" xml:space="preserve">
+    <value>Chart Settings</value>
+  </data>
+  <data name="FrmReadCardData" xml:space="preserve">
+    <value>Read Card Data</value>
+  </data>
+  <data name="FrmReadCardData1" xml:space="preserve">
+    <value>Read Card Data</value>
+  </data>
+  <data name="FrmResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="FrmResetPassword1" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="FrmUpdateCardData" xml:space="preserve">
+    <value>Update Card data</value>
+  </data>
+  <data name="FrmUpdateCardData1" xml:space="preserve">
+    <value>Update Card data</value>
+  </data>
+  <data name="FrmUpdatePersonalInfo" xml:space="preserve">
+    <value>Update Personal Information</value>
+  </data>
+  <data name="FrmUpdatePersonalInfo1" xml:space="preserve">
+    <value>Update Personal Information</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="GiftVoucher_CancelVoucher" xml:space="preserve">
+    <value>Cancel Voucher is fail</value>
+  </data>
+  <data name="GroupAcc" xml:space="preserve">
+    <value>Group Account</value>
+  </data>
+  <data name="groupBoxMarginPieChartSetup" xml:space="preserve">
+    <value>Align</value>
+  </data>
+  <data name="groupBoxMarginPieChartSetup1" xml:space="preserve">
+    <value>Align</value>
+  </data>
+  <data name="groupBoxMemberInfo" xml:space="preserve">
+    <value>Member information</value>
+  </data>
+  <data name="groupBoxMemberInfo1" xml:space="preserve">
+    <value>Member information</value>
+  </data>
+  <data name="groupBoxPersoStatusStatistics" xml:space="preserve">
+    <value>Statistics by released status</value>
+  </data>
+  <data name="groupBoxPersoStatusStatistics1" xml:space="preserve">
+    <value>Statistics by released status</value>
+  </data>
+  <data name="groupBoxPhysicalStatistics" xml:space="preserve">
+    <value>Statistics by physical status</value>
+  </data>
+  <data name="groupBoxPhysicalStatistics1" xml:space="preserve">
+    <value>Statistics by physical status</value>
+  </data>
+  <data name="groupBoxShadingPieChartSetup" xml:space="preserve">
+    <value>Shading Style</value>
+  </data>
+  <data name="groupBoxShadingPieChartSetup1" xml:space="preserve">
+    <value>Shading Style</value>
+  </data>
+  <data name="GroupCancelFail" xml:space="preserve">
+    <value>Cancel group is fail</value>
+  </data>
+  <data name="GroupId" xml:space="preserve">
+    <value>Group Id</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="ImportExcelApartent" xml:space="preserve">
+    <value>Updated information management fees, water charges</value>
+  </data>
+  <data name="labelCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="labelCompanyName1" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="labelCopyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="labelCopyright1" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lbInfo_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Organization Information:</value>
+  </data>
+  <data name="lbInfo_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Organization Information:</value>
+  </data>
+  <data name="lbl10_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lbl10_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lbl10_FrmConnectionConfig" xml:space="preserve">
+    <value>Position column:</value>
+  </data>
+  <data name="lbl10_FrmConnectionConfig1" xml:space="preserve">
+    <value>Position column:</value>
+  </data>
+  <data name="lbl10_FrmEditUser" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl10_FrmEditUser1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl10_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lbl10_UsrUserInfo" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl10_UsrUserInfo1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl11_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl11_FrmConnectionConfig" xml:space="preserve">
+    <value>Phone column:</value>
+  </data>
+  <data name="lbl11_FrmConnectionConfig1" xml:space="preserve">
+    <value>Phone column:</value>
+  </data>
+  <data name="lbl11_FrmEditUser" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl11_FrmEditUser1" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl11_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl11_UsrUserInfo" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl11_UsrUserInfo1" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="lbl12_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl12_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl12_FrmConnectionConfig" xml:space="preserve">
+    <value>Email column:</value>
+  </data>
+  <data name="lbl12_FrmConnectionConfig1" xml:space="preserve">
+    <value>Email column:</value>
+  </data>
+  <data name="lbl12_FrmEditUser" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl12_FrmEditUser1" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl12_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lbl12_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl12_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl12_UsrUserInfo" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl12_UsrUserInfo1" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditConfig" xml:space="preserve">
+    <value> Name of service configuration:</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl13_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Temporary residence address:</value>
+  </data>
+  <data name="lbl13_FrmConnectionConfig" xml:space="preserve">
+    <value>Permanent address column:</value>
+  </data>
+  <data name="lbl13_FrmConnectionConfig1" xml:space="preserve">
+    <value>Permanent address column:</value>
+  </data>
+  <data name="lbl13_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="lbl13_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl13_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl13_UsrUserInfo" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl13_UsrUserInfo1" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl14_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl14_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Permanent address:</value>
+  </data>
+  <data name="lbl14_FrmConnectionConfig" xml:space="preserve">
+    <value>Temporary residence address Column:</value>
+  </data>
+  <data name="lbl14_FrmConnectionConfig1" xml:space="preserve">
+    <value>Temporary residence address Column:</value>
+  </data>
+  <data name="lbl14_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Contact Email:</value>
+  </data>
+  <data name="lbl14_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl14_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
+  <data name="lbl15_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
+  <data name="lbl15_FrmConnectionConfig" xml:space="preserve">
+    <value>Full name Column:</value>
+  </data>
+  <data name="lbl15_FrmConnectionConfig1" xml:space="preserve">
+    <value>Full name Column:</value>
+  </data>
+  <data name="lbl15_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl15_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl16_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl16_FrmConnectionConfig" xml:space="preserve">
+    <value>Phone Column:</value>
+  </data>
+  <data name="lbl16_FrmConnectionConfig1" xml:space="preserve">
+    <value>Phone Column:</value>
+  </data>
+  <data name="lbl16_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="lbl16_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl16_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl17_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl17_FrmConnectionConfig" xml:space="preserve">
+    <value>Email Column:</value>
+  </data>
+  <data name="lbl17_FrmConnectionConfig1" xml:space="preserve">
+    <value>Email Column:</value>
+  </data>
+  <data name="lbl17_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl17_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbl18_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl18_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl18_FrmConnectionConfig" xml:space="preserve">
+    <value>Address Column:</value>
+  </data>
+  <data name="lbl18_FrmConnectionConfig1" xml:space="preserve">
+    <value>Address Column:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Organization Id:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Organization Id:</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrgAcquirerManager" xml:space="preserve">
+    <value>Can choose one or more of Concomitant Release Organization.</value>
+  </data>
+  <data name="lbl1_FrmAddOrEditOrgAcquirerManager1" xml:space="preserve">
+    <value>Can choose one or more of Concomitant Release Organization.</value>
+  </data>
+  <data name="lbl1_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Member Information</value>
+  </data>
+  <data name="lbl1_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Member Information</value>
+  </data>
+  <data name="lbl1_FrmAddUser" xml:space="preserve">
+    <value>Create a new account for an individual is a member or not a member into the system.</value>
+  </data>
+  <data name="lbl1_FrmAddUser1" xml:space="preserve">
+    <value>Create a new account for an individual is a member or not a member into the system.</value>
+  </data>
+  <data name="lbl1_FrmConnectionConfig" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmConnectionConfig1" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmEditUser" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lbl1_FrmEditUser1" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lbl1_FrmIntegrateData" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmIntegrateData1" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmReadExcelData" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmReadExcelData1" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmReviewData" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_FrmReviewData1" xml:space="preserve">
+    <value>Analysis of data from MS Excel files and synchronize with the database of the system.</value>
+  </data>
+  <data name="lbl1_UsrAccountInfo" xml:space="preserve">
+    <value>Enter your account information. Note: The login name has a maximum length of 255 characters and is not set to coincide with the existing account. The password must have a minimum strength in the average level. To create a strong password, you can follow the suggestions below:
+
+- The length from 8 to 16 characters
+- At least one uppercase letters (A, B, C ... Z)
+- At least one lowercase letters (a, b, c ... z)
+- Have at least one numeric character (1, 2, 3 ... 9)
+- At least one special character (@, #, $,%, ...)</value>
+  </data>
+  <data name="lbl1_UsrAccountInfo1" xml:space="preserve">
+    <value>Enter your account information. Note: The login name has a maximum length of 255 characters and is not set to coincide with the existing account. The password must have a minimum strength in the average level. To create a strong password, you can follow the suggestions below:
+
+- The length from 8 to 16 characters
+- At least one uppercase letters (A, B, C ... Z)
+- At least one lowercase letters (a, b, c ... z)
+- Have at least one numeric character (1, 2, 3 ... 9)
+- At least one special character (@, #, $,%, ...)</value>
+  </data>
+  <data name="lbl1_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrMemberList" xml:space="preserve">
+    <value>Select the personal information of a member from the system.</value>
+  </data>
+  <data name="lbl1_UsrMemberList1" xml:space="preserve">
+    <value>Select the personal information of a member from the system.</value>
+  </data>
+  <data name="lbl1_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Organization Code:</value>
+  </data>
+  <data name="lbl1_UsrUserInfo" xml:space="preserve">
+    <value>This message is depend on operating mode.</value>
+  </data>
+  <data name="lbl1_UsrUserInfo1" xml:space="preserve">
+    <value>This message is depend on operating mode.</value>
+  </data>
+  <data name="lbl2_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Member code:</value>
+  </data>
+  <data name="lbl2_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Member code:</value>
+  </data>
+  <data name="lbl2_FrmConnectionConfig" xml:space="preserve">
+    <value>Member code Column:</value>
+  </data>
+  <data name="lbl2_FrmConnectionConfig1" xml:space="preserve">
+    <value>Member code Column:</value>
+  </data>
+  <data name="lbl2_FrmEditUser" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl2_FrmEditUser1" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl2_lbl1_FrmIntegrateData" xml:space="preserve">
+    <value>Member List errors when updating to system.</value>
+  </data>
+  <data name="lbl2_lbl1_FrmIntegrateData1" xml:space="preserve">
+    <value>Member List errors when updating to system.</value>
+  </data>
+  <data name="lbl2_UsrAccountInfo" xml:space="preserve">
+    <value>User name:</value>
+  </data>
+  <data name="lbl2_UsrAccountInfo1" xml:space="preserve">
+    <value>User name:</value>
+  </data>
+  <data name="lbl2_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Organization name:</value>
+  </data>
+  <data name="lbl2_UsrUserInfo" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lbl2_UsrUserInfo1" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lbl3_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lbl3_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lbl3_FrmConnectionConfig" xml:space="preserve">
+    <value>Last name Column:</value>
+  </data>
+  <data name="lbl3_FrmConnectionConfig1" xml:space="preserve">
+    <value>Last name Column:</value>
+  </data>
+  <data name="lbl3_FrmEditUser" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl3_FrmEditUser1" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl3_UsrAccountInfo" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lbl3_UsrAccountInfo1" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lbl3_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Acronym name:</value>
+  </data>
+  <data name="lbl3_UsrUserInfo" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl3_UsrUserInfo1" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl4_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl4_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lbl4_FrmConnectionConfig" xml:space="preserve">
+    <value>Name Column:</value>
+  </data>
+  <data name="lbl4_FrmConnectionConfig1" xml:space="preserve">
+    <value>Name Column:</value>
+  </data>
+  <data name="lbl4_FrmEditUser" xml:space="preserve">
+    <value>Identity number:</value>
+  </data>
+  <data name="lbl4_FrmEditUser1" xml:space="preserve">
+    <value>Identity number:</value>
+  </data>
+  <data name="lbl4_UsrAccountInfo" xml:space="preserve">
+    <value>Enter again:</value>
+  </data>
+  <data name="lbl4_UsrAccountInfo1" xml:space="preserve">
+    <value>Enter again:</value>
+  </data>
+  <data name="lbl4_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Area/Region:</value>
+  </data>
+  <data name="lbl4_UsrUserInfo" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl4_UsrUserInfo1" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl5_FrmAddOrEditOrg" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl5_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl5_FrmConnectionConfig" xml:space="preserve">
+    <value>Date of birth Column:</value>
+  </data>
+  <data name="lbl5_FrmConnectionConfig1" xml:space="preserve">
+    <value>Date of birth Column:</value>
+  </data>
+  <data name="lbl5_FrmEditUser" xml:space="preserve">
+    <value>Date of issue:</value>
+  </data>
+  <data name="lbl5_FrmEditUser1" xml:space="preserve">
+    <value>Date of issue:</value>
+  </data>
+  <data name="lbl5_UsrAccountInfo" xml:space="preserve">
+    <value>Account groups:</value>
+  </data>
+  <data name="lbl5_UsrAccountInfo1" xml:space="preserve">
+    <value>Account groups:</value>
+  </data>
+  <data name="lbl5_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lbl5_UsrUserInfo" xml:space="preserve">
+    <value>Identity number:</value>
+  </data>
+  <data name="lbl5_UsrUserInfo1" xml:space="preserve">
+    <value>Identity number:</value>
+  </data>
+  <data name="lbl6_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lbl6_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lbl6_FrmConnectionConfig" xml:space="preserve">
+    <value>Gender Column:</value>
+  </data>
+  <data name="lbl6_FrmConnectionConfig1" xml:space="preserve">
+    <value>Gender Column:</value>
+  </data>
+  <data name="lbl6_FrmEditUser" xml:space="preserve">
+    <value>Where of issue:</value>
+  </data>
+  <data name="lbl6_FrmEditUser1" xml:space="preserve">
+    <value>Where of issue:</value>
+  </data>
+  <data name="lbl6_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lbl6_UsrUserInfo" xml:space="preserve">
+    <value>Date of issue:</value>
+  </data>
+  <data name="lbl6_UsrUserInfo1" xml:space="preserve">
+    <value>Date of issue:</value>
+  </data>
+  <data name="lbl7_FrmAddOrEditOrg" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl7_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="lbl7_FrmConnectionConfig" xml:space="preserve">
+    <value>Nationality Column:</value>
+  </data>
+  <data name="lbl7_FrmConnectionConfig1" xml:space="preserve">
+    <value>Nationality Column:</value>
+  </data>
+  <data name="lbl7_FrmEditUser" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl7_FrmEditUser1" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl7_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>National Code:</value>
+  </data>
+  <data name="lbl7_UsrUserInfo" xml:space="preserve">
+    <value>Where of issue:</value>
+  </data>
+  <data name="lbl7_UsrUserInfo1" xml:space="preserve">
+    <value>Where of issue:</value>
+  </data>
+  <data name="lbl8_FrmAddOrEditOrg" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="lbl8_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="lbl8_FrmConnectionConfig" xml:space="preserve">
+    <value>Company Column:</value>
+  </data>
+  <data name="lbl8_FrmConnectionConfig1" xml:space="preserve">
+    <value>Company Column:</value>
+  </data>
+  <data name="lbl8_FrmEditUser" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lbl8_FrmEditUser1" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lbl8_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>ZipCode:</value>
+  </data>
+  <data name="lbl8_UsrUserInfo" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl8_UsrUserInfo1" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lbl9_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Level:</value>
+  </data>
+  <data name="lbl9_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Level:</value>
+  </data>
+  <data name="lbl9_FrmConnectionConfig" xml:space="preserve">
+    <value>Level Column:</value>
+  </data>
+  <data name="lbl9_FrmConnectionConfig1" xml:space="preserve">
+    <value>Level Column:</value>
+  </data>
+  <data name="lbl9_FrmEditUser" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl9_FrmEditUser1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lbl9_UsrMasterAndPartnerMgtMain" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrMasterAndPartnerMgtMain1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrOrgAcquirerManagerMgtMain" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrOrgAcquirerManagerMgtMain1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrOrganizationMgtMain" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrOrganizationMgtMain1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lbl9_UsrUserInfo" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lbl9_UsrUserInfo1" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lblAdressService" xml:space="preserve">
+    <value>Server address:</value>
+  </data>
+  <data name="lblAdressService1" xml:space="preserve">
+    <value>Server address:</value>
+  </data>
+  <data name="lblAnglePieChartSetup" xml:space="preserve">
+    <value>Rotation angle:</value>
+  </data>
+  <data name="lblAnglePieChartSetup1" xml:space="preserve">
+    <value>Rotation angle:</value>
+  </data>
+  <data name="lblAreSureConfirmClearData" xml:space="preserve">
+    <value>Are you sure you want to erase the data on this card? Note that this means that the corresponding card release (if any) will be cancelled.</value>
+  </data>
+  <data name="lblAreSureConfirmClearData1" xml:space="preserve">
+    <value>Are you sure you want to erase the data on this card? Note that this means that the corresponding card release (if any) will be cancelled.</value>
+  </data>
+  <data name="lblBiHuy" xml:space="preserve">
+    <value>Cancelled:</value>
+  </data>
+  <data name="lblBiHuy1" xml:space="preserve">
+    <value>Cancelled:</value>
+  </data>
+  <data name="lblBiKhoa" xml:space="preserve">
+    <value>Locked:</value>
+  </data>
+  <data name="lblBiKhoa1" xml:space="preserve">
+    <value>Locked:</value>
+  </data>
+  <data name="lblBinhThuong" xml:space="preserve">
+    <value>Normal:</value>
+  </data>
+  <data name="lblBinhThuong1" xml:space="preserve">
+    <value>Normal:</value>
+  </data>
+  <data name="lblChangePassUserCurrent" xml:space="preserve">
+    <value>Change the password of the current user:</value>
+  </data>
+  <data name="lblChangePassUserCurrent1" xml:space="preserve">
+    <value>Change the password of the current user:</value>
+  </data>
+  <data name="lblChangePassword" xml:space="preserve">
+    <value>Change The Password</value>
+  </data>
+  <data name="lblChangePassword1" xml:space="preserve">
+    <value>Change The Password</value>
+  </data>
+  <data name="lblCheckFunctionforUser" xml:space="preserve">
+    <value>The functions that you allow the accounts in this group are entitled to make. The grant of leave should be considered conforming.</value>
+  </data>
+  <data name="lblCheckFunctionforUser1" xml:space="preserve">
+    <value>The functions that you allow the accounts in this group are entitled to make. The grant of leave should be considered conforming.</value>
+  </data>
+  <data name="lblChooseNewGroup" xml:space="preserve">
+    <value>Select a new group in the frame below then press "Confirm".</value>
+  </data>
+  <data name="lblChooseNewGroup1" xml:space="preserve">
+    <value>Select a new group in the frame below then press "Confirm".</value>
+  </data>
+  <data name="lblChooseReader" xml:space="preserve">
+    <value>Select the device reading the card:</value>
+  </data>
+  <data name="lblChooseReader1" xml:space="preserve">
+    <value>Select the device reading the card:</value>
+  </data>
+  <data name="lblChooseSubjectPerso" xml:space="preserve">
+    <value>Select the card owner:</value>
+  </data>
+  <data name="lblChooseSubjectPerso1" xml:space="preserve">
+    <value>Select the card owner:</value>
+  </data>
+  <data name="lblChuaIn" xml:space="preserve">
+    <value>Not printing:</value>
+  </data>
+  <data name="lblChuaIn1" xml:space="preserve">
+    <value>Not printing:</value>
+  </data>
+  <data name="lblChucVu" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChucVu1" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblClearCardData" xml:space="preserve">
+    <value>Delete The Data On The Card</value>
+  </data>
+  <data name="lblClearCardData1" xml:space="preserve">
+    <value>Delete The Data On The Card</value>
+  </data>
+  <data name="lblCMND" xml:space="preserve">
+    <value>Identity number:</value>
+  </data>
+  <data name="lblColorEdgePieChartSetup" xml:space="preserve">
+    <value>Type the color of the edge:</value>
+  </data>
+  <data name="lblColorEdgePieChartSetup1" xml:space="preserve">
+    <value>Type the color of the edge:</value>
+  </data>
+  <data name="lblConfigService" xml:space="preserve">
+    <value>To configure the server address sWorld, please enter the information below and then press "Save".</value>
+  </data>
+  <data name="lblConfigService1" xml:space="preserve">
+    <value>To configure the server address sWorld, please enter the information below and then press "Save".</value>
+  </data>
+  <data name="lblConfimMessage" xml:space="preserve">
+    <value>[Confirmation Message]</value>
+  </data>
+  <data name="lblConfimMessage1" xml:space="preserve">
+    <value>[Confirmation Message]</value>
+  </data>
+  <data name="lblCreateNewPass" xml:space="preserve">
+    <value>Create a new password for the selected user</value>
+  </data>
+  <data name="lblCreateNewPass1" xml:space="preserve">
+    <value>Create a new password for the selected user</value>
+  </data>
+  <data name="lblCurrentPass" xml:space="preserve">
+    <value>Current password:</value>
+  </data>
+  <data name="lblCurrentPass1" xml:space="preserve">
+    <value>Current password:</value>
+  </data>
+  <data name="lblCurrentStatus" xml:space="preserve">
+    <value>Current status:</value>
+  </data>
+  <data name="lblCurrentStatus1" xml:space="preserve">
+    <value>Current status:</value>
+  </data>
+  <data name="lblDaBiHu" xml:space="preserve">
+    <value>Is damaged:</value>
+  </data>
+  <data name="lblDaBiHu1" xml:space="preserve">
+    <value>Is damaged:</value>
+  </data>
+  <data name="lblDaBiMat" xml:space="preserve">
+    <value>Lost:</value>
+  </data>
+  <data name="lblDaBiMat1" xml:space="preserve">
+    <value>Lost:</value>
+  </data>
+  <data name="lblDaIn" xml:space="preserve">
+    <value>Printed:</value>
+  </data>
+  <data name="lblDaIn1" xml:space="preserve">
+    <value>Printed:</value>
+  </data>
+  <data name="lblDienThoai" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lblDienThoai1" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lblDownPieChartSetup" xml:space="preserve">
+    <value>Below:</value>
+  </data>
+  <data name="lblDownPieChartSetup1" xml:space="preserve">
+    <value>Below:</value>
+  </data>
+  <data name="lblDuongDanDuLieu" xml:space="preserve">
+    <value>File Paths Customer Data</value>
+  </data>
+  <data name="lblDuongDanDuLieu1" xml:space="preserve">
+    <value>File Paths Customer Data</value>
+  </data>
+  <data name="lblEdgePieChartSetup" xml:space="preserve">
+    <value>Edge width:</value>
+  </data>
+  <data name="lblEdgePieChartSetup1" xml:space="preserve">
+    <value>Edge width:</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblEmail1" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>lblFrom</value>
+  </data>
+  <data name="lblFrom1" xml:space="preserve">
+    <value>lblFrom</value>
+  </data>
+  <data name="lblGuiChooseExpDate" xml:space="preserve">
+    <value>The expiration date must be later than the current date. The expiration time of the weekly release will be 0 hours of the day that you select.</value>
+  </data>
+  <data name="lblGuiChooseExpDate1" xml:space="preserve">
+    <value>The expiration date must be later than the current date. The expiration time of the weekly release will be 0 hours of the day that you select.</value>
+  </data>
+  <data name="lblGuiChooseReader" xml:space="preserve">
+    <value>If your device is not listed in the frame above, make sure the device is connected properly to the computer. Then, press the button "Search device".</value>
+  </data>
+  <data name="lblGuiChooseReader1" xml:space="preserve">
+    <value>If your device is not listed in the frame above, make sure the device is connected properly to the computer. Then, press the button "Search device".</value>
+  </data>
+  <data name="lblGuiClearCardData" xml:space="preserve">
+    <value>Scan Card to erase all data on the card application and restore the default key.</value>
+  </data>
+  <data name="lblGuiClearCardData1" xml:space="preserve">
+    <value>Scan Card to erase all data on the card application and restore the default key.</value>
+  </data>
+  <data name="lblGUIMemberData" xml:space="preserve">
+    <value>Member's information is stored in the card.</value>
+  </data>
+  <data name="lblGUIMemberData1" xml:space="preserve">
+    <value>Member's information is stored in the card.</value>
+  </data>
+  <data name="lblGuiPersoProcess" xml:space="preserve">
+    <value>Scan the card to the card level for the currently selected members, and write data to the card member.</value>
+  </data>
+  <data name="lblGuiPersoProcess1" xml:space="preserve">
+    <value>Scan the card to the card level for the currently selected members, and write data to the card member.</value>
+  </data>
+  <data name="lblGuiReadCardData" xml:space="preserve">
+    <value>Scan the card to read data stored in member card.</value>
+  </data>
+  <data name="lblGuiReadCardData1" xml:space="preserve">
+    <value>Scan the card to read data stored in member card.</value>
+  </data>
+  <data name="lblGuiUpdateCardData" xml:space="preserve">
+    <value>Scan to card check and synchronize the data of the applications on the card if there is a change</value>
+  </data>
+  <data name="lblGuiUpdateCardData1" xml:space="preserve">
+    <value>Scan to card check and synchronize the data of the applications on the card if there is a change</value>
+  </data>
+  <data name="lblHeightPieChartSetup" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="lblHeightPieChartSetup1" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="lblHetHan" xml:space="preserve">
+    <value>Expires:</value>
+  </data>
+  <data name="lblHetHan1" xml:space="preserve">
+    <value>Expires:</value>
+  </data>
+  <data name="lblImportCard" xml:space="preserve">
+    <value>Enter The Card</value>
+  </data>
+  <data name="lblImportCard1" xml:space="preserve">
+    <value>Enter The Card</value>
+  </data>
+  <data name="lblImportInfobaseGroup" xml:space="preserve">
+    <value>Enter the basic information of the group. Note: the group name has a maximum length of 255 characters and is not set to coincide with the group we have.</value>
+  </data>
+  <data name="lblImportInfobaseGroup1" xml:space="preserve">
+    <value>Enter the basic information of the group. Note: the group name has a maximum length of 255 characters and is not set to coincide with the group we have.</value>
+  </data>
+  <data name="lblInstruction" xml:space="preserve">
+    <value>Please enter the fields below to change your password. The new password must have a minimum strength in medium level.</value>
+  </data>
+  <data name="lblInstruction1" xml:space="preserve">
+    <value>Please enter the fields below to change your password. The new password must have a minimum strength in medium level.</value>
+  </data>
+  <data name="lblIsLoading" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblIsLoading1" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblLeftAreaTitle" xml:space="preserve">
+    <value>GROUPS LIST</value>
+  </data>
+  <data name="lblLeftAreaTitle1" xml:space="preserve">
+    <value>GROUPS LIST</value>
+  </data>
+  <data name="lblLeftAreaTitleforListPartner" xml:space="preserve">
+    <value>LIST OF PARTNERS</value>
+  </data>
+  <data name="lblLeftAreaTitleforListPartner1" xml:space="preserve">
+    <value>LIST OF PARTNERS</value>
+  </data>
+  <data name="lblLeftPieChartSetup" xml:space="preserve">
+    <value>Left:</value>
+  </data>
+  <data name="lblLeftPieChartSetup1" xml:space="preserve">
+    <value>Left:</value>
+  </data>
+  <data name="lblListMemberWatingIssueCard" xml:space="preserve">
+    <value>The standby member list issued the card:</value>
+  </data>
+  <data name="lblListMemberWatingIssueCard1" xml:space="preserve">
+    <value>The standby member list issued the card:</value>
+  </data>
+  <data name="lblListResultClearCardData" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultClearCardData1" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultImportCardData" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultImportCardData1" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultReadCardData" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultReadCardData1" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultUpdateCardData" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblListResultUpdateCardData1" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblLoading1" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblLoading11" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblLoading2" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblLoading21" xml:space="preserve">
+    <value>Loading data, please wait ...</value>
+  </data>
+  <data name="lblLoaiThe" xml:space="preserve">
+    <value>Card type:</value>
+  </data>
+  <data name="lblLoaiThe1" xml:space="preserve">
+    <value>Card type:</value>
+  </data>
+  <data name="lblMaNhanVien1" xml:space="preserve">
+    <value>Member code:</value>
+  </data>
+  <data name="lblMaThanhVien" xml:space="preserve">
+    <value>Member code:</value>
+  </data>
+  <data name="lblMemberData" xml:space="preserve">
+    <value>Member Infomation</value>
+  </data>
+  <data name="lblMemberData1" xml:space="preserve">
+    <value>Member Infomation</value>
+  </data>
+  <data name="lblMoTa" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblMoTa1" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblNameGroup" xml:space="preserve">
+    <value>Group name:</value>
+  </data>
+  <data name="lblNameGroup1" xml:space="preserve">
+    <value>Group name:</value>
+  </data>
+  <data name="lblNewPass" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="lblNewPass1" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="lblNgayCap" xml:space="preserve">
+    <value>Date of issue:</value>
+  </data>
+  <data name="lblNhapKhoaChuThePhatHanh" xml:space="preserve">
+    <value>Enter the key of Master released</value>
+  </data>
+  <data name="lblNhapKhoaChuThePhatHanh1" xml:space="preserve">
+    <value>Enter the key of Master released</value>
+  </data>
+  <data name="lblNoiCap" xml:space="preserve">
+    <value>Where of issue</value>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>Send a message to the contact.</value>
+  </data>
+  <data name="lblNote1" xml:space="preserve">
+    <value>Send a message to the contact.</value>
+  </data>
+  <data name="lblNoteConfirmClearData" xml:space="preserve">
+    <value>(The program will automatically cancel the corresponding release)</value>
+  </data>
+  <data name="lblNoteConfirmClearData1" xml:space="preserve">
+    <value>(The program will automatically cancel the corresponding release)</value>
+  </data>
+  <data name="lblNotes" xml:space="preserve">
+    <value>Notes:</value>
+  </data>
+  <data name="lblNotes1" xml:space="preserve">
+    <value>Notes:</value>
+  </data>
+  <data name="lblNote_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Add a new organization to the system.</value>
+  </data>
+  <data name="lblNote_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Add a new organization to the system.</value>
+  </data>
+  <data name="lblNote_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Create new members for the organization.</value>
+  </data>
+  <data name="lblNote_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Create new members for the organization.</value>
+  </data>
+  <data name="lblNotification1" xml:space="preserve">
+    <value>Please enter at least 2 characters</value>
+  </data>
+  <data name="lblNotification11" xml:space="preserve">
+    <value>Please enter at least 2 characters</value>
+  </data>
+  <data name="lblNotification2" xml:space="preserve">
+    <value>Please enter at least 2 characters</value>
+  </data>
+  <data name="lblNotification21" xml:space="preserve">
+    <value>Please enter at least 2 characters</value>
+  </data>
+  <data name="lblNotPerso" xml:space="preserve">
+    <value>Not yet released:</value>
+  </data>
+  <data name="lblNotPerso1" xml:space="preserve">
+    <value>Not yet released:</value>
+  </data>
+  <data name="lblPartnerKey" xml:space="preserve">
+    <value>Concomitant release organization</value>
+  </data>
+  <data name="lblPartnerKey1" xml:space="preserve">
+    <value>Concomitant release organization</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lblPassword1" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lblPerso" xml:space="preserve">
+    <value>Released:</value>
+  </data>
+  <data name="lblPerso1" xml:space="preserve">
+    <value>Released:</value>
+  </data>
+  <data name="lblPersoProcess" xml:space="preserve">
+    <value>Issued card to Members</value>
+  </data>
+  <data name="lblPersoProcess1" xml:space="preserve">
+    <value>Issued card to Members</value>
+  </data>
+  <data name="lblPhongBan" xml:space="preserve">
+    <value>Organization:</value>
+  </data>
+  <data name="lblPhongBan1" xml:space="preserve">
+    <value>Organization:</value>
+  </data>
+  <data name="lblProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblProductName1" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblReadCardData" xml:space="preserve">
+    <value>Read The Data On The Card</value>
+  </data>
+  <data name="lblReadCardData1" xml:space="preserve">
+    <value>Read The Data On The Card</value>
+  </data>
+  <data name="lblReasonSuggestion" xml:space="preserve">
+    <value>Enter the reason (this is designed to help you easily manage information later):</value>
+  </data>
+  <data name="lblReasonSuggestion1" xml:space="preserve">
+    <value>Enter the reason (this is designed to help you easily manage information later):</value>
+  </data>
+  <data name="lblReSetupPassWord" xml:space="preserve">
+    <value>Reset Your Password</value>
+  </data>
+  <data name="lblReSetupPassWord1" xml:space="preserve">
+    <value>Reset Your Password</value>
+  </data>
+  <data name="lblResultListIssue" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblResultListIssue1" xml:space="preserve">
+    <value>List of results:</value>
+  </data>
+  <data name="lblReTypePass" xml:space="preserve">
+    <value>Enter the new password again:</value>
+  </data>
+  <data name="lblReTypePass1" xml:space="preserve">
+    <value>Enter the new password again:</value>
+  </data>
+  <data name="lblRightAreaTitle" xml:space="preserve">
+    <value>ORGANIZATIONAL INFORMATION</value>
+  </data>
+  <data name="lblRightAreaTitle1" xml:space="preserve">
+    <value>ORGANIZATIONAL INFORMATION</value>
+  </data>
+  <data name="lblRightAreaTitleCardStatistics" xml:space="preserve">
+    <value>CARD STATISTICS</value>
+  </data>
+  <data name="lblRightAreaTitleCardStatistics1" xml:space="preserve">
+    <value>CARD STATISTICS</value>
+  </data>
+  <data name="lblRightAreaTitleforListMember" xml:space="preserve">
+    <value>MEMBERS LIST</value>
+  </data>
+  <data name="lblRightAreaTitleforListMember1" xml:space="preserve">
+    <value>MEMBERS LIST</value>
+  </data>
+  <data name="lblRightAreaTitleListCard" xml:space="preserve">
+    <value>CARD LIST</value>
+  </data>
+  <data name="lblRightAreaTitleListCard1" xml:space="preserve">
+    <value>CARD LIST</value>
+  </data>
+  <data name="lblRightAreaTitlePerso" xml:space="preserve">
+    <value>LIST OF WEEKLY RELEASE</value>
+  </data>
+  <data name="lblRightAreaTitlePerso1" xml:space="preserve">
+    <value>LIST OF WEEKLY RELEASE</value>
+  </data>
+  <data name="lblRightPieChartSetup" xml:space="preserve">
+    <value>Right:</value>
+  </data>
+  <data name="lblRightPieChartSetup1" xml:space="preserve">
+    <value>Right:</value>
+  </data>
+  <data name="lblSerialNumber" xml:space="preserve">
+    <value>Card Code:</value>
+  </data>
+  <data name="lblSerialNumber1" xml:space="preserve">
+    <value>Card Code:</value>
+  </data>
+  <data name="lblSoLuongTheCanPhatHanh" xml:space="preserve">
+    <value>Number of cards needed:</value>
+  </data>
+  <data name="lblSoLuongTheCanPhatHanh1" xml:space="preserve">
+    <value>Number of cards needed:</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Not connected with the reading devices</value>
+  </data>
+  <data name="lblStatus1" xml:space="preserve">
+    <value>Not connected with the reading devices</value>
+  </data>
+  <data name="lblStatusBroken" xml:space="preserve">
+    <value>Is damaged:</value>
+  </data>
+  <data name="lblStatusBroken1" xml:space="preserve">
+    <value>Is damaged:</value>
+  </data>
+  <data name="lblStatusLost" xml:space="preserve">
+    <value>Lost:</value>
+  </data>
+  <data name="lblStatusLost1" xml:space="preserve">
+    <value>Lost:</value>
+  </data>
+  <data name="lblStatusNormal" xml:space="preserve">
+    <value>Normal:</value>
+  </data>
+  <data name="lblStatusNormal1" xml:space="preserve">
+    <value>Normal:</value>
+  </data>
+  <data name="lblTeacherTableDescription" xml:space="preserve">
+    <value>The currently selected member is a member will be issued the cards in the next turn. You can also change the order of members if desired.</value>
+  </data>
+  <data name="lblTeacherTableDescription1" xml:space="preserve">
+    <value>The currently selected member is a member will be issued the cards in the next turn. You can also change the order of members if desired.</value>
+  </data>
+  <data name="lblTenNhanVien1" xml:space="preserve">
+    <value>Member name:</value>
+  </data>
+  <data name="lblTenThanhVien" xml:space="preserve">
+    <value>Member name:</value>
+  </data>
+  <data name="lblTenUngDung" xml:space="preserve">
+    <value>Application name:</value>
+  </data>
+  <data name="lblTenUngDung1" xml:space="preserve">
+    <value>Application name:</value>
+  </data>
+  <data name="lblThemUngDung" xml:space="preserve">
+    <value>Add The Application</value>
+  </data>
+  <data name="lblThemUngDung1" xml:space="preserve">
+    <value>Add The Application</value>
+  </data>
+  <data name="lblThoiHanThe" xml:space="preserve">
+    <value>The time limit for the card:</value>
+  </data>
+  <data name="lblThoiHanThe1" xml:space="preserve">
+    <value>The time limit for the card:</value>
+  </data>
+  <data name="lblTitleIntegratingLog" xml:space="preserve">
+    <value>HISTORY OF DATA INTEGRATION</value>
+  </data>
+  <data name="lblTitleIntegratingLog1" xml:space="preserve">
+    <value>HISTORY OF DATA INTEGRATION</value>
+  </data>
+  <data name="lblTitle_frmAddOrEditGroup" xml:space="preserve">
+    <value>Add the Group suborganization</value>
+  </data>
+  <data name="lblTitle_frmAddOrEditGroup1" xml:space="preserve">
+    <value>Add the Group suborganization</value>
+  </data>
+  <data name="lblTitle_FrmAddOrUpdateMember" xml:space="preserve">
+    <value>Enter Member Information</value>
+  </data>
+  <data name="lblTitle_FrmAddOrUpdateMember1" xml:space="preserve">
+    <value>Enter Member Information</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="lblTo1" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="lblTongCong1" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTongCong11" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTongCong2" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTongCong21" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTongCong3" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTongCong31" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTotal1" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblUpdateCardData" xml:space="preserve">
+    <value>Synchronize The Data On The Card</value>
+  </data>
+  <data name="lblUpdateCardData1" xml:space="preserve">
+    <value>Synchronize The Data On The Card</value>
+  </data>
+  <data name="lblUpdateInfoChoosed" xml:space="preserve">
+    <value>Update the personal information of the selected account</value>
+  </data>
+  <data name="lblUpdateInfoChoosed1" xml:space="preserve">
+    <value>Update the personal information of the selected account</value>
+  </data>
+  <data name="lblUpdateInfoUser" xml:space="preserve">
+    <value>Update Personal Information</value>
+  </data>
+  <data name="lblUpdateInfoUser1" xml:space="preserve">
+    <value>Update Personal Information</value>
+  </data>
+  <data name="lblUpPieChartSetup" xml:space="preserve">
+    <value>Top:</value>
+  </data>
+  <data name="lblUpPieChartSetup1" xml:space="preserve">
+    <value>Top:</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="lblUserName1" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="lblViTriCot_HoTen" xml:space="preserve">
+    <value>The location of the customer name column:</value>
+  </data>
+  <data name="lblViTriCot_HoTen1" xml:space="preserve">
+    <value>The location of the customer name column:</value>
+  </data>
+  <data name="lblViTriCot_SoDienThoai" xml:space="preserve">
+    <value>The location of the customer phone column:</value>
+  </data>
+  <data name="lblViTriCot_SoDienThoai1" xml:space="preserve">
+    <value>The location of the customer phone column:</value>
+  </data>
+  <data name="lblViTriCot_TenCongTy" xml:space="preserve">
+    <value>The location of the company name column:</value>
+  </data>
+  <data name="lblViTriCot_TenCongTy1" xml:space="preserve">
+    <value>The location of the company name column:</value>
+  </data>
+  <data name="lblViTriCot_ThoiGianThe" xml:space="preserve">
+    <value>The location of the Time Limit For The Card column:</value>
+  </data>
+  <data name="lblViTriCot_ThoiGianThe1" xml:space="preserve">
+    <value>The location of the Time Limit For The Card column:</value>
+  </data>
+  <data name="lblViTriTieuDeMoiSheet" xml:space="preserve">
+    <value>Location of subject line of each sheet:</value>
+  </data>
+  <data name="lblViTriTieuDeMoiSheet1" xml:space="preserve">
+    <value>Location of subject line of each sheet:</value>
+  </data>
+  <data name="lbTitle_FrmAddOrEditOrg" xml:space="preserve">
+    <value>Add the Organization to the system</value>
+  </data>
+  <data name="lbTitle_FrmAddOrEditOrg1" xml:space="preserve">
+    <value>Add the Organization to the system</value>
+  </data>
+  <data name="Less" xml:space="preserve">
+    <value>Less</value>
+  </data>
+  <data name="LockAcc" xml:space="preserve">
+    <value>Lock Account</value>
+  </data>
+  <data name="LostMark" xml:space="preserve">
+    <value>Lost Mark Card</value>
+  </data>
+  <data name="MainForm" xml:space="preserve">
+    <value>Card Issuing System</value>
+  </data>
+  <data name="MainForm1" xml:space="preserve">
+    <value>Card Issuing System</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>member</value>
+  </data>
+  <data name="MemCancelFail" xml:space="preserve">
+    <value>Membership cancellation failed</value>
+  </data>
+  <data name="MemId" xml:space="preserve">
+    <value>member code</value>
+  </data>
+  <data name="MemName" xml:space="preserve">
+    <value>member name</value>
+  </data>
+  <data name="MeneCash" xml:space="preserve">
+    <value>Recharge / Deductions</value>
+  </data>
+  <data name="MenuAppManager" xml:space="preserve">
+    <value>Application on cards</value>
+  </data>
+  <data name="MenuAppManager1" xml:space="preserve">
+    <value>Application on cards</value>
+  </data>
+  <data name="MenuAttendance" xml:space="preserve">
+    <value>Scan cards in / out</value>
+  </data>
+  <data name="MenuAttendance1" xml:space="preserve">
+    <value>Scan cards in / out</value>
+  </data>
+  <data name="MenuAttendanceHistory" xml:space="preserve">
+    <value>Statistics scan tags in / out</value>
+  </data>
+  <data name="MenuAttendanceHistory1" xml:space="preserve">
+    <value>Statistics scan tags in / out</value>
+  </data>
+  <data name="MenuCardChip" xml:space="preserve">
+    <value>Card chip</value>
+  </data>
+  <data name="MenuCardChip1" xml:space="preserve">
+    <value>Card chip</value>
+  </data>
+  <data name="MenuCardMagnetic" xml:space="preserve">
+    <value>Magnetic card</value>
+  </data>
+  <data name="MenuCardMagnetic1" xml:space="preserve">
+    <value>Magnetic card</value>
+  </data>
+  <data name="MenuCardManager" xml:space="preserve">
+    <value>Card management</value>
+  </data>
+  <data name="MenuCardManager1" xml:space="preserve">
+    <value>Card management</value>
+  </data>
+  <data name="MenuCardPerso" xml:space="preserve">
+    <value>Issued card</value>
+  </data>
+  <data name="MenuCardPerso1" xml:space="preserve">
+    <value>Issued card</value>
+  </data>
+  <data name="MenuCardPersoManager" xml:space="preserve">
+    <value>Release management</value>
+  </data>
+  <data name="MenuCardPersoManager1" xml:space="preserve">
+    <value>Release management</value>
+  </data>
+  <data name="MenuCardStatistics" xml:space="preserve">
+    <value>Card statistics</value>
+  </data>
+  <data name="MenuCardStatistics1" xml:space="preserve">
+    <value>Card statistics</value>
+  </data>
+  <data name="MenuChangePassword" xml:space="preserve">
+    <value>To change the password</value>
+  </data>
+  <data name="MenuChangePassword1" xml:space="preserve">
+    <value>To change the password</value>
+  </data>
+  <data name="MenuClearCard" xml:space="preserve">
+    <value>Delete card data ...</value>
+  </data>
+  <data name="MenuClearCard1" xml:space="preserve">
+    <value>Delete card data ...</value>
+  </data>
+  <data name="MenuClearEmptyCard" xml:space="preserve">
+    <value>Clear empty card ...</value>
+  </data>
+  <data name="MenuClearEmptyCard1" xml:space="preserve">
+    <value>Clear empty card ...</value>
+  </data>
+  <data name="MenuDeviceDoorManager" xml:space="preserve">
+    <value>Input/output device information</value>
+  </data>
+  <data name="MenuDoorInStatistics" xml:space="preserve">
+    <value>Door entry/exit  statistics</value>
+  </data>
+  <data name="MenuEcashConfig" xml:space="preserve">
+    <value>Configure the service</value>
+  </data>
+  <data name="MenuEcashDeDuct" xml:space="preserve">
+    <value>Deductions</value>
+  </data>
+  <data name="MenuEcashGroupItem" xml:space="preserve">
+    <value>Nhóm dịch vụ</value>
+  </data>
+  <data name="MenuEcashNameItem" xml:space="preserve">
+    <value>tên dịch vụ</value>
+  </data>
+  <data name="MenuEcashStatisticDeduct" xml:space="preserve">
+    <value>Thống kê trừ tiền</value>
+  </data>
+  <data name="MenuEcashStatisticTopUp" xml:space="preserve">
+    <value>Thống Kê Nạp Tiền</value>
+  </data>
+  <data name="MenuEcashTopUp" xml:space="preserve">
+    <value>Recharge</value>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="MenuExit1" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MenuHome1" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MenuKeyManager" xml:space="preserve">
+    <value>KeyManager</value>
+  </data>
+  <data name="MenuKeyManager1" xml:space="preserve">
+    <value>KeyManager</value>
+  </data>
+  <data name="MenuLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MenuLogout1" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MenuManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="MenuManager1" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="MenuManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="MenuManual1" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="MenuMemberManager" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="MenuMemberManager1" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="MenuOrgAcquirerManager" xml:space="preserve">
+    <value>Organizations that accept the card</value>
+  </data>
+  <data name="MenuOrgAcquirerManager1" xml:space="preserve">
+    <value>Organizations that accept the card</value>
+  </data>
+  <data name="MenuOrgManager" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="MenuOrgManager1" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="MenuPartnerOfMasterManager" xml:space="preserve">
+    <value>Affiliated organizations released the card</value>
+  </data>
+  <data name="MenuPartnerOfMasterManager1" xml:space="preserve">
+    <value>Affiliated organizations released the card</value>
+  </data>
+  <data name="MenuPayIn" xml:space="preserve">
+    <value>Recharge</value>
+  </data>
+  <data name="MenuReadCard" xml:space="preserve">
+    <value>Read card data ...</value>
+  </data>
+  <data name="MenuReadCard1" xml:space="preserve">
+    <value>Read card data ...</value>
+  </data>
+  <data name="MenuRelatives" xml:space="preserve">
+    <value>Contact person</value>
+  </data>
+  <data name="MenuRelatives1" xml:space="preserve">
+    <value>Contact person</value>
+  </data>
+  <data name="MenuSupport" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="MenuSupport1" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="MenuSystemInfo" xml:space="preserve">
+    <value>System Information</value>
+  </data>
+  <data name="MenuSystemInfo1" xml:space="preserve">
+    <value>System Information</value>
+  </data>
+  <data name="MenuUpdateCard" xml:space="preserve">
+    <value>Synchronize data card ...</value>
+  </data>
+  <data name="MenuUpdateCard1" xml:space="preserve">
+    <value>Synchronize data card ...</value>
+  </data>
+  <data name="MenuUpdateUser" xml:space="preserve">
+    <value>Update personal information</value>
+  </data>
+  <data name="MenuUpdateUser1" xml:space="preserve">
+    <value>Update personal information</value>
+  </data>
+  <data name="MenuUserManager" xml:space="preserve">
+    <value>Group-Account</value>
+  </data>
+  <data name="MenuUserManager1" xml:space="preserve">
+    <value>Group-Account</value>
+  </data>
+  <data name="MenuUtilities" xml:space="preserve">
+    <value>Utilities</value>
+  </data>
+  <data name="MenuUtilities1" xml:space="preserve">
+    <value>Utilities</value>
+  </data>
+  <data name="MenuVoucherCard" xml:space="preserve">
+    <value>Voucher Manager</value>
+  </data>
+  <data name="MenuVoucherCard1" xml:space="preserve">
+    <value>Voucher Manager</value>
+  </data>
+  <data name="MenuVoucherCardConfigRule" xml:space="preserve">
+    <value>Configure the Voucher</value>
+  </data>
+  <data name="MenuVoucherCardConfigRule1" xml:space="preserve">
+    <value>Configure the Voucher</value>
+  </data>
+  <data name="MenuVoucherCardCreateRule" xml:space="preserve">
+    <value>Create a voucher</value>
+  </data>
+  <data name="MenuVoucherCardCreateRule1" xml:space="preserve">
+    <value>Create a voucher</value>
+  </data>
+  <data name="MenuWirteKey" xml:space="preserve">
+    <value>Install the lock and Enter the card ...</value>
+  </data>
+  <data name="MenuWirteKey1" xml:space="preserve">
+    <value>Install the lock and Enter the card ...</value>
+  </data>
+  <data name="mnuChangePassword" xml:space="preserve">
+    <value>Change Password ...</value>
+  </data>
+  <data name="mnuChangePassword1" xml:space="preserve">
+    <value>Change Password ...</value>
+  </data>
+  <data name="mnuExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="mnuExit1" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="mnuHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="mnuHome1" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="mnuLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="mnuLogout1" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="mnuOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="mnuOptions1" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="mnuSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="mnuSystem1" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="NameItemDeduct" xml:space="preserve">
+    <value>service</value>
+  </data>
+  <data name="NewGroup" xml:space="preserve">
+    <value>New Group</value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="okButton" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="okButton1" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="OrgId" xml:space="preserve">
+    <value>Organization code</value>
+  </data>
+  <data name="OrgName" xml:space="preserve">
+    <value>Organization name</value>
+  </data>
+  <data name="PartnerCode" xml:space="preserve">
+    <value>PartnerCode</value>
+  </data>
+  <data name="PartnerCode1" xml:space="preserve">
+    <value>PartnerCode</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneFirst" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="rbtnLoginFail" xml:space="preserve">
+    <value>Login Fail</value>
+  </data>
+  <data name="rbtnLoginFail1" xml:space="preserve">
+    <value>Login Fail</value>
+  </data>
+  <data name="rbtnLoginFailed" xml:space="preserve">
+    <value>Login Fail</value>
+  </data>
+  <data name="rbtnLoginFailed1" xml:space="preserve">
+    <value>Login Fail</value>
+  </data>
+  <data name="rbtnLoginSuccess" xml:space="preserve">
+    <value>Login Success</value>
+  </data>
+  <data name="rbtnLoginSuccess1" xml:space="preserve">
+    <value>Login Success</value>
+  </data>
+  <data name="rbtnNotPerso" xml:space="preserve">
+    <value>Not Issue</value>
+  </data>
+  <data name="rbtnNotPerso1" xml:space="preserve">
+    <value>Not Issue</value>
+  </data>
+  <data name="rbtnNotWorking" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="rbtnNotWorking1" xml:space="preserve">
+    <value>Đã Nghỉ</value>
+  </data>
+  <data name="rbtnPerso" xml:space="preserve">
+    <value>Issued</value>
+  </data>
+  <data name="rbtnPerso1" xml:space="preserve">
+    <value>Issued</value>
+  </data>
+  <data name="rbtnShadowStyleGradualPieChartSetup" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="rbtnShadowStyleGradualPieChartSetup1" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="rbtnShadowStyleNonePieChartSetup" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="rbtnShadowStyleNonePieChartSetup1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="rbtnShadowStyleUniformPieChartSetup" xml:space="preserve">
+    <value>Đồng nhất</value>
+  </data>
+  <data name="rbtnShadowStyleUniformPieChartSetup1" xml:space="preserve">
+    <value>Đồng nhất</value>
+  </data>
+  <data name="rbtnStatusBroken" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="rbtnStatusBroken1" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="rbtnStatusCanceled" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="rbtnStatusCanceled1" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="rbtnStatusLocked" xml:space="preserve">
+    <value>Locking</value>
+  </data>
+  <data name="rbtnStatusLocked1" xml:space="preserve">
+    <value>Locking</value>
+  </data>
+  <data name="rbtnStatusLost" xml:space="preserve">
+    <value>Losed</value>
+  </data>
+  <data name="rbtnStatusLost1" xml:space="preserve">
+    <value>Losed</value>
+  </data>
+  <data name="rbtnStatusNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rbtnStatusNormal1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rbtnSttCanceled" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="rbtnSttCanceled1" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="rbtnSttExpired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="rbtnSttExpired1" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="rbtnSttLocked" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="rbtnSttLocked1" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="rbtnSttNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rbtnSttNormal1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rbtnWorking" xml:space="preserve">
+    <value>Collaborating</value>
+  </data>
+  <data name="rbtnWorking1" xml:space="preserve">
+    <value>Collaborating</value>
+  </data>
+  <data name="rbtnWorkingAbroad" xml:space="preserve">
+    <value>Abroad</value>
+  </data>
+  <data name="rbtnWorkingAbroad1" xml:space="preserve">
+    <value>Abroad</value>
+  </data>
+  <data name="ReadData" xml:space="preserve">
+    <value>Read Data</value>
+  </data>
+  <data name="Reader" xml:space="preserve">
+    <value>Reader</value>
+  </data>
+  <data name="ReNewPass" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="RePass" xml:space="preserve">
+    <value>Retype Password</value>
+  </data>
+  <data name="SaiGonPearlConfigApartment" xml:space="preserve">
+    <value>1 cấu hình</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Please Select</value>
+  </data>
+  <data name="ServiceValue" xml:space="preserve">
+    <value>Serice Value</value>
+  </data>
+  <data name="ShortName" xml:space="preserve">
+    <value>Short Name</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="SubOrgCancelFail" xml:space="preserve">
+    <value>Deleting Organization Fail</value>
+  </data>
+  <data name="textBoxDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="textBoxDescription1" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Title Error</value>
+  </data>
+  <data name="UnLockAcc" xml:space="preserve">
+    <value>Account Need To Be Unlock</value>
+  </data>
+  <data name="UnlockRelease" xml:space="preserve">
+    <value>Unlock Release</value>
+  </data>
+  <data name="UpdateAcc" xml:space="preserve">
+    <value>Account Update</value>
+  </data>
+  <data name="UpdateCardGroup" xml:space="preserve">
+    <value>Card Group Update</value>
+  </data>
+  <data name="UpdateGroup" xml:space="preserve">
+    <value>Group Update</value>
+  </data>
+  <data name="UpdateProfile" xml:space="preserve">
+    <value>Profile Update</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UsrLoginHistory" xml:space="preserve">
+    <value>Login History</value>
+  </data>
+  <data name="UsrLoginHistory1" xml:space="preserve">
+    <value>Login History</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>ZipCode</value>
+  </data>
+  <data name="done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="lblRightDateStatisticDetail" xml:space="preserve">
+    <value>Detailed statistics by Date</value>
+  </data>
+</root>

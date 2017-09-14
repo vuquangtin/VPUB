@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>App Config</comment>
+<entry key="TimeInspectionServer">30000</entry>
+<entry key="TimeInspectionCamera">30000</entry>
+<entry key="TimeOpenDoor">5000</entry>
+<entry key="JavaWebService">https://dangkyhop.tphcm.gov.vn/sworldwebservice/sworld</entry>
+<entry key="Number">3</entry>
+<entry key="Password">1</entry>
+<entry key="NumberOfCamera">2</entry>
+<entry key="User">vu.pham</entry>
+<entry key="UseAccessControl">true</entry>
+<entry key="Mode">1212121211</entry>
+<entry key="CameraAddress2">rtsp://10.188.4.21:554/video.mp4</entry>
+<entry key="UseTimekeeping">true</entry>
+<entry key="ReaderForCamera2">192.168.1.77</entry>
+<entry key="PortReader">6789</entry>
+<entry key="CameraAddress1">rtsp://10.188.4.21:554/video.mp4</entry>
+<entry key="ReaderForCamera1">192.168.1.78</entry>
+<entry key="CheckServerAfterBeep">false</entry>
+</properties>

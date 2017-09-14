@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D37ACC6-4879-4513-956A-C4C4FEB0006A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sNonResidentComponent</RootNamespace>
+    <AssemblyName>sNonResidentComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardChipService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CardChipService.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonControls, Version=1.0.13151.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper, Version=1.0.13148.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\JavaCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalStorageService, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\LocalStorageService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\..\libs\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderLibrary, Version=1.0.13151.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\ReaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\ReaderManager.dll</HintPath>
+    </Reference>
+    <Reference Include="sExcelExportComponent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\sExcelExportComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldModel, Version=1.0.13151.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\sWorldModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\FunctionNonResident.cs" />
+    <Compile Include="Constants\NonResidentMethodNames.cs" />
+    <Compile Include="Constants\NonResidentCommandName.cs" />
+    <Compile Include="Constants\NonResidentDefineName.cs" />
+    <Compile Include="Factory\ContactForWorkFactory.cs" />
+    <Compile Include="Factory\MeetingEventFactory.cs" />
+    <Compile Include="Factory\NonResidentMemberMapFactory.cs" />
+    <Compile Include="Factory\NonResidentOrganizationFactory.cs" />
+    <Compile Include="Factory\NonResidentStatisticsFactory.cs" />
+    <Compile Include="Factory\NonResidentSubOrganizationFactory.cs" />
+    <Compile Include="Factory\OrganizationMgFactory.cs" />
+    <Compile Include="Factory\NonResidentFactory.cs" />
+    <Compile Include="Factory\RoomFactory.cs" />
+    <Compile Include="Interface\IContactForWork.cs" />
+    <Compile Include="Interface\IMeetingEvent.cs" />
+    <Compile Include="Interface\INonResident.cs" />
+    <Compile Include="Interface\INonResidentMemberMap.cs" />
+    <Compile Include="Interface\INonResidentOrganization.cs" />
+    <Compile Include="Interface\INonResidentStatistics.cs" />
+    <Compile Include="Interface\INonResidentSubOrganization.cs" />
+    <Compile Include="Interface\IOrganizationMg.cs" />
+    <Compile Include="Interface\IRoom.cs" />
+    <Compile Include="JavaComunication\CommunicationContactForWork.cs" />
+    <Compile Include="JavaComunication\CommunicationNonResident.cs" />
+    <Compile Include="JavaComunication\CommunicationNonResidentMemberMap.cs" />
+    <Compile Include="JavaComunication\CommunicationNonResidentSubOrganization.cs" />
+    <Compile Include="JavaComunication\CommunicationNonResidentStatistics.cs" />
+    <Compile Include="JavaComunication\CommunicationOrganizationMg.cs" />
+    <Compile Include="JavaComunication\CommunicationRoom.cs" />
+    <Compile Include="JavaComunication\CommunicationSMeetingEvent.cs" />
+    <Compile Include="JavaComunication\CommunicationNonResidentOrganization.cs" />
+    <Compile Include="Java\JavaContactForWork.cs" />
+    <Compile Include="Java\JavaMeetingEvent.cs" />
+    <Compile Include="Java\JavaNonResident.cs" />
+    <Compile Include="Java\JavaNonResidentMemberMap.cs" />
+    <Compile Include="Java\JavaNonResidentOrganization.cs" />
+    <Compile Include="Java\JavaNonResidentStatistics.cs" />
+    <Compile Include="Java\JavaNonResidentSubOrganization.cs" />
+    <Compile Include="Java\JavaOrganizationMg.cs" />
+    <Compile Include="Java\JavaRoom.cs" />
+    <Compile Include="Model\CustomObj\NonResidenMemSubComboBox.cs" />
+    <Compile Include="Model\CustomObj\NonResidentMeetingObj.cs" />
+    <Compile Include="Model\CustomObj\NonResidentMemberMapCustom.cs" />
+    <Compile Include="Model\CustomObj\NonResidentMemberSubOrg.cs" />
+    <Compile Include="Model\CustomObj\Statistic\NonResidentObj.cs" />
+    <Compile Include="Model\CustomObj\Statistic\NonResidentStatistic.cs" />
+    <Compile Include="Model\CustomObj\Statistic\NonResidentStatisticDetailObj.cs" />
+    <Compile Include="Model\CustomObj\Statistic\NonResidentStatisticObj.cs" />
+    <Compile Include="Model\NonResidentMemberMap.cs" />
+    <Compile Include="Model\NonResidentOrganization.cs" />
+    <Compile Include="Model\NonResidentSubOrganization.cs" />
+    <Compile Include="Model\Partaker.cs" />
+    <Compile Include="Model\OrganizationMg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\ManageMeeting\FrmPartakerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\FrmPartakerList.Designer.cs">
+      <DependentUpon>FrmPartakerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\FrmShiftImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\FrmShiftImage.Designer.cs">
+      <DependentUpon>FrmShiftImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\FrmUpdateMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\FrmUpdateMeeting.Designer.cs">
+      <DependentUpon>FrmUpdateMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\FrmAddMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\FrmAddMeeting.Designer.cs">
+      <DependentUpon>FrmAddMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\FrmInfoNonResidentStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\FrmInfoNonResidentStatistics.Designer.cs">
+      <DependentUpon>FrmInfoNonResidentStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmUpdateNonResident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmUpdateNonResident.Designer.cs">
+      <DependentUpon>FrmUpdateNonResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\NonResidentComponentWorkItem.cs" />
+    <Compile Include="WorkItems\UsrAddNonResident.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrAddNonResident.Designer.cs">
+      <DependentUpon>UsrAddNonResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\UsrManageMeeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\ManageMeeting\UsrManageMeeting.Designer.cs">
+      <DependentUpon>UsrManageMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrNonResidentStatisticsDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrNonResidentStatisticsDetail.Designer.cs">
+      <DependentUpon>UsrNonResidentStatisticsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrNonResidentStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrNonResidentStatistics.Designer.cs">
+      <DependentUpon>UsrNonResidentStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrManageCardNonResident.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\StatisticForNonresident\UsrManageCardNonResident.Designer.cs">
+      <DependentUpon>UsrManageCardNonResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrNotification.designer.cs">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WorkItems\ManageMeeting\FrmPartakerList.resx">
+      <DependentUpon>FrmPartakerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForNonresident\FrmShiftImage.resx">
+      <DependentUpon>FrmShiftImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ManageMeeting\FrmUpdateMeeting.resx">
+      <DependentUpon>FrmUpdateMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ManageMeeting\FrmAddMeeting.resx">
+      <DependentUpon>FrmAddMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForNonresident\FrmInfoNonResidentStatistics.resx">
+      <DependentUpon>FrmInfoNonResidentStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmUpdateNonResident.resx">
+      <DependentUpon>FrmUpdateNonResident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrAddNonResident.resx">
+      <DependentUpon>UsrAddNonResident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\ManageMeeting\UsrManageMeeting.resx">
+      <DependentUpon>UsrManageMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForNonresident\UsrNonResidentStatisticsDetail.resx">
+      <DependentUpon>UsrNonResidentStatisticsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForNonresident\UsrNonResidentStatistics.resx">
+      <DependentUpon>UsrNonResidentStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\StatisticForNonresident\UsrManageCardNonResident.resx">
+      <DependentUpon>UsrManageCardNonResident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrNotification.resx">
+      <DependentUpon>UsrNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraComponent\CameraComponent.csproj">
+      <Project>{bbaab352-50a3-4894-acc2-63a6476f543b}</Project>
+      <Name>CameraComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScanComponent\ScanComponent.csproj">
+      <Project>{72a95485-5e92-43c2-bd14-3859102b695f}</Project>
+      <Name>ScanComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sMeetingComponent\sMeetingComponent.csproj">
+      <Project>{68f425b4-5ad4-4f08-9d7d-91e0f4e853e3}</Project>
+      <Name>sMeetingComponent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\btnAddDevice.Image.png" />
+    <Content Include="Resources\btnUpdateDevice.Image.png" />
+    <Content Include="Resources\Cancel_16x16.png" />
+    <Content Include="Resources\ic_search.png" />
+    <Content Include="Resources\info16x16.png" />
+    <Content Include="Resources\noimage.jpg" />
+    <None Include="Resources\Refresh_16x16.png" />
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)sBuilding\MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)sBuilding\MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

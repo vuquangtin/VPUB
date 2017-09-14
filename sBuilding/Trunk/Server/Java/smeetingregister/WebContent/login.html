@@ -1,0 +1,33 @@
+<div ng-controller="loginController">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<h2 class="bg-info">{{informessageadd}}</h2>
+				<div class="login-panel panel panel-default">
+					<div class="panel-heading" id="back">
+						<h3 class="panel-title">Vui lòng đăng nhập</h3>
+					</div>
+					<div class="panel-body">
+						<form accept-charset="UTF-8" role="form">
+							<fieldset>
+								<div class="form-group">
+									<input class="form-control" placeholder="Username" ng-model="username"
+										name="username" type="text" maxlength="100">
+								</div>
+								<div class="form-group">
+									<input class="form-control" placeholder="Password" ng-model="password"
+										name="password" type="password" value="" maxlength="100">
+								</div>
+								<div id="colorTextBlue">
+									<h6>{{validatelogin}}</h6>
+								</div>
+								<input class="btn btn-lg btn-success btn-block" type="submit"
+									value="Đăng nhập" ng-click =login()>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

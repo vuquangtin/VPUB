@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/commons-lang3-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/jsoup-1.7.3.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/nhnutilites"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldcommon"/>
+	<classpathentry kind="lib" path="C:/Data/Code/sWorld/Trunk/SWTServer/Java/libs/gson-2.2.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

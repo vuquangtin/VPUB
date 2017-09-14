@@ -1,0 +1,4 @@
+D:\chinh.nguyen\Privates\Projects\CABDemo\Commons\Common\bin\Release\Common.dll
+D:\chinh.nguyen\Privates\Projects\CABDemo\Commons\Common\bin\Release\Common.pdb
+D:\chinh.nguyen\Privates\Projects\CABDemo\Commons\Common\obj\Release\Common.dll
+D:\chinh.nguyen\Privates\Projects\CABDemo\Commons\Common\obj\Release\Common.pdb

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76E7012E-BECB-4199-B01A-3C190A8BF81F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sAccessComponent</RootNamespace>
+    <AssemblyName>sAccessComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CheckComboBoxTest">
+      <HintPath>..\..\libs\CheckComboBoxTest.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonControls, Version=1.0.13151.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHelper">
+      <HintPath>..\..\libs\CommonHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaCommunication">
+      <HintPath>..\..\libs\JavaCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldCommunication">
+      <HintPath>..\..\libs\sWorldCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="sWorldModel">
+      <HintPath>..\..\libs\sWorldModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemMgtComponent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\SystemMgtComponent.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\AccessCommandNames.cs" />
+    <Compile Include="Constants\AccessEventTopicNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\AccessComponentWorkItem.cs" />
+    <Compile Include="WorkItems\FrmAddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddMember.Designer.cs">
+      <DependentUpon>FrmAddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditGroupDeviceDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditGroupDeviceDoor.Designer.cs">
+      <DependentUpon>FrmAddOrEditGroupDeviceDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditGroupMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditGroupMember.Designer.cs">
+      <DependentUpon>FrmAddOrEditGroupMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditMontlyDebt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmAddOrEditMontlyDebt.Designer.cs">
+      <DependentUpon>FrmAddOrEditMontlyDebt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\frmViewDoorOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\frmViewDoorOut.Designer.cs">
+      <DependentUpon>frmViewDoorOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrConfigAccessControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrConfigAccessControll.Designer.cs">
+      <DependentUpon>UsrConfigAccessControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrDeviceDoorGroupMgt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrDeviceDoorGroupMgt.Designer.cs">
+      <DependentUpon>UsrDeviceDoorGroupMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrDoorInStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrDoorInStatistics.Designer.cs">
+      <DependentUpon>UsrDoorInStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrMemberGroupMgt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrMemberGroupMgt.Designer.cs">
+      <DependentUpon>UsrMemberGroupMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrManagerCostStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrManagerCostStatistics.Designer.cs">
+      <DependentUpon>UsrManagerCostStatistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WorkItems\FrmAddMember.resx">
+      <DependentUpon>FrmAddMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmAddOrEditGroupDeviceDoor.resx">
+      <DependentUpon>FrmAddOrEditGroupDeviceDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmAddOrEditGroupMember.resx">
+      <DependentUpon>FrmAddOrEditGroupMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmAddOrEditMontlyDebt.resx">
+      <DependentUpon>FrmAddOrEditMontlyDebt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\frmViewDoorOut.resx">
+      <DependentUpon>frmViewDoorOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrConfigAccessControll.resx">
+      <DependentUpon>UsrConfigAccessControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrDeviceDoorGroupMgt.resx">
+      <DependentUpon>UsrDeviceDoorGroupMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrDoorInStatistics.resx">
+      <DependentUpon>UsrDoorInStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrMemberGroupMgt.resx">
+      <DependentUpon>UsrMemberGroupMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrManagerCostStatistics.resx">
+      <DependentUpon>UsrManagerCostStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cancel_16x16.png" />
+    <Content Include="Resources\Lock_16x16.png" />
+    <None Include="Resources\noimage.jpg" />
+    <Content Include="Resources\UnLock_16x16.png" />
+    <None Include="Resources\Refresh_16x16.png" />
+    <None Include="Resources\MarkRed_16x16.png" />
+    <None Include="Resources\MarkBlue_16x16.png" />
+    <None Include="Resources\MarkBlack_16x16.png" />
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="sBuildingCommunication\sBuildingCommunication.csproj">
+      <Project>{7ddb9b48-a92f-4323-9d29-12711650e007}</Project>
+      <Name>sBuildingCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)sBuilding\MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)sBuilding\MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

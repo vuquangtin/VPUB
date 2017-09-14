@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/hibernate-c3p0-3.5.6-Final.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/hibernate-core.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldcommon"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldservice"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldwebservice"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/libs/nhn-utilities-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/itextpdf-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/sworldwebservice/WebContent/WEB-INF/lib/GenQRCode.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

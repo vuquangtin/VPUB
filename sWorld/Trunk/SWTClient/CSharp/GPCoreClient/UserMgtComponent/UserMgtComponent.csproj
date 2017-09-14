@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{344A4676-9C9B-4A93-9E6C-CB7946095C74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserMgtComponent</RootNamespace>
+    <AssemblyName>UserMgtComponent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\UserCommandNames.cs" />
+    <Compile Include="Constants\UserEventTopicNames.cs" />
+    <Compile Include="WorkItems\UserAdding\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\FrmAddUser.Designer.cs">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmChangeUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmChangeUserGroup.Designer.cs">
+      <DependentUpon>FrmChangeUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmGroupDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmGroupDetail.Designer.cs">
+      <DependentUpon>FrmGroupDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmResetPassword.designer.cs">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmUpdatePersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmUpdatePersonalInfo.Designer.cs">
+      <DependentUpon>FrmUpdatePersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\IUserAddingDialog.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\UserAdding\UsrAddUserOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrAddUserOptions.Designer.cs">
+      <DependentUpon>UsrAddUserOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrUserInfo.designer.cs">
+      <DependentUpon>UsrUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrMemberList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrMemberList.Designer.cs">
+      <DependentUpon>UsrMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrAccountInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UserAdding\UsrAccountInfo.Designer.cs">
+      <DependentUpon>UsrAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrLoginHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrLoginHistory.Designer.cs">
+      <DependentUpon>UsrLoginHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrUserMgtMain.Designer.cs">
+      <DependentUpon>UsrUserMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UserWorkItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5C06C55A-825D-4B1A-89A7-654798CE2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728B1500-2760-468D-BCBA-EF16F2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkItems\UserAdding\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmChangeUserGroup.resx">
+      <DependentUpon>FrmChangeUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmGroupDetail.resx">
+      <DependentUpon>FrmGroupDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmResetPassword.resx">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmUpdatePersonalInfo.resx">
+      <DependentUpon>FrmUpdatePersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UserAdding\UsrAddUserOptions.resx">
+      <DependentUpon>UsrAddUserOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UserAdding\UsrUserInfo.resx">
+      <DependentUpon>UsrUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UserAdding\UsrMemberList.resx">
+      <DependentUpon>UsrMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UserAdding\UsrAccountInfo.resx">
+      <DependentUpon>UsrAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrLoginHistory.resx">
+      <DependentUpon>UsrLoginHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrUserMgtMain.resx">
+      <DependentUpon>UsrUserMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_ConfigurationName="Release" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

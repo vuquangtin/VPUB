@@ -1,0 +1,8 @@
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.Properties.Resources.resources
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.View.UsrScanImage.resources
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.csproj.GenerateResource.Cache
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\bin\Release\ScanComponent.dll
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\bin\Release\ScanComponent.pdb
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.dll
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.pdb
+C:\Data\Documents\sWorld\Minh.Nguyen\Dep_Project\Projects\VPUB\SVN\sBuilding\Trunk\Client\sBuilding\ScanComponent\obj\Release\ScanComponent.csprojResolveAssemblyReference.cache

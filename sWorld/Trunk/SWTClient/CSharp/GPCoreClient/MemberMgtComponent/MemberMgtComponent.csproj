@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{152138B5-554E-4116-9048-8E00D91E0C7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemberMgtComponent</RootNamespace>
+    <AssemblyName>MemberMgtComponent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GPCoreCommon\Libs\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\GPCoreCommon\Libs\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\ExcelReader.cs" />
+    <Compile Include="WorkItems\IntegratingExcel\FrmConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmConnectionConfig.Designer.cs">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmIntegrateData.Designer.cs">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReadExcelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReadExcelData.Designer.cs">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\IntegratingExcel\FrmReviewData.Designer.cs">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\AccessDbReader.cs" />
+    <Compile Include="ComponentInit.cs" />
+    <Compile Include="Constants\MemberCommandNames.cs" />
+    <Compile Include="Constants\MemberEventTopicNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkItems\Integrating\FrmConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmConnectionConfig.Designer.cs">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmIntegrateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmIntegrateData.Designer.cs">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmReadAccessData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmReadAccessData.Designer.cs">
+      <DependentUpon>FrmReadAccessData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmReviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\Integrating\FrmReviewData.Designer.cs">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\FrmPersoProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkItems\FrmPersoProcess.Designer.cs">
+      <DependentUpon>FrmPersoProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\UsrMemberMgtMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkItems\UsrMemberMgtMain.Designer.cs">
+      <DependentUpon>UsrMemberMgtMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItems\MemberWorkItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonControls\CommonControls.csproj">
+      <Project>{5c06c55a-825d-4b1a-89a7-654798ce2554}</Project>
+      <Name>CommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CommonHelper\CommonHelper.csproj">
+      <Project>{728b1500-2760-468d-bcba-ef16f2137601}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CompositeUI\CompositeUI.csproj">
+      <Project>{c478e40b-a05e-4c69-9ab3-7a3bb374243f}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\CryptoHelper\CryptoHelper.csproj">
+      <Project>{02d6869f-28cf-4514-9847-eae8a868a88f}</Project>
+      <Name>CryptoHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GPCoreCommon\sWorldModel\sWorldModel.csproj">
+      <Project>{89534068-01b1-458b-9e85-71a890ec5c9d}</Project>
+      <Name>sWorldModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardChipService\CardChipService.csproj">
+      <Project>{ed8a8197-d684-460d-933d-0768eafa9110}</Project>
+      <Name>CardChipService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JavaCommunication\JavaCommunication.csproj">
+      <Project>{92e8979e-c112-4164-ac43-d61f114eaf2a}</Project>
+      <Name>JavaCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderLibrary\PcsReaderLibrary.csproj">
+      <Project>{3b3d4195-c507-4e13-8dea-3a13495835f0}</Project>
+      <Name>PcsReaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManager\ReaderManager.csproj">
+      <Project>{3b409134-c8bb-4c41-b885-0c7827b8da2a}</Project>
+      <Name>ReaderManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sWorldCommunication\sWorldCommunication.csproj">
+      <Project>{a9ac7bce-561f-48a9-b732-c67416ddbff0}</Project>
+      <Name>sWorldCommunication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmConnectionConfig.resx">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmIntegrateData.resx">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmReadExcelData.resx">
+      <DependentUpon>FrmReadExcelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\IntegratingExcel\FrmReviewData.resx">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Integrating\FrmConnectionConfig.resx">
+      <DependentUpon>FrmConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Integrating\FrmIntegrateData.resx">
+      <DependentUpon>FrmIntegrateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Integrating\FrmReadAccessData.resx">
+      <DependentUpon>FrmReadAccessData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\Integrating\FrmReviewData.resx">
+      <DependentUpon>FrmReviewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\FrmPersoProcess.resx">
+      <DependentUpon>FrmPersoProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkItems\UsrMemberMgtMain.resx">
+      <DependentUpon>UsrMemberMgtMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\debug\
+copy $(TargetDir)*.* $(SolutionDir)MainForm\bin\release\</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_ConfigurationName="Release" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

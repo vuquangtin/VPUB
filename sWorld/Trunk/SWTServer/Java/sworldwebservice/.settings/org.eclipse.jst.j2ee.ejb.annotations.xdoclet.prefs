@@ -1,0 +1,13 @@
+XDOCLETBUILDERACTIVE=true
+XDOCLETHOME=C\:\\
+XDOCLETUSEGLOBAL=true
+XDOCLETVERSION=1.2.2
+eclipse.preferences.version=1
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.JBossEjbdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.JBossWebdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.JonasEjbdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.JonasWebdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.WeblogicEjbdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.WeblogicWebdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.WebsphereEjbdocletTaskProvider.defaultSelection=false
+org.eclipse.jst.j2ee.xdoclet.runtime.internal.server.WebsphereWebdocletTaskProvider.defaultSelection=false

@@ -1,0 +1,10 @@
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\CABDemo.exe.config
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.csprojResolveAssemblyReference.cache
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.MainForm.resources
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.Properties.Resources.resources
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.csproj.GenerateResource.Cache
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\ProfileCatalog.xml
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\CABDemo.exe
+D:\chinh.nguyen\Privates\Projects\CABDemo\bin\Release\CABDemo.pdb
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.exe
+D:\chinh.nguyen\Privates\Projects\CABDemo\Shell\obj\Release\CABDemo.pdb

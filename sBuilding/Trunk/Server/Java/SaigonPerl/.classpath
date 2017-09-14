@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sBuilding/Trunk/Server/Java/saigonPerlWebservice/WebContent/WEB-INF/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sBuilding/Trunk/Server/Java/saigonPerlWebservice/WebContent/WEB-INF/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sBuilding/Trunk/Server/Java/saigonPerlWebservice/WebContent/WEB-INF/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sBuilding/Trunk/Server/Java/saigonPerlWebservice/WebContent/WEB-INF/lib/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sBuilding/Trunk/Server/Java/saigonPerlWebservice/WebContent/WEB-INF/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/vu.pham/sWorld/Trunk/SWTServer/Java/libs/jsoup-1.7.3.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/nhnutilites"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldcommon"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sworldservice"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
